@@ -134,6 +134,17 @@ This recovery round restored the earlier yield: about 1.05 raw observations per 
 
 This is the stopping point for the initial mining phase. The corpus now spans three yielding communities in the recent passes, and the next work should be filtering and grouping rather than spending more on archive recovery.
 
+## Run 10: corpus-level candidate compilation
+
+- **Date:** 2026-08-01
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort
+- **Input:** 270 raw rows from seven labeled mining batches, plus the existing screened candidates
+- **Output:** 35 proposed patterns before provenance checks; 34 retained after removing a one-source lead and correcting malformed source pointers
+- **Source check:** every retained evidence URL matches a published observation or mining-run row; every retained candidate has at least two evidence URLs
+- **Output file:** `data/candidates/2026-08-01-big-annoyance-screen.jsonl`
+
+This is still a screening result. It is not a prevalence ranking, a reviewed problem set, or a claim that AI is the right solution. The next stage is human review: merge overlaps, reject weak patterns, and promote only records with a clear task, failure mode, cost, and boundary.
+
 ## Filter
 
 The cheap screen removes obvious one-offs, jokes, sensitive or irrelevant material, duplicates, and titles too thin to inspect. The judgment pass then applies [The Big Annoyance Test](BIG_ANNOYANCE_TEST.md): repetition, real cost, weak workaround, breadth beyond one narrow product, concrete wording, and a possible AI opening.
