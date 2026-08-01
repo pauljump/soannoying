@@ -51,6 +51,22 @@ The Haiku batch is kept separate from the original release because one archived 
 
 This is the current burn baseline: about 2,127 input characters per successful model call on this source mix. It is a measurement, not a price estimate; account usage and billing depend on the Codex plan and model accounting.
 
+## Run 5: clean measured Codex batch
+
+- **Date:** 2026-08-01
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort, read-only sandbox
+- **Dense-model escalation:** disabled
+- **Target:** 10 fresh pages per source, concurrency 1
+- **Sources with fresh pages:** `mildlyinfuriating` and `CrappyDesign`
+- **Successful output:** 24 additional source observations from 20 pages
+- **Model calls:** 20
+- **Input size:** 159,763 characters, approximately 39,941 input tokens
+- **Failures:** 0
+- **Corpus after run:** 1,522 observations in the private miner
+- **Raw batch:** `data/mining-runs/2026-08-01-codex-batch-03.jsonl`
+
+This clean round is a better planning baseline than the earlier mixed batch: about 1,998 input characters per model call, with no retry waste.
+
 ## Filter
 
 The cheap screen removes obvious one-offs, jokes, sensitive or irrelevant material, duplicates, and titles too thin to inspect. The judgment pass then applies [The Big Annoyance Test](BIG_ANNOYANCE_TEST.md): repetition, real cost, weak workaround, breadth beyond one narrow product, concrete wording, and a possible AI opening.
