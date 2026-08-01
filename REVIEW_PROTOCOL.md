@@ -6,14 +6,17 @@
 
 ## Problem review
 
-An open review should assess four things independently:
+Before a problem review, apply the [Big Annoyance Test](BIG_ANNOYANCE_TEST.md). A problem can be clearly evidenced and still be too small, too narrow, or too easy to work around for this project.
+
+An open review should assess five things independently:
 
 1. Provenance: do the cited observations actually support the stated friction?
-2. Boundary: is this one bounded problem rather than a catch-all complaint category?
-3. Mechanism: are task, context, failure mode, and loss distinguishable?
-4. Uncertainty: does the record preserve disagreement, missing context, and alternative explanations?
+2. Big annoyance fit: does it repeat, carry a real cost, resist an obvious workaround, and extend beyond one narrow product or incident?
+3. Boundary: is this one bounded problem rather than a catch-all complaint category?
+4. Mechanism: are task, context, failure mode, and loss distinguishable?
+5. Uncertainty: does the record preserve disagreement, missing context, and alternative explanations?
 
-A reviewed problem needs two independent approving reviewers, one of whom checks provenance. A maintainer records the decision and links the review discussion. Rejections and requested changes remain visible.
+A reviewed problem needs two independent approving reviewers, one of whom checks provenance and one of whom checks big-annoyance fit. A maintainer records the decision and links the review discussion. Rejections and requested changes remain visible.
 
 ## Proposal review
 

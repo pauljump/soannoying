@@ -23,6 +23,12 @@ body:
       required: true
   - type: textarea
     attributes:
+      label: Big annoyance test
+      description: Which parts repeat, carry a real cost, resist an easy workaround, and extend beyond one narrow product or incident? What evidence supports that?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
       label: Uncertainty
       description: What does the evidence not establish?
     validations:

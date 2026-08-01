@@ -2,7 +2,7 @@
 
 An open project for collecting everyday annoyances that AI might finally make fixable.
 
-The goal is not to make a giant list of complaints. The goal is to find the stuff people keep running into where an AI system could actually help: reading the mess, remembering the context, taking a step, checking the result, or making the next move cheaper.
+The goal is not to make a giant list of complaints. The goal is to find the big annoyances people keep running into: things that repeat, have a real cost, resist easy workarounds, and still feel weirdly unsolved. Then we can ask whether stronger AI could help: reading the mess, remembering the context, taking a step, checking the result, or making the next move cheaper.
 
 This repo is the source trail. It keeps these things separate:
 
@@ -11,6 +11,8 @@ source observation -> reviewed problem -> solution proposal -> validation result
 ```
 
 That matters. A post title shows someone hit an annoyance. It does not prove the problem is common, important, or solvable. A reviewed problem says we understand the problem well enough to name it. A solution proposal says how AI might help. A validation result says whether it worked.
+
+The filter we care about is in [The Big Annoyance Test](BIG_ANNOYANCE_TEST.md). “Big” and “AI-solvable” are separate judgments. Mosquitoes can be a genuinely big annoyance even if the best solution has nothing to do with AI.
 
 ## Current release
 
@@ -43,7 +45,7 @@ Browse the lightweight public page: https://pauljump.github.io/soannoying/
 node scripts/validate-release.mjs
 ```
 
-Read [PROJECT_PLAN.md](PROJECT_PLAN.md) before adding big batches or turning raw observations into problem records. The contribution path is in [CONTRIBUTING.md](CONTRIBUTING.md).
+Read [PROJECT_PLAN.md](PROJECT_PLAN.md) and [The Big Annoyance Test](BIG_ANNOYANCE_TEST.md) before adding big batches or turning raw observations into problem records. The contribution path is in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 For new work, open one of these issue types:
 
@@ -60,7 +62,7 @@ For new work, open one of these issue types:
 
 ## Project status
 
-This is an early public release. The next job is to review the first batch and turn the strongest observations into real problem records.
+This is an early public release. The current observations are broad raw leads, not a finished list of big annoyances. The next job is to throw out the merely specific or amusing complaints and turn the strongest recurring burdens into real problem records.
 
 The point is not to collect every annoyance. The point is to build a public trail from "this keeps bothering people" to "this is a real problem" to "this fix actually worked."
 

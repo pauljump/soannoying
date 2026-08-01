@@ -4,7 +4,7 @@
 
 Build the public evidence layer for a specific class of AI opportunity: recurring annoyances that were previously too context-heavy, fragmented, or expensive to solve, but may now be tractable because models can interpret messy inputs, coordinate work, and verify results.
 
-The project does not measure general dissatisfaction. It produces inspectable problem records and tests whether proposed interventions reduce the original friction.
+The project does not measure general dissatisfaction. It looks for big annoyances: recurring burdens with real costs, weak workarounds, and a shape that can be inspected. It then produces problem records and tests whether proposed interventions reduce the original friction.
 
 ## The unit of progress
 
@@ -31,9 +31,9 @@ Ship the initial 1,340 observations with source provenance, a validation script,
 
 Exit criteria: every published row validates; every row identifies its source and collection method; contributors can tell where observations, problems, proposals, and results belong.
 
-### 0.2: Human review set
+### 0.2: Big annoyance review set
 
-Review a small, diverse sample before scaling volume. Create reviewed problem records only when a reviewer can state the affected task and failure mode from the evidence. Record merges, rejections, and uncertainty instead of silently rewriting source observations.
+Review a small, diverse sample before scaling volume. Apply the [Big Annoyance Test](BIG_ANNOYANCE_TEST.md) before asking whether AI can help. Create reviewed problem records only when a reviewer can state the affected task, failure mode, repeated burden, and real cost from the evidence. Record merges, rejections, and uncertainty instead of silently rewriting source observations.
 
 Exit criteria: 50 reviewed problems across several friction types, with documented inter-reviewer disagreements and a repeatable review rubric.
 
@@ -55,10 +55,11 @@ Mine breadth only until quality constraints are clear. The current source set is
 
 Priority dimensions:
 
-1. Friction type: information, coordination, paperwork, access, configuration, physical interaction, and deceptive or coercive design.
-2. Population and stakes: avoid making a corpus that only reflects technically fluent consumer complaints.
-3. AI leverage: prioritize cases where interpretation plus action or verification may change the cost structure.
-4. Source quality: prefer public, stable, attributable source material that can be cited without an account or scraping workaround.
+1. Big annoyance fit: repeated burden, meaningful cost, weak workaround, and more than one narrow situation.
+2. Friction type: information, coordination, paperwork, access, configuration, physical interaction, and deceptive or coercive design.
+3. Population and stakes: avoid making a corpus that only reflects technically fluent consumer complaints.
+4. AI leverage: separately prioritize cases where interpretation plus action or verification may change the cost structure.
+5. Source quality: prefer public, stable, attributable source material that can be cited without an account or scraping workaround.
 
 ## Success measures
 
