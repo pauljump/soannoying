@@ -100,6 +100,23 @@ The round hit the stopping point: the failure rate rose to 33% of claimed pages 
 
 This pass confirms that making the target larger does not improve yield: 0.77 observations per model call, with 8 fetch failures. Keep future work to smaller rounds or retry recovery until another source begins yielding.
 
+## Run 8: retry recovery round
+
+- **Date:** 2026-08-01
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort, read-only sandbox
+- **Dense-model escalation:** disabled
+- **Target:** 10 fresh or previously failed pages per source, concurrency 1
+- **Sources with fresh pages:** `mildlyinfuriating` and `CrappyDesign`
+- **Successful output:** 21 raw source observations, representing 20 new mention rows, from 19 completed pages
+- **Model calls:** 19
+- **Input size:** 160,067 characters, approximately 40,017 input tokens
+- **Failures:** 1 fetch failure; retryable
+- **Empty pages:** 3
+- **Corpus after run:** 1,579 observations in the private miner
+- **Raw batch:** `data/mining-runs/2026-08-01-codex-batch-06.jsonl`
+
+This recovery round restored the earlier yield: about 1.05 raw observations per model call, with only one page left to retry. The next useful move is another small recovery/source round, not a larger batch.
+
 ## Filter
 
 The cheap screen removes obvious one-offs, jokes, sensitive or irrelevant material, duplicates, and titles too thin to inspect. The judgment pass then applies [The Big Annoyance Test](BIG_ANNOYANCE_TEST.md): repetition, real cost, weak workaround, breadth beyond one narrow product, concrete wording, and a possible AI opening.
