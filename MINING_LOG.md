@@ -67,6 +67,22 @@ This is the current burn baseline: about 2,127 input characters per successful m
 
 This clean round is a better planning baseline than the earlier mixed batch: about 1,998 input characters per model call, with no retry waste.
 
+## Run 6: extended Codex round
+
+- **Date:** 2026-08-01
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort, read-only sandbox
+- **Dense-model escalation:** disabled
+- **Target:** 30 fresh pages per source, concurrency 1
+- **Sources with fresh pages:** `mildlyinfuriating`; `CrappyDesign` had no fresh pages in this round
+- **Successful output:** 19 additional source observations from 20 completed pages
+- **Model calls:** 20
+- **Input size:** 155,348 characters, approximately 38,837 input tokens
+- **Failures:** 10 fetch failures; retryable
+- **Corpus after run:** 1,541 observations in the private miner
+- **Raw batch:** `data/mining-runs/2026-08-01-codex-batch-04.jsonl`
+
+The round hit the stopping point: the failure rate rose to 33% of claimed pages and the yield fell to 0.95 observations per model call. Future runs should return to 10-page rounds or focus on retry recovery.
+
 ## Filter
 
 The cheap screen removes obvious one-offs, jokes, sensitive or irrelevant material, duplicates, and titles too thin to inspect. The judgment pass then applies [The Big Annoyance Test](BIG_ANNOYANCE_TEST.md): repetition, real cost, weak workaround, breadth beyond one narrow product, concrete wording, and a possible AI opening.
