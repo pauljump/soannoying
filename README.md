@@ -1,45 +1,47 @@
 # So Annoying
 
-An open, source-tracked corpus of everyday frictions that may now be solvable with AI.
+An open project for collecting everyday annoyances that AI might finally make fixable.
 
-Most complaint datasets stop at sentiment. This project is interested in a narrower and more useful question: where does a recurring human frustration have enough context, an actionable control point, and a measurable outcome for an AI system to actually reduce it?
+The goal is not to make a giant list of complaints. The goal is to find the stuff people keep running into where an AI system could actually help: reading the mess, remembering the context, taking a step, checking the result, or making the next move cheaper.
 
-The repository is an evidence commons, not a list of startup ideas. It keeps four things distinct:
+This repo is the source trail. It keeps these things separate:
 
 ```
 source observation -> reviewed problem -> solution proposal -> validation result
 ```
 
-An observation says that someone encountered a friction. A reviewed problem says multiple observations describe the same thing. A proposal says how a system might help. A validation result says whether it did. Those are different claims and must remain separately attributable.
+That matters. A post title shows someone hit an annoyance. It does not prove the problem is common, important, or solvable. A reviewed problem says we understand the problem well enough to name it. A solution proposal says how AI might help. A validation result says whether it worked.
 
 ## Current release
 
-`v0.1` contains 1,340 unreviewed observations from public, Wayback-captured Reddit thread titles, collected on 2026-08-01. The data is a seed set for review, not a canonical catalog and not evidence that any specific product idea will work.
+`v0.1` has 1,340 unreviewed observations from public Reddit thread titles saved by the Internet Archive Wayback Machine. They were collected on 2026-08-01.
+
+Treat this as raw material, not truth. It is not a complete annoyance catalog, and it is not proof that any product idea will work.
 
 - Sources: `r/mildlyinfuriating`, `r/CrappyDesign`, `r/assholedesign`, `r/badUX`, `r/Windows11`, `r/techsupport`, and `r/apple`
-- Acquisition: public Internet Archive Wayback snapshots only; no logged-in or live-platform collection
+- Collection: public Wayback snapshots only; no logged-in scraping and no live platform scraping
 - Release data: [data/observations/2026-08-01-wayback-reddit.jsonl](data/observations/2026-08-01-wayback-reddit.jsonl)
 - Format and release rules: [DATA.md](DATA.md)
-- Collection and redaction policy: [SOURCES.md](SOURCES.md)
+- Source rules: [SOURCES.md](SOURCES.md)
 
 ## What belongs here
 
-An entry is worth advancing when the user-facing friction is concrete enough to investigate:
+Something is worth moving forward when it is specific enough to inspect:
 
-- Someone is trying to accomplish something and repeatedly loses time, money, agency, access, or confidence.
-- The failure mode and affected person can be stated without inventing a solution.
-- An AI system could plausibly observe, explain, act, or verify part of the loop.
-- A contributor could define what improvement would look like and what would make the intervention unsafe or unacceptable.
+- Someone is trying to do something and keeps losing time, money, access, confidence, or control.
+- We can say who is affected and what is going wrong without jumping straight to an app idea.
+- AI could plausibly observe, explain, act, or check part of the loop.
+- We can say what better would look like, and what would make the fix bad or unsafe.
 
-Recurring complaints are a discovery signal, not proof of importance. A rare but severe friction can matter; a common complaint can still be impossible, harmful, or not worth automating.
+Repeated complaints are a clue, not a verdict. A rare problem can still matter. A common complaint can still be the wrong thing to automate.
 
-## Use the corpus
+## Use the data
 
 ```bash
 node scripts/validate-release.mjs
 ```
 
-Read [PROJECT_PLAN.md](PROJECT_PLAN.md) before adding large batches or canonicalizing entries. The intended contribution flow is in [CONTRIBUTING.md](CONTRIBUTING.md).
+Read [PROJECT_PLAN.md](PROJECT_PLAN.md) before adding big batches or turning raw observations into problem records. The contribution path is in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 For new work, open one of these issue types:
 
@@ -48,16 +50,18 @@ For new work, open one of these issue types:
 
 ## Principles
 
-1. Evidence first. Keep source observations separate from interpretation.
-2. Preserve uncertainty. `unreviewed`, `proposed`, and `validated` are meaningful states, not missing polish.
-3. Prefer mechanisms over vibes. A useful problem record names the task, friction, context, and failure mode.
-4. AI is a capability hypothesis, not an answer. Name the required capability and the control point.
-5. Validation must include harm. A faster workflow that removes agency, privacy, or recourse is not automatically an improvement.
+1. Keep the source trail. Do not turn a post into a claim it does not support.
+2. Keep uncertainty visible. `unreviewed`, `proposed`, and `validated` mean different things.
+3. Name the actual problem. Who is trying to do what, where does it fail, and why does it matter?
+4. Do not treat AI as magic dust. Say what the model or agent needs to do.
+5. Check for harm. Faster is not better if it removes privacy, choice, appeal, or control.
 
 ## Project status
 
-This is an early public release. The immediate job is to make the first 1,340 source observations reviewable and to establish a disciplined path from source evidence to peer-reviewed solutions. It is deliberately not trying to enumerate every annoyance people have.
+This is an early public release. The next job is to review the first batch and turn the strongest observations into real problem records.
+
+The point is not to collect every annoyance. The point is to build a public trail from "this keeps bothering people" to "this is a real problem" to "this fix actually worked."
 
 ## License and source material
 
-Code and project-authored documentation are MIT-licensed. The release contains short excerpts and links to third-party public material; ownership of that material remains with its authors and platforms. See [DATA_POLICY.md](DATA_POLICY.md) before redistributing the dataset or submitting new source material.
+Code and project-written docs are MIT-licensed. The release includes short excerpts and links to public third-party material. That material still belongs to its authors and platforms. See [DATA_POLICY.md](DATA_POLICY.md) before redistributing the data or adding new source material.
