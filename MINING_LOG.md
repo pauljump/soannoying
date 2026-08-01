@@ -1,0 +1,35 @@
+# Mining Log
+
+This is the record of how the public corpus was made. The point is to show the scale, the cheap filter, the model choice, and where the stopping point was.
+
+## Run 1: public seed
+
+- **Date:** 2026-08-01
+- **Sources:** Wayback snapshots of seven public Reddit communities
+- **Scale:** 1,340 source observations
+- **Extraction:** title-derived, unreviewed
+- **Model spend:** none for the public seed
+- **Release:** `data/observations/2026-08-01-wayback-reddit.jsonl`
+
+## Run 2: bounded Haiku batch
+
+- **Date:** 2026-08-01
+- **Model:** `claude-haiku-4-5-20251001` through the Claude subscription CLI
+- **Dense-model escalation:** disabled
+- **Target:** 100 fresh pages per target, concurrency 5
+- **Successful output:** 89 additional source observations from 17 source pages
+- **Corpus after run:** 1,429 observations in the private miner
+- **Stopping point:** stopped after Wayback fetch failures and repeated Claude CLI failures made the batch inefficient
+- **Raw batch:** `data/mining-runs/2026-08-01-haiku-batch-01.jsonl`
+
+The Haiku batch is kept separate from the original release because one archived page can produce several extracted patterns. Those rows are useful mining output, but they are not automatically independent evidence and are not silently merged into the v0.1 release.
+
+## Filter
+
+The cheap screen removes obvious one-offs, jokes, sensitive or irrelevant material, duplicates, and titles too thin to inspect. The judgment pass then applies [The Big Annoyance Test](BIG_ANNOYANCE_TEST.md): repetition, real cost, weak workaround, breadth beyond one narrow product, concrete wording, and a possible AI opening.
+
+“Big” and “AI-solvable” stay separate. A candidate can be a big annoyance and still turn out to need a policy, physical, or non-AI solution.
+
+## Result so far
+
+The first two runs produced 13 screened candidate patterns in `data/candidates/`. They are leads for community review, not reviewed problem records. The next stopping point is after the candidate set is broad enough to cover the major annoyance shapes, not after the Wayback archive is exhausted.

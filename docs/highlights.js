@@ -134,6 +134,54 @@ window.SO_ANNOYING_DATA = {
         "https://web.archive.org/web/20230105011935/https://old.reddit.com/r/assholedesign/comments/103gbc7/paid_and_ads/",
         "https://web.archive.org/web/20230119170525/https://old.reddit.com/r/assholedesign/comments/10g4gsx/huawei_file_browser_that_came_with_a_phone_i_paid/"
       ]
+    },
+    {
+      "id": "candidate-scheduled-appointments-still-wait",
+      "status": "screened",
+      "title": "A scheduled appointment does not tell you when you will actually be seen",
+      "why_big": "The burden is repeated, wastes time, and is especially costly when the person has work, childcare, transportation, or health constraints. The failure is the gap between a promised appointment time and the real queue.",
+      "ai_opening": "A system could track live queue state, give a realistic arrival window, and coordinate rescheduling or a remote handoff with the user's approval.",
+      "uncertainty": "The current source batch repeats one underlying complaint across several pages, so it is strong evidence of a pattern in the corpus but not independent prevalence evidence.",
+      "evidence": [
+        "https://web.archive.org/web/20230101214539/https://old.reddit.com/r/mildlyinfuriating/comments/100txss/a_data_breach_at_a_college_i_applied_and_never/",
+        "https://web.archive.org/web/20230102031735/https://old.reddit.com/r/mildlyinfuriating/comments/100u519/i_cant_see_the_other_posts_that_the_dumb_bot/",
+        "https://web.archive.org/web/20230102050939/https://old.reddit.com/r/mildlyinfuriating/comments/100uws9/tried_just_ripping_a_ply_or_two_off_a_near_empty/"
+      ]
+    },
+    {
+      "id": "candidate-unwanted-junk-mail",
+      "status": "screened",
+      "title": "People receive large amounts of physical advertising they never asked for",
+      "why_big": "It repeats, consumes attention and storage, creates waste, and has no simple universal opt-out. Unlike a single unwanted email, the burden arrives physically and is harder to filter after the fact.",
+      "ai_opening": "An agent could identify senders, prepare opt-out requests, track whether they worked, and help route remaining mail to recycling without exposing unrelated household information.",
+      "uncertainty": "The strongest scale claim in the source is an estimate from one poster and should not be treated as measured prevalence.",
+      "evidence": [
+        "https://web.archive.org/web/20230102040018/https://old.reddit.com/r/mildlyinfuriating/comments/100tkzg/my_friend_bought_a_gel_blaster_from_walmart_but/",
+        "https://web.archive.org/web/20230102031735/https://old.reddit.com/r/mildlyinfuriating/comments/100u519/i_cant_see_the_other_posts_that_the_dumb_bot/",
+        "https://web.archive.org/web/20230102050939/https://old.reddit.com/r/mildlyinfuriating/comments/100uws9/tried_just_ripping_a_ply_or_two_off_a_near_empty/"
+      ]
+    },
+    {
+      "id": "candidate-dating-app-bots",
+      "status": "screened",
+      "title": "Dating apps contain enough bot or fake accounts to undermine the basic task",
+      "why_big": "The product is supposed to help people meet real people, but fake accounts waste time, create risk, and make the whole service less trustworthy. The problem is bigger than one bad profile.",
+      "ai_opening": "An agent could help assess whether a conversation is likely genuine, surface evidence, and warn before a user shares money or sensitive information while leaving the decision with the user.",
+      "uncertainty": "A single title gives weak evidence about scale and can confuse bots with ordinary bad matches. This needs independent reports and a safety review.",
+      "evidence": [
+        "https://web.archive.org/web/20230101232602/https://old.reddit.com/r/mildlyinfuriating/comments/100v2ic/dating_apps_be_like/"
+      ]
+    },
+    {
+      "id": "candidate-printers-fail-when-needed",
+      "status": "screened",
+      "title": "Printers fail in unpredictable ways exactly when a document is needed",
+      "why_big": "Printing remains a common bridge between digital work and schools, offices, forms, and services. Failures waste time and supplies, while the device often gives little useful guidance.",
+      "ai_opening": "An agent could diagnose the printer and document state, choose safe recovery steps, and verify the output rather than repeating blind retries.",
+      "uncertainty": "The new batch contains one low-context printer example, so this is a lead that needs more independent evidence before advancing.",
+      "evidence": [
+        "https://web.archive.org/web/20230102094746/https://old.reddit.com/r/mildlyinfuriating/comments/100v0et/first_lesson_how_to_create_a_fake_sale/"
+      ]
     }
   ],
   "highlights": [

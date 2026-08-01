@@ -5,13 +5,14 @@
 ```
 data/
   observations/  append-only source observations
+  mining-runs/   separately labeled extraction batches and run artifacts
   candidates/    screened patterns awaiting human review
   problems/      reviewed canonical problem records
   proposals/     AI solution hypotheses
   validations/   evidence about outcomes
 ```
 
-`observations/` and `candidates/` are populated in the current development state. Candidates are not reviewed problems and should not be used as prevalence data or solution claims. Empty `problems/`, `proposals/`, and `validations/` directories are intentional: no later-stage record should be fabricated merely to make the repository look complete.
+`observations/`, `mining-runs/`, and `candidates/` are populated in the current development state. Mining runs are not automatically part of the v0.1 release. Candidates are not reviewed problems and should not be used as prevalence data or solution claims. Empty `problems/`, `proposals/`, and `validations/` directories are intentional: no later-stage record should be fabricated merely to make the repository look complete.
 
 ## Observation schema
 
