@@ -83,6 +83,23 @@ This clean round is a better planning baseline than the earlier mixed batch: abo
 
 The round hit the stopping point: the failure rate rose to 33% of claimed pages and the yield fell to 0.95 observations per model call. Future runs should return to 10-page rounds or focus on retry recovery.
 
+## Run 7: larger measured Codex pass
+
+- **Date:** 2026-08-01
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort, read-only sandbox
+- **Dense-model escalation:** disabled
+- **Target:** 30 fresh pages per source, concurrency 1
+- **Sources with fresh pages:** `mildlyinfuriating`; the other six sources had no fresh pages in this round
+- **Successful output:** 17 additional source observations from 22 completed pages
+- **Model calls:** 22
+- **Input size:** 169,084 characters, approximately 42,271 input tokens
+- **Failures:** 8 fetch failures; retryable
+- **Empty pages:** 7
+- **Corpus after run:** 1,558 observations in the private miner
+- **Raw batch:** `data/mining-runs/2026-08-01-codex-batch-05.jsonl`
+
+This pass confirms that making the target larger does not improve yield: 0.77 observations per model call, with 8 fetch failures. Keep future work to smaller rounds or retry recovery until another source begins yielding.
+
 ## Filter
 
 The cheap screen removes obvious one-offs, jokes, sensitive or irrelevant material, duplicates, and titles too thin to inspect. The judgment pass then applies [The Big Annoyance Test](BIG_ANNOYANCE_TEST.md): repetition, real cost, weak workaround, breadth beyond one narrow product, concrete wording, and a possible AI opening.
