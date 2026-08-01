@@ -1,0 +1,13 @@
+{
+  "name": "annoyance-corpus",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Open, source-tracked evidence for AI-solvable human frictions.",
+  "scripts": {
+    "test": "node scripts/validate-release.mjs",
+    "validate": "node scripts/validate-release.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this corpus, please cite the repository and the specific release manifest."
+title: "The Annoyance Corpus"
+abstract: "An open, source-tracked evidence corpus for recurring human frictions that may be solvable with AI."
+authors:
+  - family-names: "Jump"
+    given-names: "Paul"
+repository-code: "https://github.com/pauljump/annoyance-corpus"
+license: "MIT"
+version: "0.1.0"
+date-released: "2026-08-01"

@@ -1,0 +1,23 @@
+name: Add a source observation
+description: Submit a public, policy-compliant source of a concrete friction.
+title: "observation: "
+labels: ["source-observation"]
+body:
+  - type: input
+    attributes:
+      label: Public source pointer
+      description: Use a stable, public URL. Do not submit material that needs an account, login, or access workaround.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Minimal source context
+      description: Paraphrase where possible. Do not include usernames, contact information, or sensitive personal details.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Observed friction
+      description: State the user task and the failure without proposing a fix.
+    validations:
+      required: true

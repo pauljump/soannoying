@@ -1,0 +1,22 @@
+{
+  "version": "0.1.0",
+  "released_at": "2026-08-01",
+  "kind": "unreviewed-discovery-seed",
+  "files": [
+    {
+      "path": "data/observations/2026-08-01-wayback-reddit.jsonl",
+      "rows": 1340,
+      "sha256": "ba4ace0df13f6c886c504d3f8011e384daf0a7c9c3dff60e682704cebf73864a",
+      "source_type": "reddit",
+      "collection_method": "public Internet Archive Wayback CDX and archived old.reddit.com thread pages",
+      "extraction_mode": "title-derived, unreviewed"
+    }
+  ],
+  "limitations": [
+    "not a representative sample",
+    "not prevalence data",
+    "labels are provisional",
+    "contains duplicates and low-context signals",
+    "contains no reviewed problems, solution proposals, or validation results"
+  ]
+}

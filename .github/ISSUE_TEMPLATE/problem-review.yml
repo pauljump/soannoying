@@ -1,0 +1,29 @@
+name: Review a problem
+description: Turn several observations into a bounded, evidence-backed problem record.
+title: "problem: "
+labels: ["problem-review"]
+body:
+  - type: textarea
+    attributes:
+      label: Source observations
+      description: Link the observation rows or public source pointers. Do not paste sensitive source text.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: User task and friction
+      description: Who is trying to do what, and what gets in the way?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Consequence and context
+      description: What does the failure cost, and when does it happen?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Uncertainty
+      description: What does the evidence not establish?
+    validations:
+      required: true

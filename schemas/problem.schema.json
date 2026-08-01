@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reviewed problem record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "status", "title", "task", "friction", "context", "user_loss", "evidence", "uncertainty", "review"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^problem-[a-z0-9-]+$" },
+    "status": { "const": "reviewed" },
+    "title": { "type": "string", "minLength": 1 },
+    "task": { "type": "string", "minLength": 1 },
+    "friction": { "type": "string", "minLength": 1 },
+    "context": { "type": "string", "minLength": 1 },
+    "user_loss": { "type": "string", "minLength": 1 },
+    "evidence": { "type": "array", "minItems": 2, "items": { "type": "string", "minLength": 1 } },
+    "uncertainty": { "type": "string", "minLength": 1 },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["discussion", "reviewers"],
+      "properties": {
+        "discussion": { "type": "string", "format": "uri" },
+        "reviewers": { "type": "array", "minItems": 2, "items": { "type": "string", "minLength": 1 } }
+      }
+    }
+  }
+}

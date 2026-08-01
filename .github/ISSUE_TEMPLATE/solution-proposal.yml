@@ -1,0 +1,35 @@
+name: Propose an AI solution
+description: Submit a testable intervention for a reviewed problem.
+title: "proposal: "
+labels: ["solution-proposal"]
+body:
+  - type: input
+    attributes:
+      label: Reviewed problem
+      description: Link a reviewed problem record or issue. Proposals cannot start from a single unreviewed observation.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Intervention
+      description: What would the system observe and do?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Capability and control boundary
+      description: Name the AI capability, what needs user consent, and what the system must not do.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Test and success metric
+      description: What result would show that the original friction was reduced?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Failure and harm analysis
+      description: Name likely bad outcomes, including privacy, agency, and exclusion risks.
+    validations:
+      required: true

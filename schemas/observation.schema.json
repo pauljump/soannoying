@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Annoyance Corpus observation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["url", "subreddit", "seen_at", "name", "plain_name", "category", "fixability", "evidence_excerpt", "source_type"],
+  "properties": {
+    "url": { "type": "string", "format": "uri", "pattern": "^https://web\\.archive\\.org/" },
+    "subreddit": { "type": "string", "minLength": 1 },
+    "seen_at": { "type": "string", "format": "date-time" },
+    "name": { "type": "string", "minLength": 1, "maxLength": 500 },
+    "plain_name": { "type": "string", "minLength": 1, "maxLength": 500 },
+    "category": { "type": "string", "minLength": 1, "maxLength": 120 },
+    "fixability": { "enum": ["software", "hardware-physical", "policy-social", "unclear"] },
+    "evidence_excerpt": { "type": "string", "minLength": 1, "maxLength": 1000 },
+    "source_type": { "const": "reddit" }
+  }
+}
