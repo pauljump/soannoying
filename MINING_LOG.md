@@ -117,6 +117,23 @@ This pass confirms that making the target larger does not improve yield: 0.77 ob
 
 This recovery round restored the earlier yield: about 1.05 raw observations per model call, with only one page left to retry. The next useful move is another small recovery/source round, not a larger batch.
 
+## Run 9: final broadening round
+
+- **Date:** 2026-08-01
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort, read-only sandbox
+- **Dense-model escalation:** disabled
+- **Target:** 10 fresh or previously failed pages per source, concurrency 1
+- **Sources with fresh pages:** `mildlyinfuriating`, `CrappyDesign`, and `assholedesign`
+- **Successful output:** 31 raw source observations from 21 completed pages
+- **Model calls:** 21
+- **Input size:** 185,014 characters, approximately 46,254 input tokens
+- **Failures:** 9 fetch failures; retryable
+- **Empty pages:** 4
+- **Corpus after run:** 1,610 observations in the private miner
+- **Raw batch:** `data/mining-runs/2026-08-01-codex-batch-07.jsonl`
+
+This is the stopping point for the initial mining phase. The corpus now spans three yielding communities in the recent passes, and the next work should be filtering and grouping rather than spending more on archive recovery.
+
 ## Filter
 
 The cheap screen removes obvious one-offs, jokes, sensitive or irrelevant material, duplicates, and titles too thin to inspect. The judgment pass then applies [The Big Annoyance Test](BIG_ANNOYANCE_TEST.md): repetition, real cost, weak workaround, breadth beyond one narrow product, concrete wording, and a possible AI opening.
