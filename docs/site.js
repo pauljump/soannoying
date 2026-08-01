@@ -4,6 +4,7 @@ const filters = document.querySelector(".filters");
 const emptyState = document.querySelector("#emptyState");
 const searchInput = document.querySelector("#searchInput");
 const totalObservations = document.querySelector("#totalObservations");
+const candidateCards = document.querySelector("#candidateCards");
 
 const buckets = ["All", ...new Set(data.highlights.map((item) => item.bucket))].sort((a, b) => {
   if (a === "All") return -1;
@@ -14,6 +15,23 @@ const buckets = ["All", ...new Set(data.highlights.map((item) => item.bucket))].
 let activeFilter = "All";
 
 totalObservations.textContent = data.totalObservations.toLocaleString();
+
+for (const candidate of data.candidates) {
+  const card = document.createElement("article");
+  card.className = "candidate";
+  const title = document.createElement("h3");
+  title.textContent = candidate.title;
+  const why = document.createElement("p");
+  why.textContent = candidate.why_big;
+  const links = document.createElement("div");
+  links.className = "candidate-links";
+  const source = document.createElement("a");
+  source.href = `https://github.com/pauljump/soannoying/blob/main/data/candidates/2026-08-01-big-annoyance-screen.jsonl#${candidate.id}`;
+  source.textContent = "Candidate record";
+  links.append(source);
+  card.append(title, why, links);
+  candidateCards.append(card);
+}
 
 for (const bucket of buckets.filter((bucket) => bucket !== "All")) {
   const button = document.createElement("button");

@@ -5,9 +5,15 @@ import { dirname, join } from "node:path";
 const root = new URL("..", import.meta.url).pathname;
 const observationsPath = join(root, "data/observations/2026-08-01-wayback-reddit.jsonl");
 const outputPath = join(root, "docs/highlights.js");
+const candidatesPath = join(root, "data/candidates/2026-08-01-big-annoyance-screen.jsonl");
 const checkOnly = process.argv.includes("--check");
 
 const rows = readFileSync(observationsPath, "utf8")
+  .trim()
+  .split("\n")
+  .map((line) => JSON.parse(line));
+
+const candidates = readFileSync(candidatesPath, "utf8")
   .trim()
   .split("\n")
   .map((line) => JSON.parse(line));
@@ -123,6 +129,7 @@ const payload = {
   totalObservations: rows.length,
   sourceCount: Object.keys(countsBySource).length,
   countsBySource,
+  candidates,
   highlights,
 };
 
@@ -134,7 +141,7 @@ if (checkOnly) {
     console.error("docs/highlights.js is out of date. Run npm run build:pages.");
     process.exit(1);
   }
-  console.log(`docs/highlights.js is current with ${highlights.length} highlights`);
+    console.log(`docs/highlights.js is current with ${highlights.length} highlights and ${candidates.length} candidates`);
 } else {
   mkdirSync(dirname(outputPath), { recursive: true });
   writeFileSync(outputPath, content);

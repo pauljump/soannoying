@@ -5,12 +5,13 @@
 ```
 data/
   observations/  append-only source observations
+  candidates/    screened patterns awaiting human review
   problems/      reviewed canonical problem records
   proposals/     AI solution hypotheses
   validations/   evidence about outcomes
 ```
 
-Only `observations/` is populated in `v0.1`. Empty directories are intentional: no reviewed problem, proposal, or validation record should be fabricated merely to make the repository look complete.
+`observations/` and `candidates/` are populated in the current development state. Candidates are not reviewed problems and should not be used as prevalence data or solution claims. Empty `problems/`, `proposals/`, and `validations/` directories are intentional: no later-stage record should be fabricated merely to make the repository look complete.
 
 ## Observation schema
 

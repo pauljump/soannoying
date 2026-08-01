@@ -12,6 +12,130 @@ window.SO_ANNOYING_DATA = {
     "r/techsupport": 24,
     "r/apple": 11
   },
+  "candidates": [
+    {
+      "id": "candidate-stop-unwanted-messages",
+      "status": "screened",
+      "title": "People cannot reliably stop unwanted email and text messages",
+      "why_big": "The burden repeats, consumes attention, and can continue for months even after someone tries to unsubscribe or report it. It appears across email and text rather than belonging to one product.",
+      "ai_opening": "An agent could identify the sender, find the real opt-out path, take the approved action, and verify that messages stop without exposing unrelated inbox data.",
+      "uncertainty": "The current evidence is title-derived and does not establish prevalence, legal responsibility, or whether each sender is actually the same organization.",
+      "evidence": [
+        "https://web.archive.org/web/20230101023036/https://old.reddit.com/r/assholedesign/comments/100983v/no_unsubscribe_option_i_mailed_them_to_which_they/",
+        "https://web.archive.org/web/20230120010505/https://old.reddit.com/r/assholedesign/comments/10gfmx3/relentless_emails_from_nba_that_i_never_signed_up/",
+        "https://web.archive.org/web/20230104013011/https://old.reddit.com/r/assholedesign/comments/102ojrk/every_time_i_unsubscribe_from_these_texts_that_i/",
+        "https://web.archive.org/web/20230103033006/https://old.reddit.com/r/assholedesign/comments/101wtev/there_is_no_way_to_unsubscribe_from_this_email/"
+      ]
+    },
+    {
+      "id": "candidate-cancel-subscriptions",
+      "status": "screened",
+      "title": "People cannot cancel recurring services cleanly",
+      "why_big": "The failure can directly cost money and control. The same pattern appears as forced calls or chats, cancellation fees, timing traps, and confusing flows across unrelated subscriptions.",
+      "ai_opening": "An agent could find the actual cancellation route, explain the consequences, prepare the request, and complete it only with explicit approval while preserving a receipt.",
+      "uncertainty": "The examples are complaints about specific companies; a broader problem record needs evidence across more service types and a clear boundary around what the agent may do.",
+      "evidence": [
+        "https://web.archive.org/web/20230102065707/https://old.reddit.com/r/assholedesign/comments/100rb5f/sirius_xm_wont_let_you_cancel_online_unless_you/",
+        "https://web.archive.org/web/20230102090818/https://old.reddit.com/r/assholedesign/comments/1015vx0/adobe_charges_me_to_cancel_a_subscription_they/",
+        "https://web.archive.org/web/20230103121350/https://old.reddit.com/r/assholedesign/comments/1026lav/the_telegraph_doesnt_allow_my_digital/",
+        "https://web.archive.org/web/20230104014848/https://old.reddit.com/r/assholedesign/comments/102mvzs/frustrated_with_postmates_making_my_subscription/"
+      ]
+    },
+    {
+      "id": "candidate-support-without-waiting",
+      "status": "screened",
+      "title": "Getting help requires waiting on a support line instead of handing off the work",
+      "why_big": "The cost is time and attention, often at the exact moment something has already gone wrong. The complaint is about the support pattern itself, not one bad script or agent.",
+      "ai_opening": "An agent could gather the facts, navigate the first support steps, wait asynchronously when allowed, and return with a proposed resolution or a precise escalation.",
+      "uncertainty": "The current set has fewer strong examples than the cancellation set, and it does not show whether companies permit an agent to act on a customer's behalf.",
+      "evidence": [
+        "https://web.archive.org/web/20230607085202/https://old.reddit.com/r/badux/comments/73mxml/if_your_automated_phone_system_does_not_support/",
+        "https://web.archive.org/web/20230607075018/https://old.reddit.com/r/badux/comments/73mxf9/please_stop_playing_lowfidelity_music_when/",
+        "https://web.archive.org/web/20230102071620/https://old.reddit.com/r/mildlyinfuriating/comments/100sxi5/my_amazon_package_never_arrived_and_this_was/",
+        "https://web.archive.org/web/20230102084629/https://old.reddit.com/r/mildlyinfuriating/comments/100t1h7/my_amazon_package_never_arrived_and_this_was_the/"
+      ]
+    },
+    {
+      "id": "candidate-price-at-checkout",
+      "status": "screened",
+      "title": "The real price is hard to know until the purchase is almost finished",
+      "why_big": "Unexpected fees and price changes waste time and money and make comparison difficult. The pattern crosses delivery, digital goods, card payments, and online shopping.",
+      "ai_opening": "An agent could inspect the full checkout path, normalize fees and terms, and show the real price before the user commits.",
+      "uncertainty": "The examples show bad experiences but do not yet separate deliberate deception from ordinary taxes, regional pricing, or disclosed fees.",
+      "evidence": [
+        "https://web.archive.org/web/20230103165918/https://old.reddit.com/r/assholedesign/comments/102d23r/free_delivery_but_you_need_to_pay_higher_menu/",
+        "https://web.archive.org/web/20230105035030/https://old.reddit.com/r/assholedesign/comments/103kwu9/really_delivery_fee_for_digital_materials/",
+        "https://web.archive.org/web/20230118044647/https://old.reddit.com/r/assholedesign/comments/10etibk/company_advertises_one_price_increases_the_price/",
+        "https://web.archive.org/web/20230119054733/https://old.reddit.com/r/assholedesign/comments/10fp8vo/up_charge_for_using_a_card_no_cash_option/"
+      ]
+    },
+    {
+      "id": "candidate-forced-account-data",
+      "status": "screened",
+      "title": "Basic access requires an account, personal data, or a specific device",
+      "why_big": "People can be blocked from a simple task or pushed to hand over data they do not need to share. It affects shopping, public access, and everyday services.",
+      "ai_opening": "An agent could identify the minimum information actually needed, find an accessible route, and warn the user before sharing data or creating an account.",
+      "uncertainty": "The examples mix privacy concerns, business choices, and accessibility barriers. They need separate review before being treated as one problem.",
+      "evidence": [
+        "https://web.archive.org/web/20211008171121/https://old.reddit.com/r/badux/comments/q423h7/dear_target_you_lost_a_150_sale_because_you/",
+        "https://web.archive.org/web/20230105053708/https://old.reddit.com/r/assholedesign/comments/103llbb/so_pretty_much_every_public_wifi_in_victoria_that/",
+        "https://web.archive.org/web/20230104202241/https://old.reddit.com/r/assholedesign/comments/103b45t/wtf_imagine_a_world_where_you_cant_use_anything/",
+        "https://web.archive.org/web/20230605135528/https://old.reddit.com/r/badux/comments/5ggy29/do_not_ask_for_login_credentials_after_allowing/"
+      ]
+    },
+    {
+      "id": "candidate-unreliable-connectivity",
+      "status": "screened",
+      "title": "Connectivity fails in ways ordinary people cannot diagnose",
+      "why_big": "Internet and device connections are repeated, high-frequency dependencies. When they fail, the user often gets no clear reason and has to guess through a long troubleshooting loop.",
+      "ai_opening": "An agent could collect the relevant state, run safe checks, identify likely causes, and carry out reversible fixes while explaining what changed.",
+      "uncertainty": "Most current evidence comes from Windows support titles, so the generality beyond that ecosystem still needs testing.",
+      "evidence": [
+        "https://web.archive.org/web/20230101164937/https://old.reddit.com/r/Windows11/comments/100e6sy/wifi_keeps_disconnecting_disappearing_frequently/?ref=readnext_4",
+        "https://web.archive.org/web/20230102073500/https://old.reddit.com/r/Windows11/comments/100n5ve/my_wifi_option_is_not_showing_up/",
+        "https://web.archive.org/web/20230102212852/https://old.reddit.com/r/Windows11/comments/101o92q/i_cannot_use_wifi_wirelessly/",
+        "https://web.archive.org/web/20230102080947/https://old.reddit.com/r/techsupport/comments/1000jde/usb_devices_keep_disconnecting_or_not_connecting/"
+      ]
+    },
+    {
+      "id": "candidate-cross-device-files",
+      "status": "screened",
+      "title": "Moving files between devices and storage systems is still too hard",
+      "why_big": "The task is common, consequential, and spread across incompatible devices, operating systems, cables, cloud accounts, and storage locations. The workaround is often a confusing sequence of manual steps.",
+      "ai_opening": "An agent could map where the files are, choose a safe transfer path, execute it with approval, and verify that nothing was lost or duplicated.",
+      "uncertainty": "The current source set has only a few direct examples, so this is a promising lead rather than a strong candidate yet.",
+      "evidence": [
+        "https://web.archive.org/web/20230103155830/https://old.reddit.com/r/Windows11/comments/102bl5f/windows_11_pc_cannot_see_three_videos_all_over_5/",
+        "https://web.archive.org/web/20230101173836/https://old.reddit.com/r/techsupport/comments/1004n33/best_way_to_copy_sync_or_move_files_between/"
+      ]
+    },
+    {
+      "id": "candidate-unhelpful-error-messages",
+      "status": "screened",
+      "title": "Software reports failure without explaining what happened or what to do next",
+      "why_big": "The user is already blocked, and the error message adds confusion instead of reducing it. This repeats across ordinary software and makes every recovery attempt slower.",
+      "ai_opening": "An agent could connect the error to the actual device state, translate it into likely causes, and test reversible fixes instead of making the user search blindly.",
+      "uncertainty": "The current examples are low-context titles, and this candidate may need to split into diagnosis, recovery, and product-design problems.",
+      "evidence": [
+        "https://web.archive.org/web/20230102004524/https://old.reddit.com/r/Windows11/comments/100fqvo/does_windows_11_actually_tell_you_whats_wrong_or/",
+        "https://web.archive.org/web/20230101121908/https://old.reddit.com/r/Windows11/comments/100ickf/what_does_this_error_mean_any_help_would_be_nice/",
+        "https://web.archive.org/web/20210821162427/https://old.reddit.com/r/badux/comments/p8uerl/dear_reolink_do_not_tell_me_incorrect_password/"
+      ]
+    },
+    {
+      "id": "candidate-paid-products-with-ads",
+      "status": "screened",
+      "title": "Paid products still interrupt the user with ads or upsells",
+      "why_big": "The user has already paid and still loses attention to an interruption that is hard to avoid. The pattern appears across media, games, and built-in device software.",
+      "ai_opening": "An agent could identify and suppress unwanted interruptions where the user has authority, while distinguishing ads from important system messages.",
+      "uncertainty": "The source set does not establish what users agreed to, and blocking commercial messages can conflict with the product's business model or terms.",
+      "evidence": [
+        "https://web.archive.org/web/20230103130619/https://old.reddit.com/r/assholedesign/comments/1027o8m/cant_even_play_solitaire_on_pc_without_being/",
+        "https://web.archive.org/web/20230105011935/https://old.reddit.com/r/assholedesign/comments/103gbc7/paid_and_ads/",
+        "https://web.archive.org/web/20230119170525/https://old.reddit.com/r/assholedesign/comments/10g4gsx/huawei_file_browser_that_came_with_a_phone_i_paid/"
+      ]
+    }
+  ],
   "highlights": [
     {
       "id": "cdb1d9ce748c",

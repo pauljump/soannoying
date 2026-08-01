@@ -25,6 +25,7 @@ Treat this as raw material, not truth. It is not a complete annoyance catalog, a
 - Release data: [data/observations/2026-08-01-wayback-reddit.jsonl](data/observations/2026-08-01-wayback-reddit.jsonl)
 - Format and release rules: [DATA.md](DATA.md)
 - Source rules: [SOURCES.md](SOURCES.md)
+- First screened candidates: [data/candidates/2026-08-01-big-annoyance-screen.jsonl](data/candidates/2026-08-01-big-annoyance-screen.jsonl)
 
 ## What belongs here
 
@@ -62,7 +63,7 @@ For new work, open one of these issue types:
 
 ## Project status
 
-This is an early public release. The current observations are broad raw leads, not a finished list of big annoyances. The next job is to throw out the merely specific or amusing complaints and turn the strongest recurring burdens into real problem records.
+This is an early public release. The current observations are broad raw leads, not a finished list of big annoyances. The first screen produced [nine candidate patterns](data/candidates/2026-08-01-big-annoyance-screen.jsonl); the next job is to merge, reject, and strengthen them before turning any into real problem records.
 
 The point is not to collect every annoyance. The point is to build a public trail from "this keeps bothering people" to "this is a real problem" to "this fix actually worked."
 
