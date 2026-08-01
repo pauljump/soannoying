@@ -182,6 +182,28 @@ window.SO_ANNOYING_DATA = {
       "evidence": [
         "https://web.archive.org/web/20230102094746/https://old.reddit.com/r/mildlyinfuriating/comments/100v0et/first_lesson_how_to_create_a_fake_sale/"
       ]
+    },
+    {
+      "id": "candidate-travel-disruption-refunds",
+      "status": "screened",
+      "title": "Travel companies make urgent cancellations and refunds depend on unreachable people",
+      "why_big": "Weather and other disruptions can make a booked trip impossible, but the customer is still sent through normal support queues, hotel approvals, and follow-up loops. The cost arrives when the person has the least flexibility.",
+      "ai_opening": "An agent could gather the disruption evidence, identify the applicable terms, submit the cancellation or refund request, and track the escalation until a decision is recorded.",
+      "uncertainty": "This candidate comes from one detailed source page and needs evidence across airlines, hotels, and other travel bookings before it should advance.",
+      "evidence": [
+        "https://web.archive.org/web/20230103012154/https://old.reddit.com/r/mildlyinfuriating/comments/101tzoz/stranded_by_winter_storm_expediatravelodge_dont/"
+      ]
+    },
+    {
+      "id": "candidate-account-state-differs-across-devices",
+      "status": "screened",
+      "title": "The same account shows different history or state on different devices",
+      "why_big": "People reasonably expect one account to represent one current state. Divergent order history or settings creates uncertainty about whether an action worked and forces manual checking across devices.",
+      "ai_opening": "An agent could compare the account views, identify which state is current, and reconcile or explain the difference without making an irreversible change.",
+      "uncertainty": "The current evidence is one low-context example, so this is a promising software lead rather than a strong prevalence claim.",
+      "evidence": [
+        "https://web.archive.org/web/20230113132443/https://old.reddit.com/r/CrappyDesign/comments/109mm3j/same_website_same_account_different_devices/"
+      ]
     }
   ],
   "highlights": [

@@ -24,6 +24,17 @@ This is the record of how the public corpus was made. The point is to show the s
 
 The Haiku batch is kept separate from the original release because one archived page can produce several extracted patterns. Those rows are useful mining output, but they are not automatically independent evidence and are not silently merged into the v0.1 release.
 
+## Run 3: bounded Codex batch
+
+- **Date:** 2026-08-01
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort, read-only sandbox
+- **Dense-model escalation:** disabled
+- **Target:** 25 fresh pages per target, concurrency 2
+- **Successful output:** 38 additional source observations from 34 pages
+- **Corpus after run:** 1,467 observations in the private miner
+- **Stopping point:** the batch completed, with 16 later pages failing to fetch and remaining retryable
+- **Raw batch:** `data/mining-runs/2026-08-01-codex-batch-01.jsonl`
+
 ## Filter
 
 The cheap screen removes obvious one-offs, jokes, sensitive or irrelevant material, duplicates, and titles too thin to inspect. The judgment pass then applies [The Big Annoyance Test](BIG_ANNOYANCE_TEST.md): repetition, real cost, weak workaround, breadth beyond one narrow product, concrete wording, and a possible AI opening.
@@ -32,4 +43,4 @@ The cheap screen removes obvious one-offs, jokes, sensitive or irrelevant materi
 
 ## Result so far
 
-The first two runs produced 13 screened candidate patterns in `data/candidates/`. They are leads for community review, not reviewed problem records. The next stopping point is after the candidate set is broad enough to cover the major annoyance shapes, not after the Wayback archive is exhausted.
+The first three runs produced 15 screened candidate patterns in `data/candidates/`. They are leads for community review, not reviewed problem records. The next stopping point is after the candidate set is broad enough to cover the major annoyance shapes, not after the Wayback archive is exhausted.
