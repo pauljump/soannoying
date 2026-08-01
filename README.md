@@ -1,4 +1,4 @@
-# The Annoyance Corpus
+# So Annoying
 
 An open, source-tracked corpus of everyday frictions that may now be solvable with AI.
 

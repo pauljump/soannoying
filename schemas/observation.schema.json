@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Annoyance Corpus observation",
+  "title": "So Annoying observation",
   "type": "object",
   "additionalProperties": false,
   "required": ["url", "subreddit", "seen_at", "name", "plain_name", "category", "fixability", "evidence_excerpt", "source_type"],
