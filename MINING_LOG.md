@@ -35,6 +35,22 @@ The Haiku batch is kept separate from the original release because one archived 
 - **Stopping point:** the batch completed, with 16 later pages failing to fetch and remaining retryable
 - **Raw batch:** `data/mining-runs/2026-08-01-codex-batch-01.jsonl`
 
+## Run 4: measured gradual Codex batch
+
+- **Date:** 2026-08-01
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort, read-only sandbox
+- **Dense-model escalation:** disabled
+- **Target:** 10 fresh pages per source, concurrency 1
+- **Sources with fresh pages:** `mildlyinfuriating` and `CrappyDesign`
+- **Successful output:** 31 additional source observations from 19 pages
+- **Model calls:** 19
+- **Input size:** 161,624 characters, approximately 40,406 input tokens
+- **Failures:** 1 fetch failure; retryable
+- **Corpus after run:** 1,498 observations in the private miner
+- **Raw batch:** `data/mining-runs/2026-08-01-codex-batch-02.jsonl`
+
+This is the current burn baseline: about 2,127 input characters per successful model call on this source mix. It is a measurement, not a price estimate; account usage and billing depend on the Codex plan and model accounting.
+
 ## Filter
 
 The cheap screen removes obvious one-offs, jokes, sensitive or irrelevant material, duplicates, and titles too thin to inspect. The judgment pass then applies [The Big Annoyance Test](BIG_ANNOYANCE_TEST.md): repetition, real cost, weak workaround, breadth beyond one narrow product, concrete wording, and a possible AI opening.
