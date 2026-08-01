@@ -4,8 +4,9 @@
   "version": "0.1.0",
   "description": "Open, source-tracked evidence for AI-solvable human frictions.",
   "scripts": {
-    "test": "node scripts/validate-release.mjs",
-    "validate": "node scripts/validate-release.mjs"
+    "build:pages": "node scripts/build-pages.mjs",
+    "test": "node scripts/validate-release.mjs && node scripts/build-pages.mjs --check",
+    "validate": "node scripts/validate-release.mjs && node scripts/build-pages.mjs --check"
   },
   "engines": {
     "node": ">=20"

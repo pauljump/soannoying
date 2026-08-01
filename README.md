@@ -37,6 +37,8 @@ Repeated complaints are a clue, not a verdict. A rare problem can still matter. 
 
 ## Use the data
 
+Browse the lightweight public page: https://pauljump.github.io/soannoying/
+
 ```bash
 node scripts/validate-release.mjs
 ```
