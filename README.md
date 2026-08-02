@@ -27,6 +27,8 @@ Treat this as raw material, not truth. It is not a complete annoyance catalog, a
 - Source rules: [SOURCES.md](SOURCES.md)
 - First screened candidates: [data/candidates/2026-08-01-big-annoyance-screen.jsonl](data/candidates/2026-08-01-big-annoyance-screen.jsonl)
 - Mining method and stopping points: [MINING_LOG.md](MINING_LOG.md)
+- Autonomous mining contract: [AUTONOMY.md](AUTONOMY.md)
+- Subject registry and pass ledger: [data/subjects/registry.json](data/subjects/registry.json) and [data/mining-passes/](data/mining-passes/)
 
 ## What belongs here
 
@@ -64,7 +66,7 @@ For new work, open one of these issue types:
 
 ## Project status
 
-This is an early public release. The current observations are broad raw leads, not a finished list of big annoyances. The first three mining runs produced [15 candidate patterns](data/candidates/2026-08-01-big-annoyance-screen.jsonl); the next job is to merge, reject, and strengthen them before turning any into real problem records.
+This is an early public release. The current observations are broad raw leads, not a finished list of big annoyances. The next phase is subject-by-subject mining with bounded, source-tracked passes. The trust contract makes the model, budget, stop point, and promotion boundary explicit before a worker runs unattended.
 
 The point is not to collect every annoyance. The point is to build a public trail from "this keeps bothering people" to "this is a real problem" to "this fix actually worked."
 

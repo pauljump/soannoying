@@ -61,6 +61,12 @@ Priority dimensions:
 4. AI leverage: separately prioritize cases where interpretation plus action or verification may change the cost structure.
 5. Source quality: prefer public, stable, attributable source material that can be cited without an account or scraping workaround.
 
+### Subject lanes
+
+The next mining phase runs one subject at a time: healthcare access, housing and landlords, travel and transportation, retail and delivery, accessibility, physical products, and neighborhoods, waste, and pests. Each lane gets its own source plan, bounded raw pass, stop report, and later candidate review. Technology is a separate lane so it does not quietly dominate the corpus.
+
+An autonomous worker follows [the mining contract](AUTONOMY.md) and [the subject registry](data/subjects/registry.json). It can collect and validate raw evidence within the approved limits, but it cannot change the candidate set or publish without a separate review decision.
+
 ## Success measures
 
 - A reviewer can inspect why a problem record exists without trusting a model summary.

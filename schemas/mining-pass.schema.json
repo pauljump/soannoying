@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["id", "subject", "status", "model", "budget", "sources", "result", "next_action"],
+  "properties": {
+    "id": {"type":"string","pattern":"^[a-z0-9-]+$"},
+    "subject": {"type":"string"},
+    "status": {"enum":["planned","running","complete","stopped","blocked"]},
+    "model": {"const":"gpt-5.5"},
+    "reasoning": {"const":"low"},
+    "budget": {"type":"object","required":["pages_per_source","concurrency","max_model_calls","max_input_tokens"]},
+    "sources": {"type":"array","minItems":1,"items":{"type":"string"}},
+    "result": {"type":"object","required":["pages","failed_pages","empty_pages","model_calls","input_tokens","new_rows","stop_reason"]},
+    "next_action": {"enum":["continue","change-sources","compile","stop"]}
+  },
+  "additionalProperties": true
+}
