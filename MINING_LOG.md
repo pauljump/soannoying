@@ -184,6 +184,23 @@ The URL canonicalization fix prevented query variants of the same Reddit thread 
 
 This is still a screening result, not human-reviewed problem records. The new source coverage improved the shape of the list, but it did not justify expanding it mechanically.
 
+## Run 14: healthcare access subject pass
+
+- **Date:** 2026-08-02
+- **Subject:** healthcare access
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort, concurrency 1
+- **Scope:** appointments, referrals, forms, billing, coverage, queues, records, and finding care; no diagnosis or treatment advice
+- **Sources:** `HealthInsurance` and `healthcare`, 10 pages each
+- **Successful output:** 31 subject-focused raw observations from 20 unique pages
+- **Model calls:** 20
+- **Input size:** 122,198 characters, approximately 30,550 input tokens
+- **Failures:** 0
+- **Empty pages:** 9
+- **Manifest:** `data/mining-passes/2026-08-02-healthcare-access-01.json`
+- **Raw batch:** `data/mining-runs/2026-08-02-codex-healthcare-access-01.jsonl`
+
+This is a collection result only. The next action is another bounded healthcare source chunk or a later subject-level compile; no candidate promotion happened automatically.
+
 ## Filter
 
 The cheap screen removes obvious one-offs, jokes, sensitive or irrelevant material, duplicates, and titles too thin to inspect. The judgment pass then applies [The Big Annoyance Test](BIG_ANNOYANCE_TEST.md): repetition, real cost, weak workaround, breadth beyond one narrow product, concrete wording, and a possible AI opening.

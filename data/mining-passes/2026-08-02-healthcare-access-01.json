@@ -1,0 +1,26 @@
+{
+  "id": "2026-08-02-healthcare-access-01",
+  "subject": "healthcare-access",
+  "status": "complete",
+  "model": "gpt-5.5",
+  "reasoning": "low",
+  "budget": {
+    "pages_per_source": 10,
+    "concurrency": 1,
+    "max_model_calls": 20,
+    "max_input_tokens": 50000
+  },
+  "sources": ["HealthInsurance", "healthcare"],
+  "result": {
+    "pages": 20,
+    "failed_pages": 0,
+    "empty_pages": 9,
+    "model_calls": 20,
+    "input_tokens": 30550,
+    "new_rows": 31,
+    "stop_reason": "completed two-source chunk"
+  },
+  "raw_batch": "data/mining-runs/2026-08-02-codex-healthcare-access-01.jsonl",
+  "subject_filter": "Appointments, referrals, forms, billing, coverage, queues, records, and finding care; no diagnosis or treatment advice.",
+  "next_action": "continue"
+}
