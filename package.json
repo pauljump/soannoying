@@ -5,7 +5,7 @@
   "description": "Open, source-tracked evidence for AI-solvable human frictions.",
   "scripts": {
     "build:pages": "node scripts/build-pages.mjs",
-    "test": "node scripts/validate-release.mjs && node scripts/validate-mining-runs.mjs && node scripts/validate-trust.mjs && node scripts/build-pages.mjs --check",
+    "test": "node scripts/validate-release.mjs && node scripts/validate-mining-runs.mjs && node scripts/validate-trust.mjs && node scripts/validate-subject-screens.mjs && node scripts/build-pages.mjs --check",
     "validate": "node scripts/validate-release.mjs && node scripts/validate-mining-runs.mjs && node scripts/validate-trust.mjs && node scripts/build-pages.mjs --check",
     "validate:trust": "node scripts/validate-trust.mjs"
   },

@@ -320,6 +320,18 @@ This was a low-yield pass. `mildlyinfuriating` produced no in-scope rows in this
 
 This was a mixed-source pass with some off-topic material. The next action is to change sources before compiling this subject.
 
+## Run 22: five-subject screen compilation
+
+- **Date:** 2026-08-02
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort
+- **Input:** 115 raw rows from healthcare, housing, travel, accessibility, and physical-products subject passes
+- **Result:** 20 patterns proposed; 15 retained after dropping five one-source patterns
+- **Retained screen:** 3 healthcare, 4 housing, 3 travel, 3 accessibility, and 2 physical-products patterns
+- **Source check:** every retained pattern has 2 to 6 exact URLs from the mining runs
+- **Output:** `data/candidates/subject-screens/2026-08-02-subject-screen.jsonl`
+
+This screen is separate from the global 31-candidate list. It is the first subject-level compilation, not human-reviewed problem records.
+
 ## Filter
 
 The cheap screen removes obvious one-offs, jokes, sensitive or irrelevant material, duplicates, and titles too thin to inspect. The judgment pass then applies [The Big Annoyance Test](BIG_ANNOYANCE_TEST.md): repetition, real cost, weak workaround, breadth beyond one narrow product, concrete wording, and a possible AI opening.
