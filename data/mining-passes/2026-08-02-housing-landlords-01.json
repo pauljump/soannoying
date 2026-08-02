@@ -1,0 +1,26 @@
+{
+  "id": "2026-08-02-housing-landlords-01",
+  "subject": "housing-landlords",
+  "status": "complete",
+  "model": "gpt-5.5",
+  "reasoning": "low",
+  "budget": {
+    "pages_per_source": 10,
+    "concurrency": 1,
+    "max_model_calls": 20,
+    "max_input_tokens": 50000
+  },
+  "sources": ["Tenant", "Apartmentliving"],
+  "result": {
+    "pages": 20,
+    "failed_pages": 0,
+    "empty_pages": 0,
+    "model_calls": 20,
+    "input_tokens": 26533,
+    "new_rows": 75,
+    "stop_reason": "completed two-source chunk after retrying an initial runner configuration failure"
+  },
+  "raw_batch": "data/mining-runs/2026-08-02-codex-housing-landlords-01.jsonl",
+  "subject_filter": "Repairs, deposits, lease friction, building conditions, maintenance, and tenant recourse; no legal advice.",
+  "next_action": "continue"
+}

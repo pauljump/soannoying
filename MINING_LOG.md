@@ -201,6 +201,23 @@ This is still a screening result, not human-reviewed problem records. The new so
 
 This is a collection result only. The next action is another bounded healthcare source chunk or a later subject-level compile; no candidate promotion happened automatically.
 
+## Run 15: housing and landlords subject pass
+
+- **Date:** 2026-08-02
+- **Subject:** housing and landlords
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort, concurrency 1
+- **Scope:** repairs, deposits, lease friction, building conditions, maintenance, and tenant recourse; no legal advice
+- **Sources:** `Tenant` and `Apartmentliving`, 10 pages each
+- **Successful output:** 75 subject-focused raw observations from 20 unique pages
+- **Model calls:** 20
+- **Input size:** 106,130 characters, approximately 26,533 input tokens
+- **Failures:** 0
+- **Empty pages:** 0
+- **Manifest:** `data/mining-passes/2026-08-02-housing-landlords-01.json`
+- **Raw batch:** `data/mining-runs/2026-08-02-codex-housing-landlords-01.jsonl`
+
+This is a collection result only. The first runner attempt was discarded because of a local Codex configuration error; the successful retry produced the reported batch. No candidate promotion happened automatically.
+
 ## Filter
 
 The cheap screen removes obvious one-offs, jokes, sensitive or irrelevant material, duplicates, and titles too thin to inspect. The judgment pass then applies [The Big Annoyance Test](BIG_ANNOYANCE_TEST.md): repetition, real cost, weak workaround, breadth beyond one narrow product, concrete wording, and a possible AI opening.

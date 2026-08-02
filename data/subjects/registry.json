@@ -14,7 +14,7 @@
   },
   "subjects": [
     {"id":"healthcare-access","label":"Healthcare access","status":"active","source_notes":"Appointments, referrals, forms, billing, queues, and access barriers. Exclude diagnosis and treatment advice."},
-    {"id":"housing-landlords","label":"Housing and landlords","status":"next","source_notes":"Repairs, deposits, lease friction, building conditions, and tenant recourse."},
+    {"id":"housing-landlords","label":"Housing and landlords","status":"active","source_notes":"Repairs, deposits, lease friction, building conditions, and tenant recourse."},
     {"id":"travel-transportation","label":"Travel and transportation","status":"next","source_notes":"Delays, cancellations, parking, transfers, luggage, and disruption recovery."},
     {"id":"retail-delivery-returns","label":"Retail, delivery, and returns","status":"next","source_notes":"Wrong items, missing items, returns, refunds, delivery handoffs, and hidden costs."},
     {"id":"accessibility","label":"Accessibility","status":"next","source_notes":"Physical and digital barriers that prevent ordinary access or use."},
