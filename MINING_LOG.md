@@ -145,6 +145,19 @@ This is the stopping point for the initial mining phase. The corpus now spans th
 
 This is still a screening result. It is not a prevalence ranking, a reviewed problem set, or a claim that AI is the right solution. The next stage is human review: merge overlaps, reject weak patterns, and promote only records with a clear task, failure mode, cost, and boundary.
 
+## Run 11: targeted coverage experiment
+
+- **Date:** 2026-08-02
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort, concurrency 1
+- **Target:** one small pass each for `badUX`, `Windows11`, `techsupport`, and `apple`
+- **Result:** `badUX` had no fresh pages; `Windows11` returned 24 raw rows from repeated query variants of one Snipping Tool thread
+- **Model calls:** 7 completed before stopping
+- **Input size:** approximately 14,000 input characters
+- **Stopping reason:** the archive filter was returning duplicate thread variants, so continuing would have spent calls without adding source coverage
+- **Raw batch:** `data/mining-runs/2026-08-02-codex-coverage-01.jsonl`
+
+These rows are retained for transparency but were not used to expand the screened candidate set. The next coverage pass needs URL canonicalization before it resumes `techsupport` or `apple`.
+
 ## Filter
 
 The cheap screen removes obvious one-offs, jokes, sensitive or irrelevant material, duplicates, and titles too thin to inspect. The judgment pass then applies [The Big Annoyance Test](BIG_ANNOYANCE_TEST.md): repetition, real cost, weak workaround, breadth beyond one narrow product, concrete wording, and a possible AI opening.
