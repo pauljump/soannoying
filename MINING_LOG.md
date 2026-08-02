@@ -172,6 +172,18 @@ These rows are retained for transparency but were not used to expand the screene
 
 The URL canonicalization fix prevented query variants of the same Reddit thread from becoming separate model calls. This pass confirms that `techsupport` and `apple` are viable coverage sources.
 
+## Run 13: delta candidate review
+
+- **Date:** 2026-08-02
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort
+- **Input:** the existing 34 screened candidates plus 40 new `techsupport` and `apple` observations
+- **Result:** 31 retained screened candidates
+- **Change:** weak or narrow candidates were removed, overlapping candidates were merged, and three stronger technology patterns were added
+- **Source check:** every retained candidate has 2 to 6 exact evidence URLs from the published corpus
+- **Output:** `data/candidates/2026-08-01-big-annoyance-screen.jsonl`
+
+This is still a screening result, not human-reviewed problem records. The new source coverage improved the shape of the list, but it did not justify expanding it mechanically.
+
 ## Filter
 
 The cheap screen removes obvious one-offs, jokes, sensitive or irrelevant material, duplicates, and titles too thin to inspect. The judgment pass then applies [The Big Annoyance Test](BIG_ANNOYANCE_TEST.md): repetition, real cost, weak workaround, breadth beyond one narrow product, concrete wording, and a possible AI opening.

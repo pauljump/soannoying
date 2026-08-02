@@ -23,8 +23,7 @@ window.SO_ANNOYING_DATA = {
       "evidence": [
         "https://web.archive.org/web/20230102065707/https://old.reddit.com/r/assholedesign/comments/100rb5f/sirius_xm_wont_let_you_cancel_online_unless_you/",
         "https://web.archive.org/web/20230102090818/https://old.reddit.com/r/assholedesign/comments/1015vx0/adobe_charges_me_to_cancel_a_subscription_they/",
-        "https://web.archive.org/web/20230103121350/https://old.reddit.com/r/assholedesign/comments/1026lav/the_telegraph_doesnt_allow_my_digital/",
-        "https://web.archive.org/web/20230101214539/https://old.reddit.com/r/mildlyinfuriating/comments/100txss/a_data_breach_at_a_college_i_applied_and_never/"
+        "https://web.archive.org/web/20230103121350/https://old.reddit.com/r/assholedesign/comments/1026lav/the_telegraph_doesnt_allow_my_digital/"
       ]
     },
     {
@@ -45,28 +44,14 @@ window.SO_ANNOYING_DATA = {
       "id": "candidate-support-without-waiting",
       "status": "screened",
       "title": "Getting help requires waiting on support instead of handing off the work",
-      "why_big": "The cost is time and attention, often when something has already gone wrong. People are forced through queues, callbacks, unhelpful scripts, and repeated escalation loops.",
+      "why_big": "The cost is time and attention, often when something has already gone wrong. People are forced through queues, callbacks, unhelpful scripts, repeated escalation loops, and advice searches that do not solve the underlying block.",
       "ai_opening": "An agent could gather the facts, navigate first support steps, wait asynchronously where allowed, and return with a proposed resolution or exact escalation record.",
       "uncertainty": "The evidence does not show whether companies permit an AI or third party to act on a customer's behalf.",
       "evidence": [
         "https://web.archive.org/web/20230607085202/https://old.reddit.com/r/badux/comments/73mxml/if_your_automated_phone_system_does_not_support/",
         "https://web.archive.org/web/20230103012154/https://old.reddit.com/r/mildlyinfuriating/comments/101tzoz/stranded_by_winter_storm_expediatravelodge_dont/",
         "https://web.archive.org/web/20230121095856/https://old.reddit.com/r/mildlyinfuriating/comments/101us29/airbnb_host_stole_my_money/",
-        "https://web.archive.org/web/20230103015623/https://old.reddit.com/r/mildlyinfuriating/comments/101umst/door_dash_response_to_them_sending_me_the_wrong/"
-      ]
-    },
-    {
-      "id": "candidate-scheduled-appointments-still-wait",
-      "status": "screened",
-      "title": "A scheduled appointment does not tell you when you will actually be seen",
-      "why_big": "The burden repeats, wastes time, and is costly when people have work, transportation, childcare, or health constraints. The failure is the gap between a scheduled time and the real queue.",
-      "ai_opening": "A system could track live queue state, estimate realistic wait windows, coordinate arrival timing, and help reschedule with the user's approval.",
-      "uncertainty": "Several rows repeat the same underlying complaint, so the corpus supports the pattern more than it proves independent prevalence.",
-      "evidence": [
-        "https://web.archive.org/web/20230101214539/https://old.reddit.com/r/mildlyinfuriating/comments/100txss/a_data_breach_at_a_college_i_applied_and_never/",
-        "https://web.archive.org/web/20230102040018/https://old.reddit.com/r/mildlyinfuriating/comments/100tkzg/my_friend_bought_a_gel_blaster_from_walmart_but/",
-        "https://web.archive.org/web/20230102075234/https://old.reddit.com/r/mildlyinfuriating/comments/100u1ew/this_person_even_took_a_bit_of_the_handicapped/",
-        "https://web.archive.org/web/20230102014314/https://old.reddit.com/r/mildlyinfuriating/comments/100uffs/i_didnt_know_self_checkout_dollar_trees_existed/"
+        "https://web.archive.org/web/20230101025628/https://old.reddit.com/r/techsupport/comments/1000rvl/been_stumped_on_this_for_more_than_a_week_and_i/"
       ]
     },
     {
@@ -79,8 +64,7 @@ window.SO_ANNOYING_DATA = {
       "evidence": [
         "https://web.archive.org/web/20230101023036/https://old.reddit.com/r/assholedesign/comments/100983v/no_unsubscribe_option_i_mailed_them_to_which_they/",
         "https://web.archive.org/web/20230120010505/https://old.reddit.com/r/assholedesign/comments/10gfmx3/relentless_emails_from_nba_that_i_never_signed_up/",
-        "https://web.archive.org/web/20230104013011/https://old.reddit.com/r/assholedesign/comments/102ojrk/every_time_i_unsubscribe_from_these_texts_that_i/",
-        "https://web.archive.org/web/20230103045212/https://old.reddit.com/r/mildlyinfuriating/comments/101ygyb/same_note_left_in_at_least_four_mailboxes_on_our/"
+        "https://web.archive.org/web/20230104013011/https://old.reddit.com/r/assholedesign/comments/102ojrk/every_time_i_unsubscribe_from_these_texts_that_i/"
       ]
     },
     {
@@ -165,34 +149,6 @@ window.SO_ANNOYING_DATA = {
       ]
     },
     {
-      "id": "candidate-recalled-or-mislabeled-product-claims",
-      "status": "screened",
-      "title": "Product labels claim one thing while the item behaves like another",
-      "why_big": "Misleading labels can cost money, cause waste, or create damage when people rely on them for plumbing, food, pricing, contents, or product choice.",
-      "ai_opening": "An agent could compare labels, receipts, photos, and known policies, then flag mismatch risk before use or prepare a return, warranty, or complaint packet.",
-      "uncertainty": "Some rows are low-context and may be isolated quality control mistakes rather than recurring broad patterns.",
-      "evidence": [
-        "https://web.archive.org/web/20230102040018/https://old.reddit.com/r/mildlyinfuriating/comments/100tkzg/my_friend_bought_a_gel_blaster_from_walmart_but/",
-        "https://web.archive.org/web/20230102094746/https://old.reddit.com/r/mildlyinfuriating/comments/100v0et/first_lesson_how_to_create_a_fake_sale/",
-        "https://web.archive.org/web/20230112092528/https://old.reddit.com/r/CrappyDesign/comments/109uc7p/mmmm_my_favourite_south_australian_strawberries/",
-        "https://web.archive.org/web/20230102050939/https://old.reddit.com/r/mildlyinfuriating/comments/100uws9/tried_just_ripping_a_ply_or_two_off_a_near_empty/"
-      ]
-    },
-    {
-      "id": "candidate-flushable-wipes-clog-plumbing",
-      "status": "screened",
-      "title": "Products labeled flushable still create plumbing damage",
-      "why_big": "People rely on a simple label during a repeated household task, but the consequence can be clogged drains, repairs, sewage problems, and unclear responsibility.",
-      "ai_opening": "An agent could warn about risky products, identify likely clog causes, guide safe first checks, and assemble documentation for a plumber, landlord, or product complaint.",
-      "uncertainty": "The evidence repeats one underlying complaint across several rows, so it supports the pattern but not measured prevalence.",
-      "evidence": [
-        "https://web.archive.org/web/20230102040018/https://old.reddit.com/r/mildlyinfuriating/comments/100tkzg/my_friend_bought_a_gel_blaster_from_walmart_but/",
-        "https://web.archive.org/web/20230102075234/https://old.reddit.com/r/mildlyinfuriating/comments/100u1ew/this_person_even_took_a_bit_of_the_handicapped/",
-        "https://web.archive.org/web/20230102031735/https://old.reddit.com/r/mildlyinfuriating/comments/100u519/i_cant_see_the_other_posts_that_the_dumb_bot/",
-        "https://web.archive.org/web/20230102050939/https://old.reddit.com/r/mildlyinfuriating/comments/100uws9/tried_just_ripping_a_ply_or_two_off_a_near_empty/"
-      ]
-    },
-    {
       "id": "candidate-accessibility-fixtures-unusable",
       "status": "screened",
       "title": "Accessibility features exist on paper but are unusable in practice",
@@ -202,7 +158,6 @@ window.SO_ANNOYING_DATA = {
       "evidence": [
         "https://web.archive.org/web/20230112092921/https://old.reddit.com/r/CrappyDesign/comments/109sev9/the_new_school_in_my_community_has_a_wheel_chair/",
         "https://web.archive.org/web/20230113041831/https://old.reddit.com/r/CrappyDesign/comments/109vto3/this_ramp_at_my_school/",
-        "https://web.archive.org/web/20230101214539/https://old.reddit.com/r/mildlyinfuriating/comments/100txss/a_data_breach_at_a_college_i_applied_and_never/",
         "https://web.archive.org/web/20230102075234/https://old.reddit.com/r/mildlyinfuriating/comments/100u1ew/this_person_even_took_a_bit_of_the_handicapped/"
       ]
     },
@@ -214,24 +169,8 @@ window.SO_ANNOYING_DATA = {
       "ai_opening": "An agent could document repeat incidents, identify local reporting channels, prepare compliant reports, and track enforcement or towing outcomes.",
       "uncertainty": "The corpus repeats several related parking complaints, but local laws and enforcement options vary widely.",
       "evidence": [
-        "https://web.archive.org/web/20230101214539/https://old.reddit.com/r/mildlyinfuriating/comments/100txss/a_data_breach_at_a_college_i_applied_and_never/",
         "https://web.archive.org/web/20230102075234/https://old.reddit.com/r/mildlyinfuriating/comments/100u1ew/this_person_even_took_a_bit_of_the_handicapped/",
-        "https://web.archive.org/web/20230103054839/https://old.reddit.com/r/mildlyinfuriating/comments/101zj29/park_in_my_assigned_spot_enjoy_my_jack_stands/",
-        "https://web.archive.org/web/20230102094746/https://old.reddit.com/r/mildlyinfuriating/comments/100v0et/first_lesson_how_to_create_a_fake_sale/"
-      ]
-    },
-    {
-      "id": "candidate-unwanted-junk-mail",
-      "status": "screened",
-      "title": "People receive large amounts of physical advertising they never asked for",
-      "why_big": "It repeats, consumes attention and storage, creates waste, and has no simple universal opt-out. Unlike email, the burden arrives physically and is harder to filter after the fact.",
-      "ai_opening": "An agent could identify senders, prepare opt-out requests, track whether they worked, and help route remaining mail to recycling without exposing unrelated household information.",
-      "uncertainty": "The strongest scale claim is from a poster's estimate and should not be treated as measured prevalence.",
-      "evidence": [
-        "https://web.archive.org/web/20230102040018/https://old.reddit.com/r/mildlyinfuriating/comments/100tkzg/my_friend_bought_a_gel_blaster_from_walmart_but/",
-        "https://web.archive.org/web/20230102031735/https://old.reddit.com/r/mildlyinfuriating/comments/100u519/i_cant_see_the_other_posts_that_the_dumb_bot/",
-        "https://web.archive.org/web/20230102050939/https://old.reddit.com/r/mildlyinfuriating/comments/100uws9/tried_just_ripping_a_ply_or_two_off_a_near_empty/",
-        "https://web.archive.org/web/20230103045212/https://old.reddit.com/r/mildlyinfuriating/comments/101ygyb/same_note_left_in_at_least_four_mailboxes_on_our/"
+        "https://web.archive.org/web/20230103054839/https://old.reddit.com/r/mildlyinfuriating/comments/101zj29/park_in_my_assigned_spot_enjoy_my_jack_stands/"
       ]
     },
     {
@@ -240,7 +179,7 @@ window.SO_ANNOYING_DATA = {
       "title": "Published availability is wrong when people need a service in person",
       "why_big": "A person may spend scarce time, travel, or health capacity going to a pharmacy, store, or service that appears open or available online but is not usable when they arrive.",
       "ai_opening": "An agent could cross-check official hours, map status, recent user reports, phone availability, and alternatives before the user travels.",
-      "uncertainty": "The strongest new example is a pharmacy closure; more categories would strengthen the pattern.",
+      "uncertainty": "The strongest examples remain sparse; more categories would strengthen the pattern.",
       "evidence": [
         "https://web.archive.org/web/20230103022416/https://old.reddit.com/r/mildlyinfuriating/comments/101vfho/i_just_walked_a_mile_in_the_snow_because_ive_had/",
         "https://web.archive.org/web/20230102032913/https://old.reddit.com/r/mildlyinfuriating/comments/100tuhe/its_sunday_and_chick_fil_a_is_closed/"
@@ -255,35 +194,21 @@ window.SO_ANNOYING_DATA = {
       "uncertainty": "The examples include different healthcare contexts and should not be treated as medical advice or a single institutional cause.",
       "evidence": [
         "https://web.archive.org/web/20230103022416/https://old.reddit.com/r/mildlyinfuriating/comments/101vfho/i_just_walked_a_mile_in_the_snow_because_ive_had/",
-        "https://web.archive.org/web/20230103233429/https://old.reddit.com/r/mildlyinfuriating/comments/102mo7r/no_premium_payments/",
-        "https://web.archive.org/web/20230121095856/https://old.reddit.com/r/mildlyinfuriating/comments/101us29/airbnb_host_stole_my_money/"
+        "https://web.archive.org/web/20230103233429/https://old.reddit.com/r/mildlyinfuriating/comments/102mo7r/no_premium_payments/"
       ]
     },
     {
       "id": "candidate-online-moderation-opacity",
       "status": "screened",
       "title": "Online moderation decisions are hard to understand or challenge",
-      "why_big": "A ban, duplicate flag, or rule enforcement action can remove access or visibility while giving too little evidence for the user to know what happened or how to appeal.",
+      "why_big": "A ban, duplicate flag, blocked image link, or rule enforcement action can remove access or visibility while giving too little evidence for the user to know what happened or how to appeal.",
       "ai_opening": "An agent could summarize the cited rule, compare it to the user's post, prepare a concise appeal, and preserve source pointers without inflaming the dispute.",
       "uncertainty": "The evidence is from Reddit communities and may reflect community governance rather than a general platform defect.",
       "evidence": [
         "https://web.archive.org/web/20230103005611/https://old.reddit.com/r/mildlyinfuriating/comments/101tbbn/just_why/",
         "https://web.archive.org/web/20230103040956/https://old.reddit.com/r/mildlyinfuriating/comments/101xnl0/i_was_permanently_banned_from_rchristianity_for/",
-        "https://web.archive.org/web/20230102031735/https://old.reddit.com/r/mildlyinfuriating/comments/100u519/i_cant_see_the_other_posts_that_the_dumb_bot/"
-      ]
-    },
-    {
-      "id": "candidate-community-quality-degrades",
-      "status": "screened",
-      "title": "Online communities get diluted by reposts, low-effort posts, and rule-breaking content",
-      "why_big": "People lose the value of a forum when repeated, off-topic, fake, or unexplained submissions crowd out the actual shared purpose. The burden is recurring attention loss rather than one disliked post.",
-      "ai_opening": "An AI moderator assistant could detect reposts, require missing explanation, cluster duplicates, and ask humans to approve borderline enforcement.",
-      "uncertainty": "The corpus is mostly from one subreddit, so the pattern is strong there but not broadly proven.",
-      "evidence": [
-        "https://web.archive.org/web/20230113132108/https://old.reddit.com/r/CrappyDesign/comments/109ppg0/-/",
-        "https://web.archive.org/web/20230113131720/https://old.reddit.com/r/CrappyDesign/comments/109ppg0/what_the_fu%d1%81k_is_this/",
-        "https://web.archive.org/web/20230113065828/https://old.reddit.com/r/CrappyDesign/comments/10a14hu/lol_someone_is_fricking_drowning_imagine/",
-        "https://web.archive.org/web/20230114074700/https://old.reddit.com/r/CrappyDesign/comments/109xpd4/-/"
+        "https://web.archive.org/web/20230102031735/https://old.reddit.com/r/mildlyinfuriating/comments/100u519/i_cant_see_the_other_posts_that_the_dumb_bot/",
+        "https://web.archive.org/web/20230101131604/https://old.reddit.com/r/techsupport/comments/10013eg/i_stepped_on_my_laptop_accidentally_and_display/"
       ]
     },
     {
@@ -304,14 +229,15 @@ window.SO_ANNOYING_DATA = {
       "id": "candidate-confusing-controls-and-signage",
       "status": "screened",
       "title": "Everyday controls and signs are hard to interpret at the moment of use",
-      "why_big": "People lose time and make errors when toilets, transit signs, pumps, brackets, and public signs do not clearly communicate what action to take.",
-      "ai_opening": "An agent could interpret a photo of the control or sign, infer the intended action, and flag ambiguous designs for facility feedback.",
-      "uncertainty": "Some examples are low-stakes or humorous; the stronger pattern is time-sensitive wayfinding and control use.",
+      "why_big": "People lose time and make errors when toilets, transit signs, pumps, brackets, public signs, ports, and compatibility labels do not clearly communicate what action to take.",
+      "ai_opening": "An agent could interpret a photo of the control, sign, port, or label, infer the intended action, and flag ambiguous designs for facility or product feedback.",
+      "uncertainty": "Some examples are low-stakes or humorous; the stronger pattern is time-sensitive wayfinding, control use, and compatibility decisions.",
       "evidence": [
         "https://web.archive.org/web/20230113120501/https://old.reddit.com/r/CrappyDesign/comments/109ov44/took_me_a_minute_to_try_and_flush/",
         "https://web.archive.org/web/20230113003426/https://old.reddit.com/r/CrappyDesign/comments/109t9fl/2_buttons_one_flushes_the_toilet_the_other_one/",
         "https://web.archive.org/web/20230112063606/https://old.reddit.com/r/CrappyDesign/comments/109ptsj/this_sign_does_not_make_any_sense/",
-        "https://web.archive.org/web/20230113041622/https://old.reddit.com/r/CrappyDesign/comments/109zbwa/saw_this_on_a_tram_when_going_home_got_me_20/"
+        "https://web.archive.org/web/20230101154330/https://old.reddit.com/r/apple/comments/1003idh/can_i_charge_m2_macbook_air_with_usbc_cord/",
+        "https://web.archive.org/web/20230101060449/https://old.reddit.com/r/techsupport/comments/1000wh0/the_new_ssd_doesnt_show_up_as_storage/"
       ]
     },
     {
@@ -338,7 +264,6 @@ window.SO_ANNOYING_DATA = {
       "evidence": [
         "https://web.archive.org/web/20230103053614/https://old.reddit.com/r/mildlyinfuriating/comments/101zf4q/the_gym_in_my_department_complex_collapsed_4/",
         "https://web.archive.org/web/20230103030913/https://old.reddit.com/r/mildlyinfuriating/comments/101we5t/apartment_complex_was_plowed_they_pushed_the/",
-        "https://web.archive.org/web/20230102014314/https://old.reddit.com/r/mildlyinfuriating/comments/100uffs/i_didnt_know_self_checkout_dollar_trees_existed/",
         "https://web.archive.org/web/20230112053556/https://old.reddit.com/r/CrappyDesign/comments/109o1oa/our_shower_in_croatian_airbnb/"
       ]
     },
@@ -373,67 +298,76 @@ window.SO_ANNOYING_DATA = {
     {
       "id": "candidate-account-state-differs-across-devices",
       "status": "screened",
-      "title": "The same account shows different history or state on different devices",
-      "why_big": "People reasonably expect one account to represent one current state. Divergent order history or settings creates uncertainty about whether an action worked and forces manual checking across devices.",
-      "ai_opening": "An agent could compare account views, identify which state is current, and reconcile or explain the difference without making irreversible changes.",
-      "uncertainty": "The current evidence is one direct example plus adjacent account-state complaints, so this remains a promising software lead.",
+      "title": "The same account shows different history, settings, or transferred data on different devices",
+      "why_big": "People reasonably expect one account to represent one current state. Divergent history, settings, sync status, passwords, or app data creates uncertainty about whether an action worked and forces manual checking across devices.",
+      "ai_opening": "An agent could compare account views, identify which state is current, reconcile or explain the difference, and ask before making irreversible changes.",
+      "uncertainty": "The evidence now spans account views and device transfers, but exact causes may differ between platform sync, app policy, and user settings.",
       "evidence": [
         "https://web.archive.org/web/20230113132443/https://old.reddit.com/r/CrappyDesign/comments/109mm3j/same_website_same_account_different_devices/",
-        "https://web.archive.org/web/20230104012338/https://old.reddit.com/r/mildlyinfuriating/comments/102mmim/when_you_finally_watch_something_on_netflix_and/"
+        "https://web.archive.org/web/20230104012338/https://old.reddit.com/r/mildlyinfuriating/comments/102mmim/when_you_finally_watch_something_on_netflix_and/",
+        "https://web.archive.org/web/20230101002258/https://old.reddit.com/r/apple/comments/1002zuz/mac_os_ventura_issues/",
+        "https://web.archive.org/web/20230101142717/https://old.reddit.com/r/apple/comments/1003sfq/i_got_a_new_phone_and_tried_to_transfer_data_it/"
       ]
     },
     {
       "id": "candidate-apps-fail-at-urgent-moment",
       "status": "screened",
       "title": "Everyday apps fail right when the task is time-sensitive",
-      "why_big": "When rideshare, delivery, insurance, or payment-related apps fail, the user may immediately lose money, transportation, food access, or service access.",
+      "why_big": "When rideshare, delivery, insurance, payment, or checkout-related apps fail, the user may immediately lose money, transportation, food access, or service access.",
       "ai_opening": "An agent could detect failure state, try safe recovery steps, preserve screenshots, and route the user to the fastest available fallback.",
-      "uncertainty": "The corpus includes isolated failures across services; more evidence is needed to separate outage, device, and account-specific causes.",
+      "uncertainty": "The corpus includes isolated failures across services; more evidence is needed to separate outage, device, browser, and account-specific causes.",
       "evidence": [
         "https://web.archive.org/web/20230103031219/https://old.reddit.com/r/mildlyinfuriating/comments/101webr/uberlyft_apps_wouldnt_update_when_i_landed_so_i/",
         "https://web.archive.org/web/20230103013534/https://old.reddit.com/r/mildlyinfuriating/comments/101uaqb/all_3_major_food_delivery_apps_have_crashed/",
-        "https://web.archive.org/web/20230103233429/https://old.reddit.com/r/mildlyinfuriating/comments/102mo7r/no_premium_payments/"
+        "https://web.archive.org/web/20230103233429/https://old.reddit.com/r/mildlyinfuriating/comments/102mo7r/no_premium_payments/",
+        "https://web.archive.org/web/20221231192251/https://old.reddit.com/r/techsupport/comments/1000ub1/cannot_process_payments_in_browsers_since_fresh/"
       ]
     },
     {
       "id": "candidate-unhelpful-error-messages",
       "status": "screened",
       "title": "Software reports failure without explaining what happened or what to do next",
-      "why_big": "The user is already blocked, and the error message adds confusion instead of reducing it. This repeats across ordinary software and makes recovery slower.",
+      "why_big": "The user is already blocked, and the error message adds confusion instead of reducing it. This repeats across operating systems, checkout flows, device software, and ordinary apps, making recovery slower.",
       "ai_opening": "An agent could connect the error to device or account state, translate it into likely causes, and test reversible fixes instead of making the user search blindly.",
       "uncertainty": "The examples are low-context and may need splitting into diagnosis, recovery, and product-design failures.",
       "evidence": [
         "https://web.archive.org/web/20230102004524/https://old.reddit.com/r/Windows11/comments/100fqvo/does_windows_11_actually_tell_you_whats_wrong_or/",
         "https://web.archive.org/web/20230101121908/https://old.reddit.com/r/Windows11/comments/100ickf/what_does_this_error_mean_any_help_would_be_nice/",
         "https://web.archive.org/web/20210821162427/https://old.reddit.com/r/badux/comments/p8uerl/dear_reolink_do_not_tell_me_incorrect_password/",
-        "https://web.archive.org/web/20230103013148/https://old.reddit.com/r/mildlyinfuriating/comments/101u6s4/when_i_inserted_my_card_the_screen_said_please/"
+        "https://web.archive.org/web/20230103013148/https://old.reddit.com/r/mildlyinfuriating/comments/101u6s4/when_i_inserted_my_card_the_screen_said_please/",
+        "https://web.archive.org/web/20221231192251/https://old.reddit.com/r/techsupport/comments/1000ub1/cannot_process_payments_in_browsers_since_fresh/",
+        "https://web.archive.org/web/20230101025628/https://old.reddit.com/r/techsupport/comments/1000rvl/been_stumped_on_this_for_more_than_a_week_and_i/"
       ]
     },
     {
       "id": "candidate-connectivity-and-device-diagnosis",
       "status": "screened",
       "title": "Connectivity and peripheral failures leave ordinary users guessing",
-      "why_big": "Internet, USB, Wi-Fi, printers, and chargers are routine dependencies. When they fail, the user often gets no clear cause and must guess through hardware, settings, drivers, and support.",
+      "why_big": "Internet, USB, Wi-Fi, storage devices, printers, and chargers are routine dependencies. When they fail, the user often gets no clear cause and must guess through hardware, settings, drivers, compatibility, and support.",
       "ai_opening": "An agent could collect safe diagnostic state, run reversible checks, identify likely causes, and explain what changed.",
       "uncertainty": "Most evidence comes from Windows and hardware complaint titles, so generality beyond those ecosystems still needs testing.",
       "evidence": [
         "https://web.archive.org/web/20230101164937/https://old.reddit.com/r/Windows11/comments/100e6sy/wifi_keeps_disconnecting_disappearing_frequently/?ref=readnext_4",
         "https://web.archive.org/web/20230102073500/https://old.reddit.com/r/Windows11/comments/100n5ve/my_wifi_option_is_not_showing_up/",
         "https://web.archive.org/web/20230102080947/https://old.reddit.com/r/techsupport/comments/1000jde/usb_devices_keep_disconnecting_or_not_connecting/",
-        "https://web.archive.org/web/20230103022039/https://old.reddit.com/r/mildlyinfuriating/comments/101v9ig/brand_new_battery_charger_power_supply_doesnt/"
+        "https://web.archive.org/web/20230103022039/https://old.reddit.com/r/mildlyinfuriating/comments/101v9ig/brand_new_battery_charger_power_supply_doesnt/",
+        "https://web.archive.org/web/20221231200533/https://old.reddit.com/r/techsupport/comments/1000o6y/usb_wifi_dongle_for_nas/",
+        "https://web.archive.org/web/20230101060449/https://old.reddit.com/r/techsupport/comments/1000wh0/the_new_ssd_doesnt_show_up_as_storage/"
       ]
     },
     {
       "id": "candidate-cross-device-files",
       "status": "screened",
-      "title": "Moving and organizing media files still requires fragile manual cleanup",
-      "why_big": "People still have to move, split, sync, and verify media across storage systems and file formats. Mistakes can waste time or leave files unusable in the intended app.",
+      "title": "Moving, syncing, and organizing media files still requires fragile manual cleanup",
+      "why_big": "People still have to move, split, sync, and verify media across storage systems, devices, and file formats. Mistakes can waste time or leave files unusable in the intended app.",
       "ai_opening": "An agent could map where files are, choose a safe transfer or conversion path, execute it with approval, and verify tracks or files were not lost.",
-      "uncertainty": "The evidence remains thin and should be treated as a promising lead rather than a strong prevalence claim.",
+      "uncertainty": "The evidence is stronger with Apple sync observations but still mixes file transfer, media organization, and device sync failure.",
       "evidence": [
         "https://web.archive.org/web/20230103155830/https://old.reddit.com/r/Windows11/comments/102bl5f/windows_11_pc_cannot_see_three_videos_all_over_5/",
         "https://web.archive.org/web/20230101173836/https://old.reddit.com/r/techsupport/comments/1004n33/best_way_to_copy_sync_or_move_files_between/",
-        "https://web.archive.org/web/20230103030748/https://old.reddit.com/r/mildlyinfuriating/comments/101wd2z/when_people_rip_a_cd_as_one_big_flac_file_rather/"
+        "https://web.archive.org/web/20230103030748/https://old.reddit.com/r/mildlyinfuriating/comments/101wd2z/when_people_rip_a_cd_as_one_big_flac_file_rather/",
+        "https://web.archive.org/web/20230101002258/https://old.reddit.com/r/apple/comments/1002zuz/mac_os_ventura_issues/",
+        "https://web.archive.org/web/20230101095606/https://old.reddit.com/r/techsupport/comments/1000q1n/external_hard_drive_suddenly_slowed_when_copying/"
       ]
     },
     {
@@ -442,22 +376,10 @@ window.SO_ANNOYING_DATA = {
       "title": "Organizations keep sensitive personal data long after the original interaction",
       "why_big": "People can suffer breach risk years after a minor or abandoned transaction, with little visibility into what data is retained or how to get it deleted.",
       "ai_opening": "An agent could identify retained-data rights, draft deletion or access requests, track responses, and preserve evidence without spreading the sensitive data further.",
-      "uncertainty": "The direct evidence is one strong example; applicability depends heavily on jurisdiction and organization type.",
+      "uncertainty": "The direct evidence is one strong example plus an adjacent parental-monitoring example; applicability depends heavily on jurisdiction and organization type.",
       "evidence": [
         "https://web.archive.org/web/20230101214539/https://old.reddit.com/r/mildlyinfuriating/comments/100txss/a_data_breach_at_a_college_i_applied_and_never/",
         "https://web.archive.org/web/20230103234926/https://old.reddit.com/r/mildlyinfuriating/comments/102mnth/i_monitor_my_kids_social_media_however_tiktok/"
-      ]
-    },
-    {
-      "id": "candidate-children-online-monitoring",
-      "status": "screened",
-      "title": "Parents cannot monitor children's social media without joining the platform's engagement loop",
-      "why_big": "The task is about safety and oversight, but the parent may be forced to post, enable notifications, or participate in the same system they are trying to supervise.",
-      "ai_opening": "An agent could summarize available parental controls, flag required participation or privacy tradeoffs, and help set up monitoring boundaries with consent.",
-      "uncertainty": "The evidence is largely from one TikTok-related thread and includes broad opinions about platform safety.",
-      "evidence": [
-        "https://web.archive.org/web/20230103234926/https://old.reddit.com/r/mildlyinfuriating/comments/102mnth/i_monitor_my_kids_social_media_however_tiktok/",
-        "https://web.archive.org/web/20230112083117/https://old.reddit.com/r/CrappyDesign/comments/109s09t/telegram_does_not_let_you_remove_this_in_app/"
       ]
     },
     {
@@ -470,6 +392,46 @@ window.SO_ANNOYING_DATA = {
       "evidence": [
         "https://web.archive.org/web/20230103022607/https://old.reddit.com/r/mildlyinfuriating/comments/101vejd/city_destroyed_our_mailbox_and_neighbors_when/",
         "https://web.archive.org/web/20230113022354/https://old.reddit.com/r/CrappyDesign/comments/109wmgi/standalone_revolving_doors_for_if_you_just_really/"
+      ]
+    },
+    {
+      "id": "candidate-system-performance-degrades-without-clear-cause",
+      "status": "screened",
+      "title": "Computers become slow or unstable without a clear cause or reliable fix path",
+      "why_big": "Slow right-click menus, sluggish media, browser freezes, broken indexing, and repeated log errors can consume hours and degrade routine work while the user guesses across software, drivers, storage, and operating system state.",
+      "ai_opening": "An agent could collect symptoms, logs, recent changes, startup items, and hardware state, run reversible diagnostics, and produce a ranked repair plan with evidence.",
+      "uncertainty": "The strongest new evidence comes from tech-support cases, so it shows burden and diagnostic ambiguity more than broad prevalence.",
+      "evidence": [
+        "https://web.archive.org/web/20230101025628/https://old.reddit.com/r/techsupport/comments/1000rvl/been_stumped_on_this_for_more_than_a_week_and_i/",
+        "https://web.archive.org/web/20221231185840/https://old.reddit.com/r/techsupport/comments/1000vaw/cannot_figure_out_whats_causing_error_in_my/",
+        "https://web.archive.org/web/20230102004524/https://old.reddit.com/r/Windows11/comments/100fqvo/does_windows_11_actually_tell_you_whats_wrong_or/",
+        "https://web.archive.org/web/20230101121908/https://old.reddit.com/r/Windows11/comments/100ickf/what_does_this_error_mean_any_help_would_be_nice/"
+      ]
+    },
+    {
+      "id": "candidate-device-ecosystem-transitions-break-existing-setups",
+      "status": "screened",
+      "title": "Device ecosystem changes force accessory churn or break existing setups",
+      "why_big": "Port, cable, and wireless-transition decisions can turn working chargers, cars, and accessories into compatibility problems. The cost can be money, lost access, and recurring uncertainty before buying or upgrading.",
+      "ai_opening": "An agent could inventory the user's devices and accessories, identify compatibility risks before a purchase, and recommend the least disruptive upgrade or adapter path.",
+      "uncertainty": "The new evidence is Apple-heavy and partly speculative about future port changes, so the broader pattern should be tested against other device ecosystems.",
+      "evidence": [
+        "https://web.archive.org/web/20230101154330/https://old.reddit.com/r/apple/comments/1003idh/can_i_charge_m2_macbook_air_with_usbc_cord/",
+        "https://web.archive.org/web/20230101142224/https://old.reddit.com/r/apple/comments/1003ih7/if_apple_converted_to_usb_c_in_2023_what_will/",
+        "https://web.archive.org/web/20221231200533/https://old.reddit.com/r/techsupport/comments/1000o6y/usb_wifi_dongle_for_nas/",
+        "https://web.archive.org/web/20230101060449/https://old.reddit.com/r/techsupport/comments/1000wh0/the_new_ssd_doesnt_show_up_as_storage/"
+      ]
+    },
+    {
+      "id": "candidate-consumer-electronics-repair-cost-and-triage",
+      "status": "screened",
+      "title": "Small electronics damage creates expensive, uncertain repair decisions",
+      "why_big": "A cracked or damaged screen can threaten device access while the owner has to judge whether symptoms will spread, whether warranty applies, and whether parts and labor are worth the cost.",
+      "ai_opening": "An agent could classify visible damage from photos, estimate likely repair categories, check warranty or consumer-rights options, and prepare a repair-shop question list without claiming certainty.",
+      "uncertainty": "The direct new evidence is laptop-display-heavy and includes accidental damage, so the pattern should stay bounded to triage and repair-cost uncertainty.",
+      "evidence": [
+        "https://web.archive.org/web/20230531101214/https://old.reddit.com/r/techsupport/comments/1000tt/my_monitor_suddenly_has_this_odd_circle_and/",
+        "https://web.archive.org/web/20230101131604/https://old.reddit.com/r/techsupport/comments/10013eg/i_stepped_on_my_laptop_accidentally_and_display/"
       ]
     }
   ],
