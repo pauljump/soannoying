@@ -158,6 +158,20 @@ This is still a screening result. It is not a prevalence ranking, a reviewed pro
 
 These rows are retained for transparency but were not used to expand the screened candidate set. The next coverage pass needs URL canonicalization before it resumes `techsupport` or `apple`.
 
+## Run 12: canonicalized coverage pass
+
+- **Date:** 2026-08-02
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort, concurrency 1
+- **Target:** 10 pages each from `techsupport` and `apple`
+- **Successful output:** 40 raw observations from 20 unique pages
+- **Model calls:** 20
+- **Input size:** 189,805 characters, approximately 47,452 input tokens
+- **Failures:** 0
+- **Empty pages:** 7
+- **Raw batch:** `data/mining-runs/2026-08-02-codex-coverage-02.jsonl`
+
+The URL canonicalization fix prevented query variants of the same Reddit thread from becoming separate model calls. This pass confirms that `techsupport` and `apple` are viable coverage sources.
+
 ## Filter
 
 The cheap screen removes obvious one-offs, jokes, sensitive or irrelevant material, duplicates, and titles too thin to inspect. The judgment pass then applies [The Big Annoyance Test](BIG_ANNOYANCE_TEST.md): repetition, real cost, weak workaround, breadth beyond one narrow product, concrete wording, and a possible AI opening.
