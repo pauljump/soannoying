@@ -218,6 +218,23 @@ This is a collection result only. The next action is another bounded healthcare 
 
 This is a collection result only. The first runner attempt was discarded because of a local Codex configuration error; the successful retry produced the reported batch. No candidate promotion happened automatically.
 
+## Run 16: travel and transportation subject pass
+
+- **Date:** 2026-08-02
+- **Subject:** travel and transportation
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort, concurrency 1
+- **Scope:** delays, cancellations, transfers, luggage, parking, and disruption recovery; no travel advice
+- **Sources:** `travel` and `Flights`, 10 pages each
+- **Successful output:** 42 subject-focused raw observations from 20 unique pages
+- **Model calls:** 20
+- **Input size:** 153,720 characters, approximately 38,430 input tokens
+- **Failures:** 0
+- **Empty pages:** 0
+- **Manifest:** `data/mining-passes/2026-08-02-travel-transportation-01.json`
+- **Raw batch:** `data/mining-runs/2026-08-02-codex-travel-transportation-01.jsonl`
+
+This is a collection result only. No candidate promotion happened automatically.
+
 ## Filter
 
 The cheap screen removes obvious one-offs, jokes, sensitive or irrelevant material, duplicates, and titles too thin to inspect. The judgment pass then applies [The Big Annoyance Test](BIG_ANNOYANCE_TEST.md): repetition, real cost, weak workaround, breadth beyond one narrow product, concrete wording, and a possible AI opening.

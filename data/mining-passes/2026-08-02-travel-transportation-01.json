@@ -1,0 +1,26 @@
+{
+  "id": "2026-08-02-travel-transportation-01",
+  "subject": "travel-transportation",
+  "status": "complete",
+  "model": "gpt-5.5",
+  "reasoning": "low",
+  "budget": {
+    "pages_per_source": 10,
+    "concurrency": 1,
+    "max_model_calls": 20,
+    "max_input_tokens": 50000
+  },
+  "sources": ["travel", "Flights"],
+  "result": {
+    "pages": 20,
+    "failed_pages": 0,
+    "empty_pages": 0,
+    "model_calls": 20,
+    "input_tokens": 38430,
+    "new_rows": 42,
+    "stop_reason": "completed two-source chunk"
+  },
+  "raw_batch": "data/mining-runs/2026-08-02-codex-travel-transportation-01.jsonl",
+  "subject_filter": "Delays, cancellations, transfers, luggage, parking, and disruption recovery; no travel advice.",
+  "next_action": "continue"
+}
