@@ -1,0 +1,13 @@
+{
+  "id": "2026-08-02-physical-products-01",
+  "subject": "physical-products",
+  "status": "complete",
+  "model": "gpt-5.5",
+  "reasoning": "low",
+  "budget": {"pages_per_source":10,"concurrency":1,"max_model_calls":20,"max_input_tokens":50000},
+  "sources": ["CrappyDesign", "BuyItForLife"],
+  "result": {"pages":20,"failed_pages":0,"empty_pages":1,"model_calls":19,"input_tokens":42450,"new_rows":37,"stop_reason":"completed two-source chunk"},
+  "raw_batch": "data/mining-runs/2026-08-02-codex-physical-products-01.jsonl",
+  "subject_filter": "Recurring product failures, misleading labels, awkward use, repair, and maintenance; no product recommendations.",
+  "next_action": "continue"
+}

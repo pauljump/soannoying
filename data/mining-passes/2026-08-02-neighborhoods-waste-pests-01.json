@@ -1,0 +1,13 @@
+{
+  "id": "2026-08-02-neighborhoods-waste-pests-01",
+  "subject": "neighborhoods-waste-pests",
+  "status": "complete",
+  "model": "gpt-5.5",
+  "reasoning": "low",
+  "budget": {"pages_per_source":10,"concurrency":1,"max_model_calls":20,"max_input_tokens":50000},
+  "sources": ["mildlyinfuriating", "whatsthisbug"],
+  "result": {"pages":20,"failed_pages":0,"empty_pages":0,"model_calls":20,"input_tokens":48388,"new_rows":8,"stop_reason":"completed two-source chunk; mildlyinfuriating slice had no in-scope rows"},
+  "raw_batch": "data/mining-runs/2026-08-02-codex-neighborhoods-waste-pests-01.jsonl",
+  "subject_filter": "Noise, trash, junk mail, mosquitoes, shared spaces, and local nuisance resolution; no pest diagnosis or treatment advice.",
+  "next_action": "change-sources"
+}

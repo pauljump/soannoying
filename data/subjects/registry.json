@@ -16,10 +16,11 @@
     {"id":"healthcare-access","label":"Healthcare access","status":"active","source_notes":"Appointments, referrals, forms, billing, queues, and access barriers. Exclude diagnosis and treatment advice."},
     {"id":"housing-landlords","label":"Housing and landlords","status":"active","source_notes":"Repairs, deposits, lease friction, building conditions, and tenant recourse."},
     {"id":"travel-transportation","label":"Travel and transportation","status":"active","source_notes":"Delays, cancellations, parking, transfers, luggage, and disruption recovery."},
-    {"id":"retail-delivery-returns","label":"Retail, delivery, and returns","status":"next","source_notes":"Wrong items, missing items, returns, refunds, delivery handoffs, and hidden costs."},
-    {"id":"accessibility","label":"Accessibility","status":"next","source_notes":"Physical and digital barriers that prevent ordinary access or use."},
-    {"id":"physical-products","label":"Physical products and design","status":"next","source_notes":"Recurring product failures, misleading labels, awkward use, repair, and maintenance."},
-    {"id":"neighborhoods-waste-pests","label":"Neighborhoods, waste, and pests","status":"next","source_notes":"Noise, trash, junk mail, mosquitoes, shared spaces, and local nuisance resolution."},
+    {"id":"retail-delivery-returns","label":"Retail, delivery, and returns","status":"active","source_notes":"Wrong items, missing items, returns, refunds, delivery handoffs, and hidden costs."},
+    {"id":"accessibility","label":"Accessibility","status":"active","source_notes":"Physical and digital barriers that prevent ordinary access or use."},
+    {"id":"physical-products","label":"Physical products and design","status":"active","source_notes":"Recurring product failures, misleading labels, awkward use, repair, and maintenance."},
+    {"id":"neighborhoods-waste-pests","label":"Neighborhoods, waste, and pests","status":"active","source_notes":"Noise, trash, junk mail, mosquitoes, shared spaces, and local nuisance resolution."},
+    {"id":"public-services-bureaucracy","label":"Public-service bureaucracy","status":"active","source_notes":"Forms, permits, benefits, public offices, queues, and administrative access. Exclude legal or financial advice."},
     {"id":"software-devices","label":"Software and devices","status":"covered","source_notes":"Existing technology-heavy passes and candidates. Mine only to fill a documented gap."}
   ]
 }

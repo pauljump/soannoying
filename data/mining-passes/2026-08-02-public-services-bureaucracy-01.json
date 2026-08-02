@@ -1,0 +1,13 @@
+{
+  "id": "2026-08-02-public-services-bureaucracy-01",
+  "subject": "public-services-bureaucracy",
+  "status": "complete",
+  "model": "gpt-5.5",
+  "reasoning": "low",
+  "budget": {"pages_per_source":10,"concurrency":1,"max_model_calls":20,"max_input_tokens":50000},
+  "sources": ["AskNYC", "Adulting"],
+  "result": {"pages":20,"failed_pages":0,"empty_pages":0,"model_calls":20,"input_tokens":42110,"new_rows":23,"stop_reason":"completed two-source chunk"},
+  "raw_batch": "data/mining-runs/2026-08-02-codex-public-services-bureaucracy-01.jsonl",
+  "subject_filter": "Forms, permits, benefits, public offices, queues, and administrative access; no legal or financial advice.",
+  "next_action": "change-sources"
+}

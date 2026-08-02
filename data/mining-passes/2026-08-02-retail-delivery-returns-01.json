@@ -1,0 +1,13 @@
+{
+  "id": "2026-08-02-retail-delivery-returns-01",
+  "subject": "retail-delivery-returns",
+  "status": "complete",
+  "model": "gpt-5.5",
+  "reasoning": "low",
+  "budget": {"pages_per_source":10,"concurrency":1,"max_model_calls":20,"max_input_tokens":50000},
+  "sources": ["CustomerService", "Amazon"],
+  "result": {"pages":20,"failed_pages":0,"empty_pages":0,"model_calls":20,"input_tokens":25986,"new_rows":12,"stop_reason":"completed two-source chunk; Amazon slice was mostly off-topic"},
+  "raw_batch": "data/mining-runs/2026-08-02-codex-retail-delivery-returns-01.jsonl",
+  "subject_filter": "Wrong items, missing items, returns, refunds, delivery handoffs, and hidden costs; no shopping advice.",
+  "next_action": "change-sources"
+}

@@ -235,6 +235,91 @@ This is a collection result only. The first runner attempt was discarded because
 
 This is a collection result only. No candidate promotion happened automatically.
 
+## Run 17: retail, delivery, and returns subject pass
+
+- **Date:** 2026-08-02
+- **Subject:** retail, delivery, and returns
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort, concurrency 1
+- **Scope:** wrong items, missing items, returns, refunds, delivery handoffs, and hidden costs; no shopping advice
+- **Sources:** `CustomerService` and `Amazon`, 10 pages each
+- **Successful output:** 12 subject-focused raw observations from 20 unique pages
+- **Model calls:** 20
+- **Input size:** 103,943 characters, approximately 25,986 input tokens
+- **Failures:** 0
+- **Empty pages:** 0
+- **Manifest:** `data/mining-passes/2026-08-02-retail-delivery-returns-01.json`
+- **Raw batch:** `data/mining-runs/2026-08-02-codex-retail-delivery-returns-01.jsonl`
+
+This was a low-yield pass. `CustomerService` produced most of the useful material; the `Amazon` slice was mostly off-topic. The next action is to change sources before compiling this subject.
+
+## Run 18: accessibility subject pass
+
+- **Date:** 2026-08-02
+- **Subject:** accessibility
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort, concurrency 1
+- **Scope:** physical and digital barriers that prevent ordinary access or use; no medical diagnosis or treatment advice
+- **Sources:** `disability` and `accessibility`, 10 pages each
+- **Successful output:** 35 subject-focused raw observations from 20 unique pages
+- **Model calls:** 20
+- **Input size:** 132,637 characters, approximately 33,159 input tokens
+- **Failures:** 0
+- **Empty pages:** 0
+- **Manifest:** `data/mining-passes/2026-08-02-accessibility-01.json`
+- **Raw batch:** `data/mining-runs/2026-08-02-codex-accessibility-01.jsonl`
+
+This is a collection result only. No candidate promotion happened automatically.
+
+## Run 19: physical products and design subject pass
+
+- **Date:** 2026-08-02
+- **Subject:** physical products and design
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort, concurrency 1
+- **Scope:** recurring product failures, misleading labels, awkward use, repair, and maintenance; no product recommendations
+- **Sources:** `CrappyDesign` and `BuyItForLife`, 10 pages each
+- **Successful output:** 37 subject-focused raw observations from 20 pages
+- **Model calls:** 19
+- **Input size:** 169,798 characters, approximately 42,450 input tokens
+- **Failures:** 0
+- **Empty pages:** 1
+- **Manifest:** `data/mining-passes/2026-08-02-physical-products-01.json`
+- **Raw batch:** `data/mining-runs/2026-08-02-codex-physical-products-01.jsonl`
+
+This is a collection result only. No candidate promotion happened automatically.
+
+## Run 20: neighborhoods, waste, and pests subject pass
+
+- **Date:** 2026-08-02
+- **Subject:** neighborhoods, waste, and pests
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort, concurrency 1
+- **Scope:** noise, trash, junk mail, mosquitoes, shared spaces, and local nuisance resolution; no pest diagnosis or treatment advice
+- **Sources:** `mildlyinfuriating` and `whatsthisbug`, 10 pages each
+- **Successful output:** 8 subject-focused raw observations from 20 unique pages
+- **Model calls:** 20
+- **Input size:** 193,553 characters, approximately 48,388 input tokens
+- **Failures:** 0
+- **Empty pages:** 0
+- **Manifest:** `data/mining-passes/2026-08-02-neighborhoods-waste-pests-01.json`
+- **Raw batch:** `data/mining-runs/2026-08-02-codex-neighborhoods-waste-pests-01.jsonl`
+
+This was a low-yield pass. `mildlyinfuriating` produced no in-scope rows in this slice, while `whatsthisbug` produced eight. The next action is to change sources before compiling this subject.
+
+## Run 21: public-service bureaucracy subject pass
+
+- **Date:** 2026-08-02
+- **Subject:** public-service bureaucracy
+- **Model:** `gpt-5.5` through the Codex CLI, low reasoning effort, concurrency 1
+- **Scope:** forms, permits, benefits, public offices, queues, and administrative access; no legal or financial advice
+- **Sources:** `AskNYC` and `Adulting`, 10 pages each
+- **Successful output:** 23 subject-focused raw observations from 20 unique pages
+- **Model calls:** 20
+- **Input size:** 168,440 characters, approximately 42,110 input tokens
+- **Failures:** 0
+- **Empty pages:** 0
+- **Manifest:** `data/mining-passes/2026-08-02-public-services-bureaucracy-01.json`
+- **Raw batch:** `data/mining-runs/2026-08-02-codex-public-services-bureaucracy-01.jsonl`
+
+This was a mixed-source pass with some off-topic material. The next action is to change sources before compiling this subject.
+
 ## Filter
 
 The cheap screen removes obvious one-offs, jokes, sensitive or irrelevant material, duplicates, and titles too thin to inspect. The judgment pass then applies [The Big Annoyance Test](BIG_ANNOYANCE_TEST.md): repetition, real cost, weak workaround, breadth beyond one narrow product, concrete wording, and a possible AI opening.

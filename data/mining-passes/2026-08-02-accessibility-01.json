@@ -1,0 +1,13 @@
+{
+  "id": "2026-08-02-accessibility-01",
+  "subject": "accessibility",
+  "status": "complete",
+  "model": "gpt-5.5",
+  "reasoning": "low",
+  "budget": {"pages_per_source":10,"concurrency":1,"max_model_calls":20,"max_input_tokens":50000},
+  "sources": ["disability", "accessibility"],
+  "result": {"pages":20,"failed_pages":0,"empty_pages":0,"model_calls":20,"input_tokens":33159,"new_rows":35,"stop_reason":"completed two-source chunk"},
+  "raw_batch": "data/mining-runs/2026-08-02-codex-accessibility-01.jsonl",
+  "subject_filter": "Physical and digital barriers that prevent ordinary access or use; no medical diagnosis or treatment advice.",
+  "next_action": "continue"
+}
