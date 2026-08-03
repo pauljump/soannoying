@@ -14,4 +14,10 @@ Current working list:
 
 The current pass uses a local Qwen3 14B model over Tailscale. It is cheap to run and good enough for first-pass extraction. The model is not making final judgments. These are still rough leads, and the public release remains the smaller, reviewed boundary described in the README.
 
+## Latest filter pass
+
+On August 3, 2026, Codex `gpt-5.5` at low reasoning effort screened the repeated leads and merged the strongest patterns into `37` finalist drafts. This used the Codex subscription path, not a separate provider API.
+
+Those drafts are held privately for now. The audit found that some raw rows contain a useful excerpt but the wrong Wayback URL. We will repair that source-pairing problem before publishing the new finalists. The existing public candidate set is unchanged.
+
 Mining is source-tracked and resumable. Completed pages are recorded so later passes can continue without intentionally re-mining the same page. The next release should include a deliberate filter and a manifest, not a rolling dump of whatever the miner happens to find.

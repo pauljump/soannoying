@@ -34,6 +34,8 @@ Treat this as raw material, not truth. It is not a complete annoyance catalog, a
 
 The public release is still `v0.1`, but the source-tracked mining work has continued privately. The working list now has `1,878` rough annoyances from `2,460` archived sources across `107` provisional categories. See the [progress note](data/PROGRESS.md) for what that number means. It is not a new public release or a claim that all of these are big annoyances.
 
+The latest Codex screening pass produced `37` stronger finalist drafts. They are not published as candidate records yet because an audit found that some raw mining rows pair a good excerpt with the wrong archived URL. The source trail gets fixed before those finalists cross the public promotion boundary.
+
 ## What belongs here
 
 Something is worth moving forward when it is specific enough to inspect:
