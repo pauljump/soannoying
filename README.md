@@ -30,6 +30,10 @@ Treat this as raw material, not truth. It is not a complete annoyance catalog, a
 - Autonomous mining contract: [AUTONOMY.md](AUTONOMY.md)
 - Subject registry and pass ledger: [data/subjects/registry.json](data/subjects/registry.json) and [data/mining-passes/](data/mining-passes/)
 
+## Mining progress
+
+The public release is still `v0.1`, but the source-tracked mining work has continued privately. The working corpus now has `1,878` raw annoyances from `2,460` archived sources across `107` provisional categories. See the [progress note](data/PROGRESS.md) for what that number means. It is not a new public release or a claim that all of these are big annoyances.
+
 ## What belongs here
 
 Something is worth moving forward when it is specific enough to inspect:
