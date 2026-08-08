@@ -5,7 +5,7 @@ import { dirname, join } from "node:path";
 const root = new URL("..", import.meta.url).pathname;
 const observationsPath = join(root, "data/observations/2026-08-01-wayback-reddit.jsonl");
 const outputPath = join(root, "docs/highlights.js");
-const candidatesPath = join(root, "data/candidates/2026-08-01-big-annoyance-screen.jsonl");
+const candidatesPath = join(root, "data/candidates/2026-08-08-codex-finalists.jsonl");
 const checkOnly = process.argv.includes("--check");
 
 const rows = readFileSync(observationsPath, "utf8")
