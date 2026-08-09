@@ -8,7 +8,6 @@ const candidateCards = document.querySelector("#candidateCards");
 const cityList = document.querySelector("#cityList");
 const cityPanelTop = document.querySelector("#cityPanelTop");
 const cityCards = document.querySelector("#cityCards");
-const cityFilters = document.querySelector("#cityFilters");
 
 const buckets = ["All", ...new Set(data.highlights.map((item) => item.bucket))].sort((a, b) => {
   if (a === "All") return -1;
@@ -18,7 +17,6 @@ const buckets = ["All", ...new Set(data.highlights.map((item) => item.bucket))].
 
 let activeFilter = "All";
 let activeCityId = data.cities[0]?.id;
-let activeCityScope = "all";
 
 totalObservations.textContent = data.totalObservations.toLocaleString();
 
@@ -55,9 +53,9 @@ function renderCityList() {
 function renderCity() {
   const city = data.cities.find((item) => item.id === activeCityId);
   if (!city) return;
-  cityPanelTop.innerHTML = `<div><p class="kicker">${city.status} benchmark</p><h3></h3><p>${city.sourcePages} frozen source pages · ${city.candidateCount} backlog candidates</p></div>`;
+  cityPanelTop.innerHTML = `<div><p class="kicker">Published city shortlist</p><h3></h3><p>${city.finalistCount} selected annoyances · ${city.sourcePages} frozen source pages</p></div>`;
   cityPanelTop.querySelector("h3").textContent = city.name;
-  const matches = city.finalists.filter((item) => activeCityScope === "all" || item.cityScope === activeCityScope);
+  const matches = city.finalists;
   cityCards.replaceChildren();
   for (const item of matches) {
     const card = document.createElement("article");
@@ -66,7 +64,7 @@ function renderCity() {
     top.className = "card-top";
     const scope = document.createElement("span");
     scope.className = "pill";
-    scope.textContent = item.cityScope === "city_unique" ? "City-specific" : "Shared elsewhere";
+    scope.textContent = city.name;
     const evidence = document.createElement("span");
     evidence.className = "source";
     evidence.textContent = `${item.evidence.length} source${item.evidence.length === 1 ? "" : "s"}`;
@@ -85,8 +83,9 @@ function renderCity() {
       link.href = source.archiveUrl;
       link.target = "_blank";
       link.rel = "noreferrer";
-      link.textContent = source.sourceId;
+      link.textContent = "Evidence trail";
       links.append(link);
+      break;
     }
     card.append(top, title, why, opening, links);
     cityCards.append(card);
@@ -104,13 +103,6 @@ cityList.addEventListener("click", (event) => {
   renderCity();
 });
 
-cityFilters.addEventListener("click", (event) => {
-  const button = event.target.closest("button[data-city-scope]");
-  if (!button) return;
-  activeCityScope = button.dataset.cityScope;
-  for (const filter of cityFilters.querySelectorAll("button")) filter.classList.toggle("active", filter.dataset.cityScope === activeCityScope);
-  renderCity();
-});
 
 for (const bucket of buckets.filter((bucket) => bucket !== "All")) {
   const button = document.createElement("button");

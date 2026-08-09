@@ -72,18 +72,13 @@
       <section class="cities-section" id="cities">
         <div class="section-heading">
           <p class="kicker">City layer</p>
-          <h2>Annoyances from a place</h2>
-          <p>Some problems belong to San Francisco. Others happen there but could happen anywhere. This keeps those two things visible without mixing them together.</p>
+          <h2>City annoyances</h2>
+          <p>This is a separate collection for annoyances from specific cities. San Francisco is the first one. We can compare cities later; this section does not reclassify the general annoyance list.</p>
         </div>
         <div class="city-layout">
           <div class="city-list" id="cityList" aria-label="Cities"></div>
           <div class="city-panel">
             <div class="city-panel-top" id="cityPanelTop"></div>
-            <div class="city-filters" id="cityFilters" aria-label="City annoyance scope">
-              <button class="filter active" type="button" data-city-scope="all">All</button>
-              <button class="filter" type="button" data-city-scope="city_unique">City-specific</button>
-              <button class="filter" type="button" data-city-scope="shared">Shared elsewhere</button>
-            </div>
             <div class="city-grid" id="cityCards"></div>
           </div>
         </div>
@@ -92,7 +87,7 @@
       <section class="controls" id="annoyances" aria-label="Browse highlighted annoyances">
         <div>
           <h2>Raw leads to review</h2>
-          <p>These are source-linked screened patterns, not reviewed problem records. Apply the <a href="https://github.com/pauljump/soannoying/blob/main/BIG_ANNOYANCE_TEST.md">Big Annoyance Test</a> before treating one as a real candidate.</p>
+          <p>This is the work queue. The Cities section above contains the selected city shortlist; these general leads still have Source, Review, and Propose paths. Apply the <a href="https://github.com/pauljump/soannoying/blob/main/BIG_ANNOYANCE_TEST.md">Big Annoyance Test</a> before treating one as a real candidate.</p>
         </div>
         <label class="search">
           <span>Search</span>
