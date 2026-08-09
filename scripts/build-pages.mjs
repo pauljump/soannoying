@@ -6,6 +6,7 @@ const root = new URL("..", import.meta.url).pathname;
 const observationsPath = join(root, "data/observations/2026-08-01-wayback-reddit.jsonl");
 const outputPath = join(root, "docs/highlights.js");
 const candidatesPath = join(root, "data/candidates/2026-08-09-codex-finalists.jsonl");
+const citiesRegistryPath = join(root, "data/cities/registry.json");
 const checkOnly = process.argv.includes("--check");
 
 const rows = readFileSync(observationsPath, "utf8")
@@ -17,6 +18,29 @@ const candidates = readFileSync(candidatesPath, "utf8")
   .trim()
   .split("\n")
   .map((line) => JSON.parse(line));
+
+const citiesRegistry = JSON.parse(readFileSync(citiesRegistryPath, "utf8"));
+const cities = citiesRegistry.cities.map((city) => ({
+  ...city,
+  finalists: readFileSync(join(root, city.finalistsPath), "utf8")
+    .trim()
+    .split("\n")
+    .filter(Boolean)
+    .map((line) => JSON.parse(line))
+    .map((item) => ({
+      id: item.finalistId,
+      title: item.title,
+      cityScope: item.city_scope,
+      sharedKey: item.shared_key,
+      whyBig: item.why_big,
+      aiOpening: item.ai_opening,
+      uncertainty: item.uncertainty,
+      evidence: item.evidence.map((source) => ({
+        sourceId: source.sourceId,
+        archiveUrl: source.archiveUrl,
+      })),
+    })),
+}));
 
 const termGroups = [
   ["Subscriptions", ["subscription", "cancel", "unsubscribe", "billing", "charged", "stubs"]],
@@ -130,6 +154,7 @@ const payload = {
   sourceCount: Object.keys(countsBySource).length,
   countsBySource,
   candidates,
+  cities,
   highlights,
 };
 

@@ -13,6 +13,7 @@
       <nav class="topbar" aria-label="Project links">
         <a class="brand" href="./">So Annoying</a>
         <div class="navlinks">
+          <a href="#cities">Cities</a>
           <a href="https://github.com/pauljump/soannoying">GitHub</a>
           <a href="https://github.com/pauljump/soannoying/issues/new?template=problem-review.yml">Review</a>
           <a href="https://github.com/pauljump/soannoying/issues/new?template=solution-proposal.yml">Propose</a>
@@ -66,6 +67,26 @@
           <p>These survived a first pass for repetition, real cost, weak workarounds, and a problem bigger than one product. They are still waiting for community review.</p>
         </div>
         <div class="candidate-grid" id="candidateCards"></div>
+      </section>
+
+      <section class="cities-section" id="cities">
+        <div class="section-heading">
+          <p class="kicker">City layer</p>
+          <h2>Annoyances from a place</h2>
+          <p>Some problems belong to San Francisco. Others happen there but could happen anywhere. This keeps those two things visible without mixing them together.</p>
+        </div>
+        <div class="city-layout">
+          <div class="city-list" id="cityList" aria-label="Cities"></div>
+          <div class="city-panel">
+            <div class="city-panel-top" id="cityPanelTop"></div>
+            <div class="city-filters" id="cityFilters" aria-label="City annoyance scope">
+              <button class="filter active" type="button" data-city-scope="all">All</button>
+              <button class="filter" type="button" data-city-scope="city_unique">City-specific</button>
+              <button class="filter" type="button" data-city-scope="shared">Shared elsewhere</button>
+            </div>
+            <div class="city-grid" id="cityCards"></div>
+          </div>
+        </div>
       </section>
 
       <section class="controls" id="annoyances" aria-label="Browse highlighted annoyances">

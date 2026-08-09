@@ -263,6 +263,120 @@ main {
   font-weight: 700;
 }
 
+.cities-section {
+  padding: 8px 0 58px;
+  border-top: 1px solid var(--line);
+}
+
+.city-layout {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.city-list {
+  display: grid;
+  gap: 8px;
+}
+
+.city-tab {
+  display: grid;
+  gap: 2px;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+}
+
+.city-tab span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.city-tab.active {
+  border-color: var(--blue);
+  box-shadow: inset 4px 0 0 var(--blue);
+}
+
+.city-panel {
+  min-width: 0;
+}
+
+.city-panel-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.city-panel-top .kicker {
+  margin-bottom: 4px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.city-panel-top h3 {
+  margin-bottom: 3px;
+  font-size: 28px;
+}
+
+.city-panel-top p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.city-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 18px 0;
+}
+
+.city-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.city-card {
+  display: flex;
+  min-height: 270px;
+  flex-direction: column;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.city-card h4 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.city-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.city-card .ai-opening {
+  margin-top: auto;
+  color: var(--ink);
+}
+
+.city-card .card-actions {
+  justify-content: flex-start;
+}
+
 .controls {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(260px, 380px);
@@ -419,7 +533,8 @@ footer p {
 
   .intro,
   .controls,
-  .rule {
+  .rule,
+  .city-layout {
     grid-template-columns: 1fr;
   }
 
@@ -465,6 +580,10 @@ footer p {
   }
 
   .candidate-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .city-grid {
     grid-template-columns: 1fr;
   }
 }

@@ -749,6 +749,641 @@ window.SO_ANNOYING_DATA = {
       ]
     }
   ],
+  "cities": [
+    {
+      "id": "san-francisco",
+      "name": "San Francisco",
+      "status": "pilot",
+      "sourcePages": 92,
+      "candidateCount": 389,
+      "finalistCount": 31,
+      "updatedAt": "2026-08-09",
+      "finalistsPath": "data/cities/2026-08-09-san-francisco-finalists.jsonl",
+      "finalists": [
+        {
+          "id": "f5bc65fd4b591597",
+          "title": "Residential parking permits can take days when people need immediate legal parking",
+          "cityScope": "city_unique",
+          "sharedKey": null,
+          "whyBig": "A delayed permit can turn a routine move or housing instability into repeated tickets or towing risk.",
+          "aiOpening": "AI could help residents determine faster permit paths, office options, temporary alternatives, and ticket-risk windows from city rules and parking signs.",
+          "uncertainty": "The sources do not prove how often expedited help is actually available or how many residents face this delay.",
+          "evidence": [
+            {
+              "sourceId": "sf-asksf",
+              "archiveUrl": "https://web.archive.org/web/20230601030549/https://old.reddit.com/r/AskSF/comments/13x6ihs/monthly_residential_parking_pass_urgent/"
+            },
+            {
+              "sourceId": "sf-asksf",
+              "archiveUrl": "https://web.archive.org/web/20230601030549/https://old.reddit.com/r/AskSF/comments/13x6ihs/monthly_residential_parking_pass_urgent/"
+            }
+          ]
+        },
+        {
+          "id": "211abdf4ae49b530",
+          "title": "People living from cars face ticket and towing risks while trying to keep shelter",
+          "cityScope": "shared",
+          "sharedKey": "vehicle_shelter_parking_enforcement_risk",
+          "whyBig": "A parking citation or tow can remove a person's only shelter and create cascading costs.",
+          "aiOpening": "AI could help map lawful overnight options, permit requirements, street-sweeping schedules, and low-risk relocation plans.",
+          "uncertainty": "The sources describe one situation and do not show the prevalence of vehicle residency parking enforcement.",
+          "evidence": [
+            {
+              "sourceId": "sf-asksf",
+              "archiveUrl": "https://web.archive.org/web/20230601030549/https://old.reddit.com/r/AskSF/comments/13x6ihs/monthly_residential_parking_pass_urgent/"
+            },
+            {
+              "sourceId": "sf-asksf",
+              "archiveUrl": "https://web.archive.org/web/20230601030549/https://old.reddit.com/r/AskSF/comments/13x6ihs/monthly_residential_parking_pass_urgent/"
+            }
+          ]
+        },
+        {
+          "id": "eff6d98e3e4fdfc9",
+          "title": "Patients struggle to locate clinicians for specialized diagnostic tests",
+          "cityScope": "shared",
+          "sharedKey": "specialized_medical_test_provider_search",
+          "whyBig": "Specialized test access can require many calls and unclear referrals before a patient finds the right provider.",
+          "aiOpening": "AI could identify likely departments, verify test availability, check insurance constraints, and prepare referral questions.",
+          "uncertainty": "The source does not prove how many providers offer the ACTH test or whether insurance was a barrier.",
+          "evidence": [
+            {
+              "sourceId": "sf-asksf",
+              "archiveUrl": "https://web.archive.org/web/20230601064421/https://old.reddit.com/r/AskSF/comments/13xactt/looking_for_an_md_that_does_acth_stim_tests/"
+            }
+          ]
+        },
+        {
+          "id": "2f0ee989566eeef9",
+          "title": "BART riders lack train arrival information before entering fare gates",
+          "cityScope": "city_unique",
+          "sharedKey": null,
+          "whyBig": "Riders can pay before learning a train is delayed, then lose time resolving fare handling if they choose another route.",
+          "aiOpening": "AI could combine real-time arrivals, station layouts, fare rules, and alternative routes before a rider commits to entering.",
+          "uncertainty": "The sources do not prove which stations lack signs or how often riders pay before discovering major delays.",
+          "evidence": [
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230614212428/https://old.reddit.com/r/Bart/comments/13x78xc/found_randomly_on_google_maps/"
+            },
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230609031115/https://old.reddit.com/r/Bart/comments/144tb7b/why_dont_bart_stations_have_train_arrival_times/"
+            },
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230609031115/https://old.reddit.com/r/Bart/comments/144tb7b/why_dont_bart_stations_have_train_arrival_times/"
+            },
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230609031115/https://old.reddit.com/r/Bart/comments/144tb7b/why_dont_bart_stations_have_train_arrival_times/"
+            },
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230609031115/https://old.reddit.com/r/Bart/comments/144tb7b/why_dont_bart_stations_have_train_arrival_times/"
+            },
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230609031115/https://old.reddit.com/r/Bart/comments/144tb7b/why_dont_bart_stations_have_train_arrival_times/"
+            },
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230609160708/https://old.reddit.com/r/Bart/comments/1458eyt/from_yoc_to_macarthur/"
+            },
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230610065426/https://old.reddit.com/r/Bart/comments/145t0oh/dont_ride_bart/"
+            }
+          ]
+        },
+        {
+          "id": "3312ba08d57b8546",
+          "title": "BART station elevator outages create access failures",
+          "cityScope": "city_unique",
+          "sharedKey": null,
+          "whyBig": "Broken elevators can make a transit trip impossible for wheelchair users, disabled riders, parents, and travelers with luggage.",
+          "aiOpening": "AI could monitor elevator status, predict risky transfers, and reroute riders through accessible stations before they are stranded.",
+          "uncertainty": "The sources do not quantify outage frequency or identify the stations with the highest failure rates.",
+          "evidence": [
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230609000519/https://old.reddit.com/r/Bart/comments/143rh8e/bart_with_e_bike_to_giants_game/"
+            },
+            {
+              "sourceId": "sf-bayarea",
+              "archiveUrl": "https://web.archive.org/web/20230602013607/https://old.reddit.com/r/bayarea/comments/140dio/im_curious_has_anyone_ever_been_fined_for_eating/"
+            }
+          ]
+        },
+        {
+          "id": "422b335a82dd1f18",
+          "title": "Disabled riders depend on transit that may be cut or reduced",
+          "cityScope": "city_unique",
+          "sharedKey": null,
+          "whyBig": "Reduced Muni or BART service can make work, care, errands, and independent living unaffordable or unreachable for disabled residents.",
+          "aiOpening": "AI could plan accessible multimodal routes, monitor service changes, coordinate paratransit or subsidies, and flag missed-care risks.",
+          "uncertainty": "The sources show serious rider concern but do not prove the exact service cuts or affected rider count.",
+          "evidence": [
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230604161714/https://old.reddit.com/r/Bart/comments/140hrzm/disabled_riders_and_the_need_for_bart_to_stay/"
+            },
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230604161714/https://old.reddit.com/r/Bart/comments/140hrzm/disabled_riders_and_the_need_for_bart_to_stay/"
+            },
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230604161714/https://old.reddit.com/r/Bart/comments/140hrzm/disabled_riders_and_the_need_for_bart_to_stay/"
+            },
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230604161714/https://old.reddit.com/r/Bart/comments/140hrzm/disabled_riders_and_the_need_for_bart_to_stay/"
+            },
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230604161714/https://old.reddit.com/r/Bart/comments/140hrzm/disabled_riders_and_the_need_for_bart_to_stay/"
+            },
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230604161714/https://old.reddit.com/r/Bart/comments/140hrzm/disabled_riders_and_the_need_for_bart_to_stay/"
+            },
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230604161714/https://old.reddit.com/r/Bart/comments/140hrzm/disabled_riders_and_the_need_for_bart_to_stay/"
+            },
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230604161714/https://old.reddit.com/r/Bart/comments/140hrzm/disabled_riders_and_the_need_for_bart_to_stay/"
+            }
+          ]
+        },
+        {
+          "id": "f5c02b51e2ec7317",
+          "title": "BART crowding after major events makes trips miserable and hard to plan",
+          "cityScope": "city_unique",
+          "sharedKey": null,
+          "whyBig": "Post-event surges create long waits, crowding, and uncertainty when many riders need the same limited service.",
+          "aiOpening": "AI could forecast station crowding after games, suggest staggered exits, and compare walking, transit, and rideshare alternatives.",
+          "uncertainty": "The source does not show which venues, dates, or service patterns drive the worst delays.",
+          "evidence": [
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230609000519/https://old.reddit.com/r/Bart/comments/143rh8e/bart_with_e_bike_to_giants_game/"
+            }
+          ]
+        },
+        {
+          "id": "407f44219c2c00f5",
+          "title": "BART cars and stations become dirty from passenger food and spills",
+          "cityScope": "city_unique",
+          "sharedKey": null,
+          "whyBig": "Messy trains and stations degrade comfort, accessibility, and perceived safety across repeated public trips.",
+          "aiOpening": "AI could route cleaning reports, detect recurring hotspots, and prioritize maintenance dispatch from rider and staff signals.",
+          "uncertainty": "The sources do not quantify cleanliness incidents or cleaning response times.",
+          "evidence": [
+            {
+              "sourceId": "sf-bayarea",
+              "archiveUrl": "https://web.archive.org/web/20230602013607/https://old.reddit.com/r/bayarea/comments/140dio/im_curious_has_anyone_ever_been_fined_for_eating/"
+            },
+            {
+              "sourceId": "sf-bayarea",
+              "archiveUrl": "https://web.archive.org/web/20230602013607/https://old.reddit.com/r/bayarea/comments/140dio/im_curious_has_anyone_ever_been_fined_for_eating/"
+            }
+          ]
+        },
+        {
+          "id": "29171de93963c153",
+          "title": "Transit riders face phone and wallet theft in crowded spaces",
+          "cityScope": "shared",
+          "sharedKey": "transit_crowd_pickpocketing",
+          "whyBig": "Theft during transit can cost money, identity recovery time, and personal safety confidence.",
+          "aiOpening": "AI could surface station-specific risk patterns, crowding alerts, and practical prevention prompts without over-policing ordinary riders.",
+          "uncertainty": "The source is observational and does not prove incident rates or locations.",
+          "evidence": [
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230607183537/https://old.reddit.com/r/Bart/comments/143xkhq/round_trips_from_dublin_to_uc_berkeley/"
+            }
+          ]
+        },
+        {
+          "id": "ca0669d7fd949d17",
+          "title": "Car break-ins make parking risky when belongings are visible",
+          "cityScope": "shared",
+          "sharedKey": "visible_belongings_car_break_ins",
+          "whyBig": "A small parking mistake can lead to broken windows, stolen property, insurance hassle, and lost time.",
+          "aiOpening": "AI could warn drivers about local break-in patterns, safer parking choices, and context-specific prevention steps.",
+          "uncertainty": "The source does not establish incident frequency or compare neighborhoods.",
+          "evidence": [
+            {
+              "sourceId": "sf-sanfrancisco",
+              "archiveUrl": "https://web.archive.org/web/20230602025651/https://old.reddit.com/r/sanfrancisco/comments/150d0o/how_safe_is_it_around_22nd_and_south_van_ness/"
+            }
+          ]
+        },
+        {
+          "id": "cdd07e279489ea5b",
+          "title": "Street-level safety can change sharply block by block",
+          "cityScope": "city_unique",
+          "sharedKey": null,
+          "whyBig": "Residents and visitors can make poor route or housing choices when safety conditions vary sharply over short distances.",
+          "aiOpening": "AI could combine local reports, lighting, transit access, crime data, and time of day to explain practical route and neighborhood tradeoffs.",
+          "uncertainty": "The source is general and does not identify specific blocks or objective safety measures.",
+          "evidence": [
+            {
+              "sourceId": "sf-sanfrancisco",
+              "archiveUrl": "https://web.archive.org/web/20230602025651/https://old.reddit.com/r/sanfrancisco/comments/150d0o/how_safe_is_it_around_22nd_and_south_van_ness/"
+            }
+          ]
+        },
+        {
+          "id": "8281c54792b3aacf",
+          "title": "Landlord-tenant disputes require residents to navigate specialized local help",
+          "cityScope": "city_unique",
+          "sharedKey": null,
+          "whyBig": "Renters can lose money, housing stability, or legal leverage if they cannot quickly understand rights and counseling options.",
+          "aiOpening": "AI could triage tenant issues, prepare documents, explain San Francisco-specific rules, and route residents to the right clinic or agency.",
+          "uncertainty": "The sources show the existence of counseling demand but do not prove volume or outcomes.",
+          "evidence": [
+            {
+              "sourceId": "sf-housing",
+              "archiveUrl": "https://web.archive.org/web/20230601115031/https://old.reddit.com/r/SFBayHousing/comments/124wiu/share_my_roommate_is_leaving_have_a_two_bead_room/"
+            },
+            {
+              "sourceId": "sf-housing",
+              "archiveUrl": "https://web.archive.org/web/20230601124255/https://old.reddit.com/r/SFBayHousing/comments/13sqgy/room_with_workshop_available_in_two_bedroom/"
+            },
+            {
+              "sourceId": "sf-housing",
+              "archiveUrl": "https://web.archive.org/web/20230601163535/https://old.reddit.com/r/SFBayHousing/comments/144mhz/seeking_cyberpunk_tgrl_nonprofit_worker_seeks/"
+            },
+            {
+              "sourceId": "sf-housing",
+              "archiveUrl": "https://web.archive.org/web/20230601165621/https://old.reddit.com/r/SFBayHousing/comments/155qb3/share_1br_in_an_updated_3br_flat_in_inner_richmond/"
+            },
+            {
+              "sourceId": "sf-housing",
+              "archiveUrl": "https://web.archive.org/web/20230601201244/https://old.reddit.com/r/SFBayHousing/comments/15ud3c/seeking_brothers_looking_for_place_in_the_south/"
+            },
+            {
+              "sourceId": "sf-housing",
+              "archiveUrl": "https://web.archive.org/web/20230601141419/https://old.reddit.com/r/SFBayHousing/comments/124jc3/do_i_have_to_move/"
+            },
+            {
+              "sourceId": "sf-sanfrancisco",
+              "archiveUrl": "https://web.archive.org/web/20230602025651/https://old.reddit.com/r/sanfrancisco/comments/150d0o/how_safe_is_it_around_22nd_and_south_van_ness/"
+            }
+          ]
+        },
+        {
+          "id": "24b414453c85fa6d",
+          "title": "Prospective renters struggle to detect apartment scams before viewing",
+          "cityScope": "shared",
+          "sharedKey": "rental_application_scam_detection",
+          "whyBig": "Rental scams can cost money and expose personal information before a renter even sees a unit.",
+          "aiOpening": "AI could assess listing signals, payment requests, forms, ownership records, and communication patterns for scam risk.",
+          "uncertainty": "The source does not prove the specific listing was fraudulent.",
+          "evidence": [
+            {
+              "sourceId": "sf-asksf",
+              "archiveUrl": "https://web.archive.org/web/20230604072411/https://old.reddit.com/r/AskSF/comments/1404vfe/buying_a_condo_and_renting_it_out_in_sf/"
+            }
+          ]
+        },
+        {
+          "id": "a159977eaf60700c",
+          "title": "San Francisco has too few affordable homes for residents who need to stay",
+          "cityScope": "city_unique",
+          "sharedKey": null,
+          "whyBig": "Housing shortage and high rents push families, longtime residents, and low-income workers into displacement or poor-quality options.",
+          "aiOpening": "AI could match households to realistic housing programs, eligibility paths, waitlists, commute tradeoffs, and tenant protections.",
+          "uncertainty": "The sources do not prove causality for every rent increase or quantify available affordable units.",
+          "evidence": [
+            {
+              "sourceId": "sf-urbanplanning",
+              "archiveUrl": "https://web.archive.org/web/20230601115613/https://old.reddit.com/r/urbanplanning/comments/138e95/microapartment_plan_may_face_limits/"
+            },
+            {
+              "sourceId": "sf-urbanplanning",
+              "archiveUrl": "https://web.archive.org/web/20230601115613/https://old.reddit.com/r/urbanplanning/comments/138e95/microapartment_plan_may_face_limits/"
+            },
+            {
+              "sourceId": "sf-sanfrancisco",
+              "archiveUrl": "https://web.archive.org/web/20230601174448/https://old.reddit.com/r/sanfrancisco/comments/140thk/seen_on_3rd_street_in_bayviewhunters_point_never/"
+            },
+            {
+              "sourceId": "sf-urbanplanning",
+              "archiveUrl": "https://web.archive.org/web/20230601181313/https://old.reddit.com/r/urbanplanning/comments/154ni1/are_sports_facilities_engines_of_economic/"
+            },
+            {
+              "sourceId": "sf-urbanplanning",
+              "archiveUrl": "https://web.archive.org/web/20230601115613/https://old.reddit.com/r/urbanplanning/comments/138e95/microapartment_plan_may_face_limits/"
+            }
+          ]
+        },
+        {
+          "id": "6adca97dae171d8c",
+          "title": "Low-income renters may be left choosing tiny or poor-quality housing",
+          "cityScope": "shared",
+          "sharedKey": "low_income_poor_quality_housing_tradeoff",
+          "whyBig": "When housing supply is constrained, vulnerable renters may accept overcrowded, unsafe, or inadequate units because alternatives are worse.",
+          "aiOpening": "AI could help renters compare habitability standards, subsidy options, inspection history, and realistic alternatives.",
+          "uncertainty": "The sources argue the risk but do not document specific occupied units or enforcement failures.",
+          "evidence": [
+            {
+              "sourceId": "sf-urbanplanning",
+              "archiveUrl": "https://web.archive.org/web/20230601115613/https://old.reddit.com/r/urbanplanning/comments/138e95/microapartment_plan_may_face_limits/"
+            },
+            {
+              "sourceId": "sf-urbanplanning",
+              "archiveUrl": "https://web.archive.org/web/20230601115613/https://old.reddit.com/r/urbanplanning/comments/138e95/microapartment_plan_may_face_limits/"
+            },
+            {
+              "sourceId": "sf-urbanplanning",
+              "archiveUrl": "https://web.archive.org/web/20230601115613/https://old.reddit.com/r/urbanplanning/comments/138e95/microapartment_plan_may_face_limits/"
+            }
+          ]
+        },
+        {
+          "id": "cf87492c3b139a46",
+          "title": "Temporary workers struggle to find legal medium-term housing",
+          "cityScope": "city_unique",
+          "sharedKey": null,
+          "whyBig": "Workers such as travel nurses and interns need stays longer than vacation rentals but shorter than standard leases, creating search and compliance friction.",
+          "aiOpening": "AI could match renters to compliant lease terms, furnished options, permit constraints, and verified landlords.",
+          "uncertainty": "The sources do not prove the exact city rule or the number of affected workers.",
+          "evidence": [
+            {
+              "sourceId": "sf-asksf",
+              "archiveUrl": "https://web.archive.org/web/20230604070405/https://old.reddit.com/r/AskSF/comments/1404d4j/did_sf_ban_intermediate_length_occupancy/"
+            },
+            {
+              "sourceId": "sf-asksf",
+              "archiveUrl": "https://web.archive.org/web/20230604072411/https://old.reddit.com/r/AskSF/comments/1404vfe/buying_a_condo_and_renting_it_out_in_sf/"
+            }
+          ]
+        },
+        {
+          "id": "0bdb00604118fd3e",
+          "title": "Moving on a fixed deadline is hard when affordable housing cannot be found",
+          "cityScope": "shared",
+          "sharedKey": "deadline_housing_search_affordability",
+          "whyBig": "A failed housing search before a move-out date can lead to emergency costs, instability, or homelessness risk.",
+          "aiOpening": "AI could coordinate listings, eligibility programs, budget constraints, paperwork, and backup housing plans against a deadline.",
+          "uncertainty": "The sources describe individual searches and do not prove the broader market failure alone.",
+          "evidence": [
+            {
+              "sourceId": "sf-housing",
+              "archiveUrl": "https://web.archive.org/web/20230601135832/https://old.reddit.com/r/SFBayHousing/comments/13h0h9/seeking_3_month_living_arrangements_while_i/"
+            },
+            {
+              "sourceId": "sf-housing",
+              "archiveUrl": "https://web.archive.org/web/20230601141419/https://old.reddit.com/r/SFBayHousing/comments/124jc3/do_i_have_to_move/"
+            }
+          ]
+        },
+        {
+          "id": "2f05469210a3f432",
+          "title": "Downtown San Francisco parking is difficult and expensive to secure",
+          "cityScope": "city_unique",
+          "sharedKey": null,
+          "whyBig": "Workers and residents can lose time or money when parking near downtown requires scarce spaces, employer lots, or paid monthly arrangements.",
+          "aiOpening": "AI could forecast parking availability, compare transit alternatives, and identify permit or paid-space options by schedule.",
+          "uncertainty": "The sources do not quantify parking vacancy, price, or neighborhood variation.",
+          "evidence": [
+            {
+              "sourceId": "sf-housing",
+              "archiveUrl": "https://web.archive.org/web/20230601215312/https://old.reddit.com/r/SFBayHousing/comments/144x3n/my_husband_just_got_a_job_in_mountain_view_i_work/"
+            },
+            {
+              "sourceId": "sf-housing",
+              "archiveUrl": "https://web.archive.org/web/20230601215312/https://old.reddit.com/r/SFBayHousing/comments/144x3n/my_husband_just_got_a_job_in_mountain_view_i_work/"
+            }
+          ]
+        },
+        {
+          "id": "f9365b25817a727c",
+          "title": "Cross-Bay and Peninsula commutes force hard tradeoffs between Caltrain, BART, driving, and parking",
+          "cityScope": "city_unique",
+          "sharedKey": null,
+          "whyBig": "A San Francisco-to-Mountain View commute can waste hours when transit stops, office locations, road congestion, and parking do not align.",
+          "aiOpening": "AI could optimize commute plans across household locations, first-mile access, Caltrain/BART schedules, traffic, and parking constraints.",
+          "uncertainty": "The sources describe a specific commute problem and do not prove average travel times.",
+          "evidence": [
+            {
+              "sourceId": "sf-housing",
+              "archiveUrl": "https://web.archive.org/web/20230601215312/https://old.reddit.com/r/SFBayHousing/comments/144x3n/my_husband_just_got_a_job_in_mountain_view_i_work/"
+            },
+            {
+              "sourceId": "sf-housing",
+              "archiveUrl": "https://web.archive.org/web/20230601215312/https://old.reddit.com/r/SFBayHousing/comments/144x3n/my_husband_just_got_a_job_in_mountain_view_i_work/"
+            },
+            {
+              "sourceId": "sf-housing",
+              "archiveUrl": "https://web.archive.org/web/20230601215312/https://old.reddit.com/r/SFBayHousing/comments/144x3n/my_husband_just_got_a_job_in_mountain_view_i_work/"
+            }
+          ]
+        },
+        {
+          "id": "b79edd4558adfeee",
+          "title": "Travelers cannot easily predict when station parking lots fill",
+          "cityScope": "city_unique",
+          "sharedKey": null,
+          "whyBig": "Uncertain station parking availability can cause missed trains, extra driving, or last-minute route changes.",
+          "aiOpening": "AI could forecast lot fill times from historical occupancy, events, commute patterns, and real-time reports.",
+          "uncertainty": "The source names Millbrae but does not provide actual fill times or occupancy data.",
+          "evidence": [
+            {
+              "sourceId": "sf-bart",
+              "archiveUrl": "https://web.archive.org/web/20230614212428/https://old.reddit.com/r/Bart/comments/13x78xc/found_randomly_on_google_maps/"
+            }
+          ]
+        },
+        {
+          "id": "057e81b69d737f81",
+          "title": "People without cars need reliable transportation alternatives",
+          "cityScope": "shared",
+          "sharedKey": "car_free_transportation_access",
+          "whyBig": "Residents who cannot afford cars are more exposed to transit gaps, unsafe routes, and time-consuming errands.",
+          "aiOpening": "AI could plan low-cost routes, coordinate errands, compare micromobility and transit, and adapt plans when service changes.",
+          "uncertainty": "The source does not identify specific service gaps or affected neighborhoods.",
+          "evidence": [
+            {
+              "sourceId": "sf-urbanplanning",
+              "archiveUrl": "https://web.archive.org/web/20230601115613/https://old.reddit.com/r/urbanplanning/comments/138e95/microapartment_plan_may_face_limits/"
+            }
+          ]
+        },
+        {
+          "id": "2fdf47083239547f",
+          "title": "Outdated event listings send people toward closed or inactive venues",
+          "cityScope": "shared",
+          "sharedKey": "outdated_local_event_listings",
+          "whyBig": "Bad local listings waste search time and make it harder for people to find real community events.",
+          "aiOpening": "AI could verify venue status, scrape calendars, reconcile social posts, and maintain current niche-event directories.",
+          "uncertainty": "The source does not prove how many listings were outdated or whether events had moved elsewhere.",
+          "evidence": [
+            {
+              "sourceId": "sf-sanfrancisco",
+              "archiveUrl": "https://web.archive.org/web/20230602071032/https://old.reddit.com/r/sanfrancisco/comments/1408d5/what_queer_spoken_word_events_do_you_enjoy/"
+            }
+          ]
+        },
+        {
+          "id": "3eeb7f380b2ba917",
+          "title": "People need local grief counseling and support groups but may not know where to start",
+          "cityScope": "shared",
+          "sharedKey": "grief_support_resource_navigation",
+          "whyBig": "Finding appropriate support during grief can be difficult when options vary by cost, schedule, format, and eligibility.",
+          "aiOpening": "AI could match people to verified support groups, therapists, crisis resources, insurance options, and meeting formats.",
+          "uncertainty": "The source does not prove that available resources are insufficient, only that navigation help was needed.",
+          "evidence": [
+            {
+              "sourceId": "sf-sanfrancisco",
+              "archiveUrl": "https://web.archive.org/web/20230601132358/https://old.reddit.com/r/sanfrancisco/comments/140net/clicking_random_brought_me_here_havent_been_back/"
+            }
+          ]
+        },
+        {
+          "id": "c5a42d00f569b9f6",
+          "title": "Dangerous street trees can create recurring wind-season safety risks",
+          "cityScope": "shared",
+          "sharedKey": "street_tree_wind_safety_risk",
+          "whyBig": "Unstable trees can injure people and damage vehicles if inspection and maintenance miss high-risk locations.",
+          "aiOpening": "AI could prioritize tree inspections using species, age, weather, past failures, soil conditions, and resident reports.",
+          "uncertainty": "The source describes severe incidents but does not establish inspection failures or recurrence rates.",
+          "evidence": [
+            {
+              "sourceId": "sf-urbanplanning",
+              "archiveUrl": "https://web.archive.org/web/20230601080554/https://old.reddit.com/r/urbanplanning/comments/13xbmoy/urban_planning_body_cut_off_trees_entirely_from_a/"
+            }
+          ]
+        },
+        {
+          "id": "6b5fb0590f0e6e82",
+          "title": "Ocean Beach erosion is worsened by regional sand-management decisions",
+          "cityScope": "city_unique",
+          "sharedKey": null,
+          "whyBig": "Coastal erosion threatens beaches, infrastructure, and public spending when upstream bay activity removes protective sand.",
+          "aiOpening": "AI could model sediment flows, permitting impacts, erosion forecasts, and mitigation tradeoffs for agencies and residents.",
+          "uncertainty": "The source states a causal claim but does not provide the underlying measurement evidence.",
+          "evidence": [
+            {
+              "sourceId": "sf-bayarea",
+              "archiveUrl": "https://web.archive.org/web/20230601165511/https://old.reddit.com/r/bayarea/comments/150awh/dredge_mining_of_shoals_near_angel_and_alcatraz/"
+            }
+          ]
+        },
+        {
+          "id": "88a889feb1036660",
+          "title": "Job seekers face certification catch-22s in planning careers",
+          "cityScope": "shared",
+          "sharedKey": "professional_certification_experience_catch22",
+          "whyBig": "Applicants can be blocked when jobs prefer certification that requires the experience they are trying to obtain.",
+          "aiOpening": "AI could map alternative entry paths, qualifying experience rules, job requirements, and targeted applications.",
+          "uncertainty": "The source is specific to planning and does not prove the barrier applies across all employers.",
+          "evidence": [
+            {
+              "sourceId": "sf-urbanplanning",
+              "archiveUrl": "https://web.archive.org/web/20230601150036/https://old.reddit.com/r/urbanplanning/comments/1537v4/rurbanplanning_i_need_your_advice_on_getting_my/"
+            }
+          ]
+        },
+        {
+          "id": "47e7529e3a9cd1fc",
+          "title": "Public-sector planning jobs are crowded with overqualified applicants",
+          "cityScope": "shared",
+          "sharedKey": "competitive_public_sector_job_market",
+          "whyBig": "High applicant volume makes job searches slower, less predictable, and more discouraging even for qualified candidates.",
+          "aiOpening": "AI could identify better-fit roles, tailor applications, estimate competitiveness, and suggest adjacent career paths.",
+          "uncertainty": "The sources are anecdotal and focused on planning jobs, not the whole labor market.",
+          "evidence": [
+            {
+              "sourceId": "sf-urbanplanning",
+              "archiveUrl": "https://web.archive.org/web/20230601150036/https://old.reddit.com/r/urbanplanning/comments/1537v4/rurbanplanning_i_need_your_advice_on_getting_my/"
+            },
+            {
+              "sourceId": "sf-urbanplanning",
+              "archiveUrl": "https://web.archive.org/web/20230601150036/https://old.reddit.com/r/urbanplanning/comments/1537v4/rurbanplanning_i_need_your_advice_on_getting_my/"
+            },
+            {
+              "sourceId": "sf-urbanplanning",
+              "archiveUrl": "https://web.archive.org/web/20230601150036/https://old.reddit.com/r/urbanplanning/comments/1537v4/rurbanplanning_i_need_your_advice_on_getting_my/"
+            },
+            {
+              "sourceId": "sf-urbanplanning",
+              "archiveUrl": "https://web.archive.org/web/20230601150036/https://old.reddit.com/r/urbanplanning/comments/1537v4/rurbanplanning_i_need_your_advice_on_getting_my/"
+            }
+          ]
+        },
+        {
+          "id": "1dda54c9bc1fdffb",
+          "title": "Tailor quality is hard to judge before expensive clothing is damaged",
+          "cityScope": "shared",
+          "sharedKey": "local_service_quality_verification",
+          "whyBig": "Bad alterations can permanently ruin garments and leave customers with no easy repair path.",
+          "aiOpening": "AI could screen reviews, match garment type to specialist experience, and generate alteration checklists before work begins.",
+          "uncertainty": "The source reports two bad experiences and does not prove a broad tailoring market problem.",
+          "evidence": [
+            {
+              "sourceId": "sf-bayarea",
+              "archiveUrl": "https://web.archive.org/web/20230601162246/https://old.reddit.com/r/bayarea/comments/140pe2/can_anyone_recommend_a_good_tailor_in_the/"
+            }
+          ]
+        },
+        {
+          "id": "3b22ca260af50fc9",
+          "title": "Tech workforce diversity gaps persist despite regional industry growth",
+          "cityScope": "shared",
+          "sharedKey": "tech_workforce_underrepresentation",
+          "whyBig": "Underrepresentation can limit access to high-paying jobs and reinforce unequal professional networks.",
+          "aiOpening": "AI could audit hiring funnels, identify outreach gaps, match candidates to pathways, and track diversity outcomes.",
+          "uncertainty": "The source is an observation and does not provide hiring data or employer-specific causes.",
+          "evidence": [
+            {
+              "sourceId": "sf-sanfrancisco",
+              "archiveUrl": "https://web.archive.org/web/20230601174448/https://old.reddit.com/r/sanfrancisco/comments/140thk/seen_on_3rd_street_in_bayviewhunters_point_never/"
+            }
+          ]
+        },
+        {
+          "id": "e7f0244031a09bc5",
+          "title": "Biking can be inaccessible when controls and balance needs are not adapted",
+          "cityScope": "shared",
+          "sharedKey": "adaptive_bicycle_access",
+          "whyBig": "Standard bicycle controls can exclude riders with one-handed use or balance constraints from affordable mobility.",
+          "aiOpening": "AI could match riders to adaptive equipment, local mechanics, safety constraints, and suitable routes.",
+          "uncertainty": "The sources are personal and do not prove broader demand for adaptive cycling support.",
+          "evidence": [
+            {
+              "sourceId": "sf-sanfrancisco",
+              "archiveUrl": "https://web.archive.org/web/20230601124357/https://old.reddit.com/r/sanfrancisco/comments/131ig4/help_im_in_a_movie/"
+            },
+            {
+              "sourceId": "sf-sanfrancisco",
+              "archiveUrl": "https://web.archive.org/web/20230601124357/https://old.reddit.com/r/sanfrancisco/comments/131ig4/help_im_in_a_movie/"
+            }
+          ]
+        },
+        {
+          "id": "322c75d3ac76809d",
+          "title": "Sports facilities may shift low-wage jobs rather than create lasting employment",
+          "cityScope": "shared",
+          "sharedKey": "stadium_economic_impact_accountability",
+          "whyBig": "Public decisions around major facilities can misallocate resources if job-creation claims are overstated.",
+          "aiOpening": "AI could compare projected and actual employment, subsidies, wage quality, and regional displacement effects.",
+          "uncertainty": "The source states an economic argument and does not provide project-specific data.",
+          "evidence": [
+            {
+              "sourceId": "sf-urbanplanning",
+              "archiveUrl": "https://web.archive.org/web/20230601181313/https://old.reddit.com/r/urbanplanning/comments/154ni1/are_sports_facilities_engines_of_economic/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "highlights": [
     {
       "id": "cdb1d9ce748c",

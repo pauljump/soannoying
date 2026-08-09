@@ -1,0 +1,14 @@
+{
+  "cities": [
+    {
+      "id": "san-francisco",
+      "name": "San Francisco",
+      "status": "pilot",
+      "sourcePages": 92,
+      "candidateCount": 389,
+      "finalistCount": 31,
+      "updatedAt": "2026-08-09",
+      "finalistsPath": "data/cities/2026-08-09-san-francisco-finalists.jsonl"
+    }
+  ]
+}
