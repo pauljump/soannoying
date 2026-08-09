@@ -19,6 +19,17 @@ The repository advances an item through four states:
 
 No state implies the next one. This is the core integrity rule of the project.
 
+## Definitions and publication
+
+The website is a view of the work, not a fifth lifecycle state.
+
+- An **observation** is one source-backed example of friction.
+- A **candidate pattern** groups observations that may describe the same larger burden.
+- A **published annoyance** is a candidate that passed a source check and the Big Annoyance Test. It is what appears on the public page. It is not yet a formal problem record, solution proposal, or validation.
+- A **reviewed problem** is the next formal step. It names the affected task, context, failure, cost, evidence, and uncertainty clearly enough for other people to inspect.
+
+The publication decision is deliberately narrower than a product or research claim. We publish a record when the evidence supports calling it a real annoyance and the description is useful. We do not publish it as proof of prevalence, as a solution, or as a promise that AI can fix it. A published annoyance can later be merged, corrected, rejected, or promoted into a reviewed problem without rewriting the original observations.
+
 ## Why now
 
 Many annoyances stayed unsolved because the work required reading an ambiguous message, remembering a user's context, comparing scattered information, completing an action across a boundary, or checking the result. Modern AI can sometimes perform those tasks. It cannot make bad incentives disappear, override policy, or make a physical constraint vanish. The corpus should make that distinction visible.

@@ -26,7 +26,7 @@ function renderCityList() {
     button.className = `city-tab${city.id === activeCityId ? " active" : ""}`;
     button.type = "button";
     button.dataset.cityId = city.id;
-    button.innerHTML = `<strong></strong><span>${city.finalCount} final annoyance records</span>`;
+    button.innerHTML = `<strong></strong><span>${city.finalCount} annoyances</span>`;
     button.querySelector("strong").textContent = city.name;
     cityList.append(button);
   }
@@ -35,7 +35,7 @@ function renderCityList() {
 function renderCity() {
   const city = data.cities.find((item) => item.id === activeCityId);
   if (!city) return;
-  cityPanelTop.innerHTML = `<div><p class="kicker">Final city annoyance records</p><h3></h3><p>${city.finalCount} final annoyances · ${city.sourcePages} frozen source pages</p></div>`;
+  cityPanelTop.innerHTML = `<div><p class="kicker">Published city list</p><h3></h3><p>${city.finalCount} annoyances · ${city.sourcePages} frozen source pages</p></div>`;
   cityPanelTop.querySelector("h3").textContent = city.name;
   const matches = city.finals;
   cityCards.replaceChildren();
@@ -113,7 +113,7 @@ function render() {
     card.innerHTML = `
       <div class="card-top">
         <span class="pill">${item.bucket ?? "Everyday"}</span>
-        <span class="source">Final annoyance</span>
+        <span class="source">${item.evidence.length} source${item.evidence.length === 1 ? "" : "s"}</span>
       </div>
       <h3></h3>
       <p class="final-summary"></p>

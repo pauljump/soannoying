@@ -22,3 +22,7 @@ Mosquitoes are a good example. They are recurring, widespread, physical, costly 
 - A problem that is easy to avoid with a normal workaround
 
 This is a screening test, not a numerical ranking. Reviewers should record which parts are supported, which are guesses, and what evidence is still missing.
+
+## Publication rule
+
+The public page shows the records that pass this test and have a source trail that can be checked. This is a publishing decision, not a new lifecycle state. A published annoyance is not automatically a reviewed problem, an AI solution, or a validated result.

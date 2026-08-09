@@ -176,7 +176,7 @@ if (checkOnly) {
     console.error("docs/highlights.js is out of date. Run npm run build:pages.");
     process.exit(1);
   }
-    console.log(`docs/highlights.js is current with ${highlights.length} highlights, ${publishedFinals.length} published finals, and ${cities.length} cities`);
+    console.log(`docs/highlights.js is current with ${highlights.length} highlights, ${publishedFinals.length} published annoyances, and ${cities.length} cities`);
 } else {
   mkdirSync(dirname(outputPath), { recursive: true });
   writeFileSync(outputPath, content);
