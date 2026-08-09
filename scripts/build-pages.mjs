@@ -169,9 +169,9 @@ const payload = {
   },
   cities,
   cityStats: {
-    cityCount: cities.length,
+    rawLeads: cities.reduce((total, city) => total + city.candidateCount, 0),
+    rawObservations: cities.reduce((total, city) => total + city.sourcePages, 0),
     finalCount: cities.reduce((total, city) => total + city.finals.length, 0),
-    sourcePages: cities.reduce((total, city) => total + city.sourcePages, 0),
   },
   highlights,
 };

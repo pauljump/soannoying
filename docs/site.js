@@ -5,9 +5,9 @@ const emptyState = document.querySelector("#emptyState");
 const searchInput = document.querySelector("#searchInput");
 const totalObservations = document.querySelector("#totalObservations");
 const publishedFinalCount = document.querySelector("#publishedFinalCount");
-const cityCount = document.querySelector("#cityCount");
+const cityRawLeads = document.querySelector("#cityRawLeads");
+const cityRawObservations = document.querySelector("#cityRawObservations");
 const cityFinalCount = document.querySelector("#cityFinalCount");
-const citySourcePages = document.querySelector("#citySourcePages");
 const cityList = document.querySelector("#cityList");
 const cityPanelTop = document.querySelector("#cityPanelTop");
 const cityCards = document.querySelector("#cityCards");
@@ -23,9 +23,9 @@ let activeCityId = data.cities[0]?.id;
 
 totalObservations.textContent = data.totalObservations.toLocaleString();
 publishedFinalCount.textContent = data.generalStats.publishedCount.toLocaleString();
-cityCount.textContent = data.cityStats.cityCount.toLocaleString();
+cityRawLeads.textContent = data.cityStats.rawLeads.toLocaleString();
+cityRawObservations.textContent = data.cityStats.rawObservations.toLocaleString();
 cityFinalCount.textContent = data.cityStats.finalCount.toLocaleString();
-citySourcePages.textContent = data.cityStats.sourcePages.toLocaleString();
 
 function renderCityList() {
   cityList.replaceChildren();

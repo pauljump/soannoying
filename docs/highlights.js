@@ -1388,9 +1388,9 @@ window.SO_ANNOYING_DATA = {
     }
   ],
   "cityStats": {
-    "cityCount": 1,
-    "finalCount": 31,
-    "sourcePages": 92
+    "rawLeads": 389,
+    "rawObservations": 92,
+    "finalCount": 31
   },
   "highlights": [
     {
