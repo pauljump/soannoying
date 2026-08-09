@@ -34,7 +34,7 @@ Treat this as raw material, not truth. It is not a complete annoyance catalog, a
 
 The public release is still `v0.1`, but the source-tracked mining work has continued privately. The working list now has `1,878` rough annoyances from `2,460` archived sources across `107` provisional categories. See the [progress note](data/PROGRESS.md) for what that number means. It is not a new public release or a claim that all of these are big annoyances.
 
-The latest Codex screening pass produced `54` stronger finalist drafts from the private corpus. They passed a source audit: every finalist points to real corpus evidence, and no finalist has a mismatched excerpt and archived URL. They are published as screened candidates in [data/candidates/2026-08-08-codex-finalists.jsonl](data/candidates/2026-08-08-codex-finalists.jsonl), not as reviewed problem records.
+The latest Codex screening pass produced `50` stronger finalist drafts from the private corpus. They passed a source audit: every finalist points to real corpus evidence, and every finalist has multiple distinct source URLs. They are published as screened candidates in [data/candidates/2026-08-09-codex-finalists.jsonl](data/candidates/2026-08-09-codex-finalists.jsonl), not as reviewed problem records.
 
 ## What belongs here
 
