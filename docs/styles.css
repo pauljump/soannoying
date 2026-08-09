@@ -189,6 +189,46 @@ main {
   padding: 36px 0 64px;
 }
 
+.funnel {
+  padding: 0 0 54px;
+}
+
+.funnel-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.funnel-step {
+  min-height: 180px;
+  padding: 18px;
+  border-right: 1px solid var(--line);
+}
+
+.funnel-step:last-child {
+  border-right: 0;
+}
+
+.funnel-step span {
+  display: block;
+  margin-bottom: 28px;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.funnel-step h3 {
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.funnel-step p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .band {
   width: 100%;
   padding: 18px 0 42px;
@@ -527,8 +567,19 @@ footer p {
   .intro,
   .controls,
   .rule,
-  .city-layout {
+  .city-layout,
+  .funnel-grid {
     grid-template-columns: 1fr;
+  }
+
+  .funnel-step {
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .funnel-step:last-child {
+    border-bottom: 0;
   }
 
   .intro {
