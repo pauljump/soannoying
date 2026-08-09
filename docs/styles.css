@@ -146,6 +146,12 @@ h1 {
 .snapshot-columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.stat-group {
+  display: grid;
+  grid-template-rows: 58px repeat(3, minmax(120px, 1fr));
 }
 
 .stat-group:first-child {
@@ -153,7 +159,9 @@ h1 {
 }
 
 .stat-heading {
-  min-height: 58px;
+  display: flex;
+  align-items: center;
+  min-height: 0;
   margin: 0;
   padding: 18px 18px 10px;
   color: var(--muted);
@@ -163,6 +171,10 @@ h1 {
 }
 
 .stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 0;
   padding: 20px 18px;
   border-bottom: 1px solid var(--line);
 }
