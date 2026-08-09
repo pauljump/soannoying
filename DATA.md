@@ -6,13 +6,14 @@
 data/
   observations/  append-only source observations
   mining-runs/   separately labeled extraction batches and run artifacts
-  candidates/    screened patterns awaiting human review
+  candidates/    screened patterns and the source trail behind published finals
+  cities/        separate city-specific final collections
   problems/      reviewed canonical problem records
   proposals/     AI solution hypotheses
   validations/   evidence about outcomes
 ```
 
-`observations/`, `mining-runs/`, and `candidates/` are populated in the current development state. Mining runs are not automatically part of the v0.1 release. Candidates are not reviewed problems and should not be used as prevalence data or solution claims. Empty `problems/`, `proposals/`, and `validations/` directories are intentional: no later-stage record should be fabricated merely to make the repository look complete.
+`observations/`, `mining-runs/`, `candidates/`, and `cities/` are populated in the current development state. Mining runs are not automatically part of the v0.1 release. The public page's published final set is a release view over source-audited candidate records and city final records. It is not the same thing as a reviewed problem record, a solution proposal, or a validation result. Empty `problems/`, `proposals/`, and `validations/` directories are intentional: no later-stage record should be fabricated merely to make the repository look complete.
 
 ## Observation schema
 

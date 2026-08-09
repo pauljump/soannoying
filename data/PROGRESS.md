@@ -16,8 +16,8 @@ The current mining pass uses Gemini 3.6 Flash Low through the Antigravity subscr
 
 ## Latest filter pass
 
-On August 9, 2026, Codex `gpt-5.5` at low reasoning effort screened the repeated leads and merged the strongest patterns into `50` finalist drafts. This used the Codex subscription path, not a separate provider API.
+On August 9, 2026, Codex `gpt-5.5` at low reasoning effort screened the repeated leads and merged the strongest patterns into `50` finalist records. This used the Codex subscription path, not a separate provider API.
 
-The 50 drafts passed a source audit. Every evidence ID resolved to a real corpus row with evidence text and an archived URL, and every finalist has multiple distinct source URLs. They are published as a new screened-candidate file for community review. They are not reviewed problems, solution proposals, or validations.
+The 50 finalist records passed a source audit. Every evidence ID resolved to a real corpus row with evidence text and an archived URL, and every finalist has multiple distinct source URLs. They are now the published final annoyance set for the public page. That is a release decision, not a claim that they are reviewed problem records, solution proposals, or validations.
 
 Mining is source-tracked and resumable. Completed pages are recorded so later passes can continue without intentionally re-mining the same page. The next release should include a deliberate filter and a manifest, not a rolling dump of whatever the miner happens to find.

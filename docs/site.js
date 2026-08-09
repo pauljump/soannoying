@@ -4,12 +4,11 @@ const filters = document.querySelector(".filters");
 const emptyState = document.querySelector("#emptyState");
 const searchInput = document.querySelector("#searchInput");
 const totalObservations = document.querySelector("#totalObservations");
-const candidateCards = document.querySelector("#candidateCards");
 const cityList = document.querySelector("#cityList");
 const cityPanelTop = document.querySelector("#cityPanelTop");
 const cityCards = document.querySelector("#cityCards");
 
-const buckets = ["All", ...new Set(data.highlights.map((item) => item.bucket))].sort((a, b) => {
+const buckets = ["All", ...new Set(data.publishedFinals.map((item) => item.bucket ?? "Everyday"))].sort((a, b) => {
   if (a === "All") return -1;
   if (b === "All") return 1;
   return a.localeCompare(b);
@@ -20,23 +19,6 @@ let activeCityId = data.cities[0]?.id;
 
 totalObservations.textContent = data.totalObservations.toLocaleString();
 
-for (const candidate of data.candidates) {
-  const card = document.createElement("article");
-  card.className = "candidate";
-  const title = document.createElement("h3");
-  title.textContent = candidate.title;
-  const why = document.createElement("p");
-  why.textContent = candidate.why_big;
-  const links = document.createElement("div");
-  links.className = "candidate-links";
-  const source = document.createElement("a");
-  source.href = `https://github.com/pauljump/soannoying/blob/main/data/candidates/2026-08-09-codex-finalists.jsonl#${candidate.id}`;
-  source.textContent = "Candidate record";
-  links.append(source);
-  card.append(title, why, links);
-  candidateCards.append(card);
-}
-
 function renderCityList() {
   cityList.replaceChildren();
   for (const city of data.cities) {
@@ -44,7 +26,7 @@ function renderCityList() {
     button.className = `city-tab${city.id === activeCityId ? " active" : ""}`;
     button.type = "button";
     button.dataset.cityId = city.id;
-    button.innerHTML = `<strong></strong><span>${city.finalistCount} finalist drafts</span>`;
+    button.innerHTML = `<strong></strong><span>${city.finalCount} published finals</span>`;
     button.querySelector("strong").textContent = city.name;
     cityList.append(button);
   }
@@ -53,9 +35,9 @@ function renderCityList() {
 function renderCity() {
   const city = data.cities.find((item) => item.id === activeCityId);
   if (!city) return;
-  cityPanelTop.innerHTML = `<div><p class="kicker">Published city shortlist</p><h3></h3><p>${city.finalistCount} selected annoyances · ${city.sourcePages} frozen source pages</p></div>`;
+  cityPanelTop.innerHTML = `<div><p class="kicker">Published city finals</p><h3></h3><p>${city.finalCount} final annoyances · ${city.sourcePages} frozen source pages</p></div>`;
   cityPanelTop.querySelector("h3").textContent = city.name;
-  const matches = city.finalists;
+  const matches = city.finals;
   cityCards.replaceChildren();
   for (const item of matches) {
     const card = document.createElement("article");
@@ -113,19 +95,12 @@ for (const bucket of buckets.filter((bucket) => bucket !== "All")) {
   filters.append(button);
 }
 
-function issueUrl(template, item) {
-  const params = new URLSearchParams({
-    template,
-    title: `${template === "problem-review.yml" ? "Review" : "Proposal"}: ${item.title.slice(0, 80)}`,
-  });
-  return `https://github.com/pauljump/soannoying/issues/new?${params.toString()}`;
-}
-
 function render() {
   const query = searchInput.value.trim().toLowerCase();
-  const matches = data.highlights.filter((item) => {
-    const inFilter = activeFilter === "All" || item.bucket === activeFilter;
-    const inQuery = !query || `${item.title} ${item.source} ${item.bucket}`.toLowerCase().includes(query);
+  const matches = data.publishedFinals.filter((item) => {
+    const bucket = item.bucket ?? "Everyday";
+    const inFilter = activeFilter === "All" || bucket === activeFilter;
+    const inQuery = !query || `${item.title} ${item.whyBig} ${item.aiOpening}`.toLowerCase().includes(query);
     return inFilter && inQuery;
   });
 
@@ -137,17 +112,17 @@ function render() {
     card.className = "card";
     card.innerHTML = `
       <div class="card-top">
-        <span class="pill">${item.bucket}</span>
-        <span class="source">${item.source}</span>
+        <span class="pill">${item.bucket ?? "Everyday"}</span>
+        <span class="source">Published final</span>
       </div>
       <h3></h3>
+      <p class="final-summary"></p>
       <div class="card-actions">
-        <a href="${item.sourceUrl}">Source</a>
-        <a href="${issueUrl("problem-review.yml", item)}">Review</a>
-        <a href="${issueUrl("solution-proposal.yml", item)}">Propose</a>
+        <a href="${item.evidence[0] ?? "https://github.com/pauljump/soannoying/tree/main/data/candidates"}" target="_blank" rel="noreferrer">Evidence trail</a>
       </div>
     `;
     card.querySelector("h3").textContent = item.title;
+    card.querySelector(".final-summary").textContent = item.whyBig;
     cards.append(card);
   }
 }

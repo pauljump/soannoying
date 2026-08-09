@@ -6,9 +6,9 @@
       "status": "pilot",
       "sourcePages": 92,
       "candidateCount": 389,
-      "finalistCount": 31,
+      "finalCount": 31,
       "updatedAt": "2026-08-09",
-      "finalistsPath": "data/cities/2026-08-09-san-francisco-finalists.jsonl"
+      "finalsPath": "data/cities/2026-08-09-san-francisco-finals.jsonl"
     }
   ]
 }

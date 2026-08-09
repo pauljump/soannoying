@@ -537,6 +537,13 @@ main {
   letter-spacing: 0;
 }
 
+.final-summary {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .card-actions {
   justify-content: flex-start;
   flex-wrap: wrap;

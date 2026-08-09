@@ -22,7 +22,7 @@ const candidates = readFileSync(candidatesPath, "utf8")
 const citiesRegistry = JSON.parse(readFileSync(citiesRegistryPath, "utf8"));
 const cities = citiesRegistry.cities.map((city) => ({
   ...city,
-  finalists: readFileSync(join(root, city.finalistsPath), "utf8")
+      finals: readFileSync(join(root, city.finalsPath), "utf8")
     .trim()
     .split("\n")
     .filter(Boolean)
@@ -93,6 +93,16 @@ function bucketFor(title) {
   return "Everyday";
 }
 
+const publishedFinals = candidates.map((item) => ({
+  id: item.id,
+  title: item.title,
+  bucket: bucketFor(item.title),
+  whyBig: item.why_big,
+  aiOpening: item.ai_opening,
+  uncertainty: item.uncertainty,
+  evidence: item.evidence,
+}));
+
 function score(row) {
   const title = cleanText(row.name);
   const lower = title.toLowerCase();
@@ -153,7 +163,7 @@ const payload = {
   totalObservations: rows.length,
   sourceCount: Object.keys(countsBySource).length,
   countsBySource,
-  candidates,
+  publishedFinals,
   cities,
   highlights,
 };
@@ -166,7 +176,7 @@ if (checkOnly) {
     console.error("docs/highlights.js is out of date. Run npm run build:pages.");
     process.exit(1);
   }
-    console.log(`docs/highlights.js is current with ${highlights.length} highlights and ${candidates.length} candidates`);
+    console.log(`docs/highlights.js is current with ${highlights.length} highlights, ${publishedFinals.length} published finals, and ${cities.length} cities`);
 } else {
   mkdirSync(dirname(outputPath), { recursive: true });
   writeFileSync(outputPath, content);

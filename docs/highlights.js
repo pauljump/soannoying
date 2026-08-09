@@ -12,13 +12,13 @@ window.SO_ANNOYING_DATA = {
     "r/techsupport": 24,
     "r/apple": 11
   },
-  "candidates": [
+  "publishedFinals": [
     {
       "id": "candidate-misleading-shipping-claims-and-late-delivery-costs-01",
-      "status": "screened",
       "title": "Misleading shipping claims and late delivery costs",
-      "why_big": "Shoppers make decisions based on free-shipping language, then discover at checkout that the offer only applies to pickup or that delivery costs extra. This wastes time, changes the real price, and weakens trust in ecommerce claims.",
-      "ai_opening": "AI could compare advertised shipping terms with cart and checkout totals, flag misleading fulfillment wording, and show the true delivered cost before purchase.",
+      "bucket": "Design",
+      "whyBig": "Shoppers make decisions based on free-shipping language, then discover at checkout that the offer only applies to pickup or that delivery costs extra. This wastes time, changes the real price, and weakens trust in ecommerce claims.",
+      "aiOpening": "AI could compare advertised shipping terms with cart and checkout totals, flag misleading fulfillment wording, and show the true delivered cost before purchase.",
       "uncertainty": "The evidence repeats retailer-centered examples and does not prove how common the exact tactic is across all ecommerce.",
       "evidence": [
         "https://web.archive.org/web/20230321184120/https://old.reddit.com/r/badux/comments/11xpwcv/dear_restaurants_if_your_sign_says_closes_at_9pm/",
@@ -32,10 +32,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-forced-account-creation-and-unnecessary-checkout-data-02",
-      "status": "screened",
       "title": "Forced account creation and unnecessary checkout data",
-      "why_big": "Checkout flows that require accounts or unnecessary personal fields turn a simple purchase into identity management and privacy risk. The burden is broad because it appears across ecommerce and can directly cause abandoned purchases.",
-      "ai_opening": "AI could detect required account or data friction, identify guest-checkout alternatives, pre-warn shoppers, and help merchants find abandonment points.",
+      "bucket": "Websites",
+      "whyBig": "Checkout flows that require accounts or unnecessary personal fields turn a simple purchase into identity management and privacy risk. The burden is broad because it appears across ecommerce and can directly cause abandoned purchases.",
+      "aiOpening": "AI could detect required account or data friction, identify guest-checkout alternatives, pre-warn shoppers, and help merchants find abandonment points.",
       "uncertainty": "The evidence shows repeated complaints but does not quantify abandonment or prove each data request was unnecessary.",
       "evidence": [
         "https://web.archive.org/web/20211025181034/https://old.reddit.com/r/badux/comments/qfmpp3/dear_bank_of_america_if_a_user_is_calling_to/",
@@ -55,10 +55,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-online-product-sizes-use-the-wrong-or-unclear-sizing-system-03",
-      "status": "screened",
       "title": "Online product sizes use the wrong or unclear sizing system",
-      "why_big": "Wrong size-system labeling can leave buyers with unusable items, especially for apparel and shoes where international sizing differs and returns may be limited.",
-      "ai_opening": "AI could detect ambiguous size systems, compare listings against brand charts, and warn when sizing appears inconsistent before purchase.",
+      "bucket": "Everyday",
+      "whyBig": "Wrong size-system labeling can leave buyers with unusable items, especially for apparel and shoes where international sizing differs and returns may be limited.",
+      "aiOpening": "AI could detect ambiguous size systems, compare listings against brand charts, and warn when sizing appears inconsistent before purchase.",
       "uncertainty": "The rows repeat one shoe example and do not prove how often sellers mislabel sizes.",
       "evidence": [
         "https://web.archive.org/web/20220614202022/https://old.reddit.com/r/badux/comments/vcc5da/reading_is_easy/",
@@ -69,10 +69,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-paid-subscriptions-hide-content-behind-extra-charges-04",
-      "status": "screened",
       "title": "Paid subscriptions hide content behind extra charges",
-      "why_big": "People pay for access, then discover much of the catalog still costs extra or can disappear. This creates recurring cost confusion, wasted browsing, and broken trust in subscription value.",
-      "ai_opening": "AI could compare what is included versus paid-extra, warn before signup or playback, and identify cheaper legal access options.",
+      "bucket": "Everyday",
+      "whyBig": "People pay for access, then discover much of the catalog still costs extra or can disappear. This creates recurring cost confusion, wasted browsing, and broken trust in subscription value.",
+      "aiOpening": "AI could compare what is included versus paid-extra, warn before signup or playback, and identify cheaper legal access options.",
       "uncertainty": "The examples center on Amazon-style streaming and do not prove scale across all services.",
       "evidence": [
         "https://web.archive.org/web/20230101070702/https://old.reddit.com/r/assholedesign/comments/1003mhh/youre_not_allowed_to_comment_unless_you_enable/",
@@ -90,10 +90,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-subscriptions-are-hard-to-cancel-05",
-      "status": "screened",
       "title": "Subscriptions are hard to cancel",
-      "why_big": "Cancellation friction creates direct financial cost and wastes time when users must navigate hidden paths, retention pressure, or live support to stop billing.",
-      "ai_opening": "AI could find cancellation paths, prepare scripts or messages, document attempts, and remind users before the next billing date.",
+      "bucket": "Subscriptions",
+      "whyBig": "Cancellation friction creates direct financial cost and wastes time when users must navigate hidden paths, retention pressure, or live support to stop billing.",
+      "aiOpening": "AI could find cancellation paths, prepare scripts or messages, document attempts, and remind users before the next billing date.",
       "uncertainty": "The evidence names a few services and does not prove whether cancellation was impossible versus deliberately difficult.",
       "evidence": [
         "https://web.archive.org/web/20230602064408/https://old.reddit.com/r/mildlyinfuriating/comments/135hp3/when_reddit_is_down/",
@@ -108,10 +108,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-marketing-messages-lack-a-working-unsubscribe-path-06",
-      "status": "screened",
       "title": "Marketing messages lack a working unsubscribe path",
-      "why_big": "Broken, missing, or unclear unsubscribe flows create repeated unwanted email and shift cleanup work onto recipients through filtering, blocking, or manual requests.",
-      "ai_opening": "AI could inspect emails for valid opt-out paths, track unsubscribe attempts, detect continued messages, and prepare compliance complaints.",
+      "bucket": "Subscriptions",
+      "whyBig": "Broken, missing, or unclear unsubscribe flows create repeated unwanted email and shift cleanup work onto recipients through filtering, blocking, or manual requests.",
+      "aiOpening": "AI could inspect emails for valid opt-out paths, track unsubscribe attempts, detect continued messages, and prepare compliance complaints.",
       "uncertainty": "The evidence includes repeated sender-specific examples and does not prove intent or prevalence across all senders.",
       "evidence": [
         "https://web.archive.org/web/20230104233402/https://old.reddit.com/r/assholedesign/comments/1030s10/i_cant_unsubscribe_from_deezer_emails_because_the/?ref=readnext_1",
@@ -129,10 +129,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-people-get-enrolled-in-marketing-messages-without-clear-consent-07",
-      "status": "screened",
       "title": "People get enrolled in marketing messages without clear consent",
-      "why_big": "Unwanted ad-message subscriptions create ongoing attention cost and privacy concern after consent has already been bypassed or obscured.",
-      "ai_opening": "AI could detect unwanted subscription confirmations, find opt-out routes, draft complaints, and maintain records of consent and unsubscribe attempts.",
+      "bucket": "Everyday",
+      "whyBig": "Unwanted ad-message subscriptions create ongoing attention cost and privacy concern after consent has already been bypassed or obscured.",
+      "aiOpening": "AI could detect unwanted subscription confirmations, find opt-out routes, draft complaints, and maintain records of consent and unsubscribe attempts.",
       "uncertainty": "The evidence is a repeated report of one incident and does not establish whether enrollment was intentional, accidental, or common.",
       "evidence": [
         "https://web.archive.org/web/20230104035535/https://old.reddit.com/r/assholedesign/comments/1027oi4/got_subscribed_to_receive_ad_messages_even_though/?ref=readnext_8",
@@ -141,10 +141,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-misleading-free-offers-require-unexpected-extra-spending-08",
-      "status": "screened",
       "title": "Misleading free offers require unexpected extra spending",
-      "why_big": "Promotions framed as free can still require additional payment before use, leaving people to spend more than expected or lose the advertised benefit.",
-      "ai_opening": "AI could parse offer terms, calculate true minimum spend, and warn when a promotion is not meaningfully free.",
+      "bucket": "Everyday",
+      "whyBig": "Promotions framed as free can still require additional payment before use, leaving people to spend more than expected or lose the advertised benefit.",
+      "aiOpening": "AI could parse offer terms, calculate true minimum spend, and warn when a promotion is not meaningfully free.",
       "uncertainty": "The evidence is one repeated voucher example and does not show the full disclosure path.",
       "evidence": [
         "https://web.archive.org/web/20230101210255/https://old.reddit.com/r/assholedesign/comments/100dv8c/the_x_on_this_mobile_game_ad/",
@@ -153,10 +153,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-non-removable-add-ons-and-bundled-fees-in-checkout-09",
-      "status": "screened",
       "title": "Non-removable add-ons and bundled fees in checkout",
-      "why_big": "Forced fees or bundled options create direct monetary cost when customers cannot remove services they do not need.",
-      "ai_opening": "AI could inspect checkout line items, flag non-removable charges, suggest alternate booking paths, and prepare support or dispute documentation.",
+      "bucket": "Websites",
+      "whyBig": "Forced fees or bundled options create direct monetary cost when customers cannot remove services they do not need.",
+      "aiOpening": "AI could inspect checkout line items, flag non-removable charges, suggest alternate booking paths, and prepare support or dispute documentation.",
       "uncertainty": "The evidence shows one parking checkout case and does not prove whether the charge was policy, software limitation, or venue-specific.",
       "evidence": [
         "https://web.archive.org/web/20230102101413/https://old.reddit.com/r/assholedesign/comments/1018r78/i_cannot_remove_the_guest_parking_even_if_i_dont/",
@@ -165,10 +165,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-companies-remove-connected-device-features-after-purchase-10",
-      "status": "screened",
       "title": "Companies remove connected-device features after purchase",
-      "why_big": "Owners lose value when working hardware later loses cloud or service features that were part of the original purchase decision, forcing replacement, migration, or degraded use.",
-      "ai_opening": "AI could monitor product policy changes, identify affected devices, estimate impact, and suggest migration or local-storage options.",
+      "bucket": "Everyday",
+      "whyBig": "Owners lose value when working hardware later loses cloud or service features that were part of the original purchase decision, forcing replacement, migration, or degraded use.",
+      "aiOpening": "AI could monitor product policy changes, identify affected devices, estimate impact, and suggest migration or local-storage options.",
       "uncertainty": "The evidence is concentrated on one device ecosystem and does not prove frequency across all connected hardware.",
       "evidence": [
         "https://web.archive.org/web/20230102051534/https://old.reddit.com/r/assholedesign/comments/1008vzy/found_these_pants_in_a_shop_and_noticed_the_crotch/",
@@ -182,10 +182,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-software-installs-itself-or-cannot-be-removed-normally-11",
-      "status": "screened",
       "title": "Software installs itself or cannot be removed normally",
-      "why_big": "Users lose control when software appears without a deliberate install or cannot be uninstalled through expected paths, affecting device trust, storage, defaults, and updates.",
-      "ai_opening": "AI could explain what installed the software, identify supported removal or disable paths, and monitor updates that may restore unwanted components.",
+      "bucket": "Everyday",
+      "whyBig": "Users lose control when software appears without a deliberate install or cannot be uninstalled through expected paths, affecting device trust, storage, defaults, and updates.",
+      "aiOpening": "AI could explain what installed the software, identify supported removal or disable paths, and monitor updates that may restore unwanted components.",
       "uncertainty": "The rows concern one browser on one operating system and do not prove the broader mechanism or frequency.",
       "evidence": [
         "https://web.archive.org/web/20230118023258/https://old.reddit.com/r/assholedesign/comments/10etxs2/microsoft_edge_just_installed_itself_i_didnt/?sort=old",
@@ -195,10 +195,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-users-cannot-control-built-in-security-software-12",
-      "status": "screened",
       "title": "Users cannot control built-in security software",
-      "why_big": "System security tools that override user or admin intent can create operational burden when temporary changes do not stick and policy controls are unclear.",
-      "ai_opening": "AI could explain policy constraints, check management settings, and suggest supported configuration paths without blindly disabling protection.",
+      "bucket": "Everyday",
+      "whyBig": "System security tools that override user or admin intent can create operational burden when temporary changes do not stick and policy controls are unclear.",
+      "aiOpening": "AI could explain policy constraints, check management settings, and suggest supported configuration paths without blindly disabling protection.",
       "uncertainty": "The evidence is one repeated Windows Defender complaint and does not prove a broad cross-platform pattern.",
       "evidence": [
         "https://web.archive.org/web/20230104123845/https://old.reddit.com/r/Windows11/comments/102ywfx/-/",
@@ -207,10 +207,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-operating-system-settings-are-scattered-across-too-many-places-13",
-      "status": "screened",
       "title": "Operating system settings are scattered across too many places",
-      "why_big": "Related controls split across multiple settings panels make routine configuration harder, especially for users trying to change accessibility or device behavior.",
-      "ai_opening": "AI could map user intent to the right settings location across OS versions and explain what each setting changes.",
+      "bucket": "Files",
+      "whyBig": "Related controls split across multiple settings panels make routine configuration harder, especially for users trying to change accessibility or device behavior.",
+      "aiOpening": "AI could map user intent to the right settings location across OS versions and explain what each setting changes.",
       "uncertainty": "The evidence focuses on Windows mouse, pointer, and keyboard settings and does not prove the full scope across platforms.",
       "evidence": [
         "https://web.archive.org/web/20210407170538/https://old.reddit.com/r/badux/comments/mm6q3a/dear_einstein_if_an_input_is_labeled_number_and/",
@@ -227,10 +227,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-operating-system-updates-and-bugs-break-basic-computer-use-14",
-      "status": "screened",
       "title": "Operating system updates and bugs break basic computer use",
-      "why_big": "Update failures, freezing apps, broken shortcuts, display issues, and unstable system behavior can block everyday work and force time-consuming troubleshooting.",
-      "ai_opening": "AI could collect symptoms, correlate them with recent updates and hardware, and guide rollback, driver, or settings checks.",
+      "bucket": "Everyday",
+      "whyBig": "Update failures, freezing apps, broken shortcuts, display issues, and unstable system behavior can block everyday work and force time-consuming troubleshooting.",
+      "aiOpening": "AI could collect symptoms, correlate them with recent updates and hardware, and guide rollback, driver, or settings checks.",
       "uncertainty": "The rows are separate Windows 11 complaints and do not prove a single root cause.",
       "evidence": [
         "https://web.archive.org/web/20221226033717/https://old.reddit.com/r/Windows11/comments/101cntt/how_to_use_windows_11s_file_explorer_tabs/",
@@ -243,10 +243,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-wi-fi-disappears-or-fails-on-computers-15",
-      "status": "screened",
       "title": "Wi-Fi disappears or fails on computers",
-      "why_big": "Connectivity failures block setup, updates, work, calls, downloads, and troubleshooting itself, with weak workarounds like rebooting or hunting for drivers.",
-      "ai_opening": "AI could diagnose from device model, driver state, logs, BIOS settings, router behavior, and recent updates, then recommend the next concrete check.",
+      "bucket": "Everyday",
+      "whyBig": "Connectivity failures block setup, updates, work, calls, downloads, and troubleshooting itself, with weak workarounds like rebooting or hunting for drivers.",
+      "aiOpening": "AI could diagnose from device model, driver state, logs, BIOS settings, router behavior, and recent updates, then recommend the next concrete check.",
       "uncertainty": "The rows are Windows-focused and do not establish whether the cause is OS, driver, hardware, router, or local network.",
       "evidence": [
         "https://web.archive.org/web/20230102075010/https://old.reddit.com/r/Windows11/comments/100lp2e/-/",
@@ -259,10 +259,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-required-apps-fail-to-launch-or-disappear-after-system-changes-16",
-      "status": "screened",
       "title": "Required apps fail to launch or disappear after system changes",
-      "why_big": "When installed apps crash, vanish, or fail after updates, users lose access to software they may rely on for work, entertainment, purchases, or device management.",
-      "ai_opening": "AI could inspect app registration state, event logs, update history, and package integrity before recommending repair or reinstall steps.",
+      "bucket": "Everyday",
+      "whyBig": "When installed apps crash, vanish, or fail after updates, users lose access to software they may rely on for work, entertainment, purchases, or device management.",
+      "aiOpening": "AI could inspect app registration state, event logs, update history, and package integrity before recommending repair or reinstall steps.",
       "uncertainty": "The evidence is concentrated in Windows and Xbox or UWP examples and does not prove one shared technical cause.",
       "evidence": [
         "https://web.archive.org/web/20230102152454/https://old.reddit.com/r/Windows11/comments/101f4vy/uwp_apps_disappeared_from_start_after_fixing/",
@@ -272,10 +272,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-unhelpful-error-messages-leave-users-stuck-17",
-      "status": "screened",
       "title": "Unhelpful error messages leave users stuck",
-      "why_big": "Generic error messages provide no cause, next step, or searchable clue, forcing users into guessing, forums, or support channels across many software products.",
-      "ai_opening": "AI could translate raw errors and user context into likely causes, searchable terms, and safe next actions.",
+      "bucket": "Everyday",
+      "whyBig": "Generic error messages provide no cause, next step, or searchable clue, forcing users into guessing, forums, or support channels across many software products.",
+      "aiOpening": "AI could translate raw errors and user context into likely causes, searchable terms, and safe next actions.",
       "uncertainty": "The evidence shows frustration with vague errors but not the specific systems, frequency, or causes.",
       "evidence": [
         "https://web.archive.org/web/20210811192453/https://old.reddit.com/r/badux/comments/p2k52v/i_think_its_time_to_face_the_fact_that_exactly/",
@@ -286,10 +286,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-users-cannot-tell-which-app-is-requesting-sensitive-permissions-18",
-      "status": "screened",
       "title": "Users cannot tell which app is requesting sensitive permissions",
-      "why_big": "Permission prompts without clear source attribution prevent informed privacy choices and make it hard to investigate, block, or audit risky behavior.",
-      "ai_opening": "AI could trace permission prompts to processes, explain what triggered them, and suggest safe next actions.",
+      "bucket": "Apps",
+      "whyBig": "Permission prompts without clear source attribution prevent informed privacy choices and make it hard to investigate, block, or audit risky behavior.",
+      "aiOpening": "AI could trace permission prompts to processes, explain what triggered them, and suggest safe next actions.",
       "uncertainty": "The evidence is Windows-specific and does not prove whether the behavior is a platform bug, app behavior, or configuration issue.",
       "evidence": [
         "https://web.archive.org/web/20230102075010/https://old.reddit.com/r/Windows11/comments/100lp2e/-/",
@@ -305,10 +305,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-calendar-apps-remind-users-about-stale-meetings-19",
-      "status": "screened",
       "title": "Calendar apps remind users about stale meetings",
-      "why_big": "Reminders for meetings that are over, attended, or canceled interrupt work and erode trust in calendar notifications.",
-      "ai_opening": "AI could reconcile calendar state, attendance, cancellation notices, and reminder settings before surfacing notifications.",
+      "bucket": "Apps",
+      "whyBig": "Reminders for meetings that are over, attended, or canceled interrupt work and erode trust in calendar notifications.",
+      "aiOpening": "AI could reconcile calendar state, attendance, cancellation notices, and reminder settings before surfacing notifications.",
       "uncertainty": "The evidence points mainly to Outlook behavior and does not prove the exact cause or prevalence across platforms.",
       "evidence": [
         "https://web.archive.org/web/20210126105105/https://old.reddit.com/r/badux/comments/l41hun/all_those_silly_sheep_who_put_their_login_buttons/",
@@ -320,10 +320,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-application-menus-make-commands-hard-to-find-20",
-      "status": "screened",
       "title": "Application menus make commands hard to find",
-      "why_big": "Users waste time hunting through menus and memorizing where each app hides routine commands during ordinary workflows.",
-      "ai_opening": "AI could provide command search, infer intended actions from plain language, and surface or execute the relevant menu item.",
+      "bucket": "Everyday",
+      "whyBig": "Users waste time hunting through menus and memorizing where each app hides routine commands during ordinary workflows.",
+      "aiOpening": "AI could provide command search, infer intended actions from plain language, and surface or execute the relevant menu item.",
       "uncertainty": "The evidence is repeated from a small set of UX posts and does not establish scale across all software.",
       "evidence": [
         "https://web.archive.org/web/20210126105105/https://old.reddit.com/r/badux/comments/l41hun/all_those_silly_sheep_who_put_their_login_buttons/",
@@ -332,10 +332,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-search-returns-irrelevant-filler-instead-of-no-results-21",
-      "status": "screened",
       "title": "Search returns irrelevant filler instead of no results",
-      "why_big": "When search fills results with unrelated items, users waste time checking false matches and lose trust in marketplaces, media catalogs, stores, and knowledge tools.",
-      "ai_opening": "AI could identify true no-result cases, explain what was searched, suggest corrected queries, and separate substitutes from unrelated filler.",
+      "bucket": "Websites",
+      "whyBig": "When search fills results with unrelated items, users waste time checking false matches and lose trust in marketplaces, media catalogs, stores, and knowledge tools.",
+      "aiOpening": "AI could identify true no-result cases, explain what was searched, suggest corrected queries, and separate substitutes from unrelated filler.",
       "uncertainty": "The examples are repeated UX complaints and do not measure frequency across services.",
       "evidence": [
         "https://web.archive.org/web/20210124183221/https://old.reddit.com/r/badux/comments/l04pxm/impressive_lag_on_xbox_gamepass/",
@@ -344,10 +344,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-social-feeds-are-crowded-by-unwanted-recommendations-22",
-      "status": "screened",
       "title": "Social feeds are crowded by unwanted recommendations",
-      "why_big": "People use feeds to see chosen sources, but algorithmic recommendations can crowd out that content and turn a familiar product into a time-wasting discovery surface.",
-      "ai_opening": "AI could classify feed items by source and intent, suppress unwanted recommendations, and produce a cleaner digest of chosen accounts or communities.",
+      "bucket": "Everyday",
+      "whyBig": "People use feeds to see chosen sources, but algorithmic recommendations can crowd out that content and turn a familiar product into a time-wasting discovery surface.",
+      "aiOpening": "AI could classify feed items by source and intent, suppress unwanted recommendations, and produce a cleaner digest of chosen accounts or communities.",
       "uncertainty": "The evidence centers on Facebook-style suggested content and does not quantify prevalence across all platforms.",
       "evidence": [
         "https://web.archive.org/web/20230102041237/https://old.reddit.com/r/assholedesign/comments/100ctry/facebook_flooding_90_of_my_feed_with_suggested/?ref=readnext_0",
@@ -360,10 +360,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-apps-use-misleading-notifications-to-pull-people-back-in-23",
-      "status": "screened",
       "title": "Apps use misleading notifications to pull people back in",
-      "why_big": "Engagement notifications that imply activity may not match reality create attention cost and make users distrust alerts across apps.",
-      "ai_opening": "AI could audit notification patterns, summarize which alerts were actually actionable, and tune or suppress low-value notifications.",
+      "bucket": "Everyday",
+      "whyBig": "Engagement notifications that imply activity may not match reality create attention cost and make users distrust alerts across apps.",
+      "aiOpening": "AI could audit notification patterns, summarize which alerts were actually actionable, and tune or suppress low-value notifications.",
       "uncertainty": "The rows are repeated captures of the same TikTok complaint and do not prove cross-app prevalence.",
       "evidence": [
         "https://web.archive.org/web/20230102213008/https://old.reddit.com/r/assholedesign/comments/101dq44/tiktok_flat_out_lies_to_you_to_get_you_to_open/?ref=readnext_9",
@@ -373,10 +373,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-video-titles-hide-the-language-of-the-actual-content-24",
-      "status": "screened",
       "title": "Video titles hide the language of the actual content",
-      "why_big": "Videos titled in a language users can read but spoken in another language waste time across learning, search, and media browsing.",
-      "ai_opening": "AI could detect spoken language, compare it with title language, and label or filter videos by actual audio language.",
+      "bucket": "Everyday",
+      "whyBig": "Videos titled in a language users can read but spoken in another language waste time across learning, search, and media browsing.",
+      "aiOpening": "AI could detect spoken language, compare it with title language, and label or filter videos by actual audio language.",
       "uncertainty": "The evidence is focused on YouTube-style videos and does not prove the same issue across all media platforms.",
       "evidence": [
         "https://web.archive.org/web/20210618025837/https://old.reddit.com/r/badux/comments/o2ez2q/a_certain_online_learning_website_that_rhymes/",
@@ -387,10 +387,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-multilingual-sites-make-language-selection-hard-to-recognize-25",
-      "status": "screened",
       "title": "Multilingual sites make language selection hard to recognize",
-      "why_big": "Language menus that label languages in the wrong language can trap users before they can read the site, affecting international access.",
-      "ai_opening": "AI could infer preferred language, translate language names locally, or audit localization menus for self-name labeling.",
+      "bucket": "Everyday",
+      "whyBig": "Language menus that label languages in the wrong language can trap users before they can read the site, affecting international access.",
+      "aiOpening": "AI could infer preferred language, translate language names locally, or audit localization menus for self-name labeling.",
       "uncertainty": "The evidence gives one repeated example and does not prove frequency.",
       "evidence": [
         "https://web.archive.org/web/20211112181235/https://old.reddit.com/r/badux/comments/qsh30g/when_i_am_buying_a_phone_why_do_some_sites_have_a/",
@@ -399,10 +399,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-forms-use-vague-labels-that-hide-required-information-26",
-      "status": "screened",
       "title": "Forms use vague labels that hide required information",
-      "why_big": "Ambiguous labels cause failed submissions and support burden when help text reveals the form actually needs a more specific value.",
-      "ai_opening": "AI could review forms for ambiguous labels, compare them against help text, and suggest clearer field names before release.",
+      "bucket": "Everyday",
+      "whyBig": "Ambiguous labels cause failed submissions and support burden when help text reveals the form actually needs a more specific value.",
+      "aiOpening": "AI could review forms for ambiguous labels, compare them against help text, and suggest clearer field names before release.",
       "uncertainty": "The rows appear to repeat the same example and do not show how common it is across sites.",
       "evidence": [
         "https://web.archive.org/web/20210515045709/https://old.reddit.com/r/badux/comments/ncr4pv/dear_product_sites_what_the_hell_does_sort_by/",
@@ -412,10 +412,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-community-posting-rules-block-participation-without-clear-recourse-27",
-      "status": "screened",
       "title": "Community posting rules block participation without clear recourse",
-      "why_big": "Opaque account, karma, title, and formatting rules make legitimate participation difficult and force users into manual rewriting or abandonment.",
-      "ai_opening": "AI could check drafts against community rules, explain likely removal reasons, and suggest compliant revisions before submission.",
+      "bucket": "Everyday",
+      "whyBig": "Opaque account, karma, title, and formatting rules make legitimate participation difficult and force users into manual rewriting or abandonment.",
+      "aiOpening": "AI could check drafts against community rules, explain likely removal reasons, and suggest compliant revisions before submission.",
       "uncertainty": "The evidence comes from Reddit moderation examples and does not prove the rules are unfair or how often legitimate posts are wrongly blocked.",
       "evidence": [
         "https://web.archive.org/web/20230101120412/https://old.reddit.com/r/CrappyDesign/comments/100hxc8/goodbye_macha/",
@@ -432,10 +432,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-customer-support-flows-make-users-lose-time-before-help-28",
-      "status": "screened",
       "title": "Customer support flows make users lose time before help",
-      "why_big": "Support queues, excessive verification, and accidental exits can erase long waits or block access before the real problem is addressed.",
-      "ai_opening": "AI could preserve issue context, warn before queue exits, guide verification, and route cases when automated gates repeatedly fail.",
+      "bucket": "Support",
+      "whyBig": "Support queues, excessive verification, and accidental exits can erase long waits or block access before the real problem is addressed.",
+      "aiOpening": "AI could preserve issue context, warn before queue exits, guide verification, and route cases when automated gates repeatedly fail.",
       "uncertainty": "The evidence names specific support flows and does not prove the same mechanisms are widespread.",
       "evidence": [
         "https://web.archive.org/web/20211220184057/https://old.reddit.com/r/badux/comments/rku0go/old_school_fail_see_every_calculator_ever_made/",
@@ -447,10 +447,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-critical-support-calls-include-marketing-before-help-29",
-      "status": "screened",
       "title": "Critical support calls include marketing before help",
-      "why_big": "Forcing callers to hear ads before fraud support delays a time-sensitive security task and makes the support channel less trustworthy.",
-      "ai_opening": "AI could route users to the fastest verified fraud-reporting channel, record call attempts, and help escalate when nonessential steps delay support.",
+      "bucket": "Support",
+      "whyBig": "Forcing callers to hear ads before fraud support delays a time-sensitive security task and makes the support channel less trustworthy.",
+      "aiOpening": "AI could route users to the fastest verified fraud-reporting channel, record call attempts, and help escalate when nonessential steps delay support.",
       "uncertainty": "The evidence centers on Bank of America examples and does not prove this pattern across many institutions.",
       "evidence": [
         "https://web.archive.org/web/20220211235517/https://old.reddit.com/r/badux/comments/sqdent/dear_customer_help_you_can_safely_stop_saying_i/",
@@ -463,10 +463,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-posted-closing-times-do-not-match-actual-service-30",
-      "status": "screened",
       "title": "Posted closing times do not match actual service",
-      "why_big": "Customers waste trips and face conflict when posted hours do not mean orders or service are available until that time.",
-      "ai_opening": "AI could learn and surface practical last-order or service-cutoff times from reviews, policies, menus, and business signals.",
+      "bucket": "Everyday",
+      "whyBig": "Customers waste trips and face conflict when posted hours do not mean orders or service are available until that time.",
+      "aiOpening": "AI could learn and surface practical last-order or service-cutoff times from reviews, policies, menus, and business signals.",
       "uncertainty": "The evidence is restaurant-heavy and does not prove how often businesses publish clear cutoff policies.",
       "evidence": [
         "https://web.archive.org/web/20230321184120/https://old.reddit.com/r/badux/comments/11xpwcv/dear_restaurants_if_your_sign_says_closes_at_9pm/",
@@ -482,10 +482,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-medical-appointment-times-do-not-reflect-actual-wait-time-31",
-      "status": "screened",
       "title": "Medical appointment times do not reflect actual wait time",
-      "why_big": "Long waits after scheduled appointments create lost work time, childcare conflicts, transportation issues, and stress while people are seeking care.",
-      "ai_opening": "AI could predict likely delays from clinic flow, appointment type, staffing, and history, then give more realistic arrival and wait-time guidance.",
+      "bucket": "Everyday",
+      "whyBig": "Long waits after scheduled appointments create lost work time, childcare conflicts, transportation issues, and stress while people are seeking care.",
+      "aiOpening": "AI could predict likely delays from clinic flow, appointment type, staffing, and history, then give more realistic arrival and wait-time guidance.",
       "uncertainty": "The evidence shows frustration with long waits but does not prove frequency across providers or operational causes.",
       "evidence": [
         "https://web.archive.org/web/20230101234903/https://old.reddit.com/r/mildlyinfuriating/comments/100s1gg/whats_the_point_of_making_an_appointment_to_see_a/?sort=old",
@@ -494,10 +494,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-similar-medical-names-confuse-important-care-decisions-32",
-      "status": "screened",
       "title": "Similar medical names confuse important care decisions",
-      "why_big": "Lookalike vaccine names create cognitive burden for patients, parents, and caregivers trying to understand records, requirements, or recommendations.",
-      "ai_opening": "AI could translate medical names into plain-language distinctions, check context such as age or schedule, and prompt clinician confirmation.",
+      "bucket": "Everyday",
+      "whyBig": "Lookalike vaccine names create cognitive burden for patients, parents, and caregivers trying to understand records, requirements, or recommendations.",
+      "aiOpening": "AI could translate medical names into plain-language distinctions, check context such as age or schedule, and prompt clinician confirmation.",
       "uncertainty": "The evidence is about Tdap and DTaP and does not show actual medical errors or broader naming prevalence.",
       "evidence": [
         "https://web.archive.org/web/20230313044025/https://old.reddit.com/r/badux/comments/11q07iu/dear_ui_folks_price_sorting_options_should_only/",
@@ -510,10 +510,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-people-with-adhd-struggle-to-do-activities-that-help-manage-adhd-33",
-      "status": "screened",
       "title": "People with ADHD struggle to do activities that help manage ADHD",
-      "why_big": "The problem is a recurring self-management loop: exercise may help ADHD symptoms, but ADHD itself makes starting and sustaining exercise harder.",
-      "ai_opening": "AI could break exercise into low-friction steps, adapt reminders to attention patterns, and adjust plans after missed sessions without heavy planning.",
+      "bucket": "Everyday",
+      "whyBig": "The problem is a recurring self-management loop: exercise may help ADHD symptoms, but ADHD itself makes starting and sustaining exercise harder.",
+      "aiOpening": "AI could break exercise into low-friction steps, adapt reminders to attention patterns, and adjust plans after missed sessions without heavy planning.",
       "uncertainty": "The evidence is brief and anecdotal and does not prove which exercise supports work best for which people.",
       "evidence": [
         "https://web.archive.org/web/20230604050542/https://old.reddit.com/r/ADHD/comments/1401rug/is_my_psychiatrist_innovative_or_fringe/",
@@ -523,10 +523,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-accessibility-infrastructure-exists-but-does-not-provide-usable-access-34",
-      "status": "screened",
       "title": "Accessibility infrastructure exists but does not provide usable access",
-      "why_big": "A ramp or accessible route that does not actually connect creates a mobility, dignity, and legal burden with no easy workaround for affected people.",
-      "ai_opening": "AI could review photos, maps, or site plans for broken accessible routes and generate repair tickets with evidence.",
+      "bucket": "Everyday",
+      "whyBig": "A ramp or accessible route that does not actually connect creates a mobility, dignity, and legal burden with no easy workaround for affected people.",
+      "aiOpening": "AI could review photos, maps, or site plans for broken accessible routes and generate repair tickets with evidence.",
       "uncertainty": "The evidence appears to be one repeated example and does not prove frequency.",
       "evidence": [
         "https://web.archive.org/web/20230601153013/https://old.reddit.com/r/CrappyDesign/comments/19112n/i_found_one_of_my_first_attempts_at_photoshop/",
@@ -536,10 +536,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-apartment-windows-barely-open-35",
-      "status": "screened",
       "title": "Apartment windows barely open",
-      "why_big": "Tenants can be stuck with windows limited to a few inches, affecting ventilation, comfort, and control over their living space.",
-      "ai_opening": "AI could help identify likely code, lease, and safety issues and draft a specific request to a landlord or housing authority.",
+      "bucket": "Files",
+      "whyBig": "Tenants can be stuck with windows limited to a few inches, affecting ventilation, comfort, and control over their living space.",
+      "aiOpening": "AI could help identify likely code, lease, and safety issues and draft a specific request to a landlord or housing authority.",
       "uncertainty": "The evidence is one apartment-window situation and does not show whether the restriction was legal, safety-driven, or common.",
       "evidence": [
         "https://web.archive.org/web/20230101120958/https://old.reddit.com/r/mildlyinfuriating/comments/1000jvu/calling_out_the_ex/",
@@ -550,10 +550,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-home-fixtures-are-installed-in-ways-residents-cannot-adjust-36",
-      "status": "screened",
       "title": "Home fixtures are installed in ways residents cannot adjust",
-      "why_big": "Badly placed or non-adjustable fixtures create daily housing usability problems, especially for renters or residents without an easy repair path.",
-      "ai_opening": "AI could assess fixture dimensions from photos, identify code or accessibility concerns, and generate repair requests or contractor instructions.",
+      "bucket": "Everyday",
+      "whyBig": "Badly placed or non-adjustable fixtures create daily housing usability problems, especially for renters or residents without an easy repair path.",
+      "aiOpening": "AI could assess fixture dimensions from photos, identify code or accessibility concerns, and generate repair requests or contractor instructions.",
       "uncertainty": "The rows repeat the same showerhead example and do not prove broad prevalence.",
       "evidence": [
         "https://web.archive.org/web/20230602122235/https://old.reddit.com/r/CrappyDesign/comments/192g7j/for_all_your_carpet_needs/",
@@ -566,10 +566,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-dirty-tap-water-appears-during-normal-household-use-37",
-      "status": "screened",
       "title": "Dirty tap water appears during normal household use",
-      "why_big": "Brown water during a shower is a concrete health, safety, and habitability burden with no acceptable workaround in the moment.",
-      "ai_opening": "AI could triage likely causes, log incidents, compare against utility notices, and draft landlord or utility complaints with evidence.",
+      "bucket": "Everyday",
+      "whyBig": "Brown water during a shower is a concrete health, safety, and habitability burden with no acceptable workaround in the moment.",
+      "aiOpening": "AI could triage likely causes, log incidents, compare against utility notices, and draft landlord or utility complaints with evidence.",
       "uncertainty": "The evidence repeats one scenario and does not prove cause, severity, or duration.",
       "evidence": [
         "https://web.archive.org/web/20230601162715/https://old.reddit.com/r/mildlyinfuriating/comments/127nr6/when_people_play_music_to_try_to_fall_asleep/",
@@ -580,10 +580,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-sump-pumps-run-continuously-without-clear-diagnosis-38",
-      "status": "screened",
       "title": "Sump pumps run continuously without clear diagnosis",
-      "why_big": "A sump pump that will not stop can mean wasted electricity, equipment failure, flooding risk, and urgent maintenance uncertainty.",
-      "ai_opening": "AI could guide homeowners through symptom checks, maintenance history, weather context, and when to call a specialist.",
+      "bucket": "Everyday",
+      "whyBig": "A sump pump that will not stop can mean wasted electricity, equipment failure, flooding risk, and urgent maintenance uncertainty.",
+      "aiOpening": "AI could guide homeowners through symptom checks, maintenance history, weather context, and when to call a specialist.",
       "uncertainty": "The batch gives repeated short descriptions but little detail about cause or independence of cases.",
       "evidence": [
         "https://web.archive.org/web/20230101045111/https://old.reddit.com/r/HomeImprovement/comments/1000d6l/did_my_contractor_mess_this_up/",
@@ -593,10 +593,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-private-driveways-are-used-or-blocked-by-strangers-39",
-      "status": "screened",
       "title": "Private driveways are used or blocked by strangers",
-      "why_big": "Driveway intrusions or blockage create property risk, privacy concerns, access problems, and enforcement friction for residents.",
-      "ai_opening": "AI could analyze camera clips, quantify repeat patterns, prepare enforcement documentation, and suggest signage or barrier options.",
+      "bucket": "Everyday",
+      "whyBig": "Driveway intrusions or blockage create property risk, privacy concerns, access problems, and enforcement friction for residents.",
+      "aiOpening": "AI could analyze camera clips, quantify repeat patterns, prepare enforcement documentation, and suggest signage or barrier options.",
       "uncertainty": "The evidence includes driveway turnaround and stadium parking cases but does not prove frequency beyond those contexts.",
       "evidence": [
         "https://web.archive.org/web/20240603215658/https://old.reddit.com/r/homeowners/comments/1d22p88/street_parking_homeowner_has_priority_over_public/",
@@ -609,10 +609,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-public-places-have-unclear-boundaries-for-disruptive-pets-40",
-      "status": "screened",
       "title": "Public places have unclear boundaries for disruptive pets",
-      "why_big": "Pets in shared indoor spaces can affect hygiene, noise, comfort, and access when venue rules are unclear or unenforced.",
-      "ai_opening": "AI could help venues publish clearer pet policies, route complaints with evidence, and surface pet-friendly or pet-restricted options before visits.",
+      "bucket": "Everyday",
+      "whyBig": "Pets in shared indoor spaces can affect hygiene, noise, comfort, and access when venue rules are unclear or unenforced.",
+      "aiOpening": "AI could help venues publish clearer pet policies, route complaints with evidence, and surface pet-friendly or pet-restricted options before visits.",
       "uncertainty": "The evidence repeats one public-space scenario and does not establish venue rules or prevalence.",
       "evidence": [
         "https://web.archive.org/web/20230101120958/https://old.reddit.com/r/mildlyinfuriating/comments/1000jvu/calling_out_the_ex/",
@@ -622,10 +622,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-spam-calls-overwhelm-normal-phone-use-41",
-      "status": "screened",
       "title": "Spam calls overwhelm normal phone use",
-      "why_big": "High-volume spam calling repeatedly interrupts people, causes missed legitimate calls, and makes phones less trustworthy for real communication.",
-      "ai_opening": "AI could screen calls, classify suspicious patterns, summarize voicemail, and escalate likely real calls.",
+      "bucket": "Everyday",
+      "whyBig": "High-volume spam calling repeatedly interrupts people, causes missed legitimate calls, and makes phones less trustworthy for real communication.",
+      "aiOpening": "AI could screen calls, classify suspicious patterns, summarize voicemail, and escalate likely real calls.",
       "uncertainty": "The evidence shows a small number of reports and does not identify call sources, carriers, or existing blocking settings.",
       "evidence": [
         "https://web.archive.org/web/20230602064408/https://old.reddit.com/r/mildlyinfuriating/comments/135hp3/when_reddit_is_down/",
@@ -634,10 +634,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-hidden-batteries-make-devices-seem-broken-42",
-      "status": "screened",
       "title": "Hidden batteries make devices seem broken",
-      "why_big": "When batteries are split across hidden compartments, users can misdiagnose dead devices, waste troubleshooting time, or replace products unnecessarily.",
-      "ai_opening": "AI could inspect product photos or manuals and guide users to every likely battery compartment before repair or disposal.",
+      "bucket": "Everyday",
+      "whyBig": "When batteries are split across hidden compartments, users can misdiagnose dead devices, waste troubleshooting time, or replace products unnecessarily.",
+      "aiOpening": "AI could inspect product photos or manuals and guide users to every likely battery compartment before repair or disposal.",
       "uncertainty": "The evidence repeats a clear design complaint but does not show the range of device types or return frequency.",
       "evidence": [
         "https://web.archive.org/web/20230307151904/https://old.reddit.com/r/badux/comments/11l1zzb/quite_possibly_the_worst_named_things_on_planet/",
@@ -650,10 +650,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-products-are-designed-to-prevent-reuse-or-refilling-43",
-      "status": "screened",
       "title": "Products are designed to prevent reuse or refilling",
-      "why_big": "Non-refillable design can force repeat purchases and create waste when routine reuse is blocked by the product rather than by necessity.",
-      "ai_opening": "AI could identify likely non-refillable designs from images or reviews and suggest reusable alternatives or safe workarounds.",
+      "bucket": "Everyday",
+      "whyBig": "Non-refillable design can force repeat purchases and create waste when routine reuse is blocked by the product rather than by necessity.",
+      "aiOpening": "AI could identify likely non-refillable designs from images or reviews and suggest reusable alternatives or safe workarounds.",
       "uncertainty": "The evidence is one spray-bottle example repeated twice and does not prove the pattern across a whole category.",
       "evidence": [
         "https://web.archive.org/web/20221231193420/https://old.reddit.com/r/assholedesign/comments/1001c10/reddit_using_the_icon_from_subs_you_follow_on_ads/",
@@ -662,10 +662,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-everyday-clothing-wears-out-quickly-at-the-same-stress-point-44",
-      "status": "screened",
       "title": "Everyday clothing wears out quickly at the same stress point",
-      "why_big": "Jeans repeatedly developing crotch holes creates replacement cost, repair burden, and wardrobe reliability problems at a common wear point.",
-      "ai_opening": "AI could compare durability complaints across brands, materials, and fits, or suggest repair and prevention options based on wear pattern.",
+      "bucket": "Everyday",
+      "whyBig": "Jeans repeatedly developing crotch holes creates replacement cost, repair burden, and wardrobe reliability problems at a common wear point.",
+      "aiOpening": "AI could compare durability complaints across brands, materials, and fits, or suggest repair and prevention options based on wear pattern.",
       "uncertainty": "The evidence comes from one repeated personal report and does not prove whether the cause is fabric quality, fit, activity, or laundering.",
       "evidence": [
         "https://web.archive.org/web/20230601154351/https://old.reddit.com/r/mildlyinfuriating/comments/1b1bpo/someone_highlighted_most_but_not_all_of_this_page/",
@@ -674,10 +674,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-recipes-use-impractical-precision-for-everyday-ingredients-45",
-      "status": "screened",
       "title": "Recipes use impractical precision for everyday ingredients",
-      "why_big": "Gram-level measurements for tiny amounts like salt and pepper create unnecessary tool requirements and make everyday cooking harder.",
-      "ai_opening": "AI could convert tiny gram amounts into practical household measures while preserving precision warnings where they matter.",
+      "bucket": "Everyday",
+      "whyBig": "Gram-level measurements for tiny amounts like salt and pepper create unnecessary tool requirements and make everyday cooking harder.",
+      "aiOpening": "AI could convert tiny gram amounts into practical household measures while preserving precision warnings where they matter.",
       "uncertainty": "The evidence does not show whether users lacked scales or whether the issue mainly applies to seasoning amounts.",
       "evidence": [
         "https://web.archive.org/web/20230306001006/https://old.reddit.com/r/badux/comments/11jhqrn/when_a_scale_is_given_from_1_to_10_decimal/",
@@ -688,10 +688,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-software-compatibility-is-disclosed-only-after-payment-or-signup-46",
-      "status": "screened",
       "title": "Software compatibility is disclosed only after payment or signup",
-      "why_big": "Finding out after payment that a service will not work on a device wastes money, creates refund burden, and reflects a preventable onboarding failure.",
-      "ai_opening": "AI could check device, OS, region, and feature compatibility before purchase or flag missing compatibility disclosures.",
+      "bucket": "Everyday",
+      "whyBig": "Finding out after payment that a service will not work on a device wastes money, creates refund burden, and reflects a preventable onboarding failure.",
+      "aiOpening": "AI could check device, OS, region, and feature compatibility before purchase or flag missing compatibility disclosures.",
       "uncertainty": "The evidence appears to repeat one complaint and does not establish how widespread the pattern is.",
       "evidence": [
         "https://web.archive.org/web/20210821162427/https://old.reddit.com/r/badux/comments/p8uerl/dear_reolink_do_not_tell_me_incorrect_password/",
@@ -700,10 +700,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-local-editing-tools-require-internet-for-basic-tasks-47",
-      "status": "screened",
       "title": "Local editing tools require internet for basic tasks",
-      "why_big": "Basic local file actions like cropping should not depend on connectivity, and internet requirements can block simple productivity when offline or when services fail.",
-      "ai_opening": "AI could perform common edits offline, choose the simplest local workflow, and avoid routing basic file operations through web services.",
+      "bucket": "Everyday",
+      "whyBig": "Basic local file actions like cropping should not depend on connectivity, and internet requirements can block simple productivity when offline or when services fail.",
+      "aiOpening": "AI could perform common edits offline, choose the simplest local workflow, and avoid routing basic file operations through web services.",
       "uncertainty": "The evidence repeats one meme-cropping flow and does not prove how many tools behave this way.",
       "evidence": [
         "https://web.archive.org/web/20230118064930/https://old.reddit.com/r/assholedesign/comments/10f02wb/fck_off_cant_crop_memes_without_the_internet/",
@@ -712,10 +712,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-online-test-out-options-require-hidden-course-knowledge-48",
-      "status": "screened",
       "title": "Online test-out options require hidden course knowledge",
-      "why_big": "A test-out path fails if answers require taking the class first, creating wasted time and unfair barriers in education or certification workflows.",
-      "ai_opening": "AI could audit assessments for dependency on unreleased course material and help separate prerequisite knowledge from taught-only content.",
+      "bucket": "Everyday",
+      "whyBig": "A test-out path fails if answers require taking the class first, creating wasted time and unfair barriers in education or certification workflows.",
+      "aiOpening": "AI could audit assessments for dependency on unreleased course material and help separate prerequisite knowledge from taught-only content.",
       "uncertainty": "The evidence shows the complaint but not the actual questions or institutional scale.",
       "evidence": [
         "https://web.archive.org/web/20210803193020/https://old.reddit.com/r/badux/comments/oxaxkj/if_your_online_class_has_a_testout_option_and/",
@@ -724,10 +724,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-platforms-remove-honest-reviews-and-weaken-marketplace-trust-49",
-      "status": "screened",
       "title": "Platforms remove honest reviews and weaken marketplace trust",
-      "why_big": "When reviews about bad experiences disappear, users lose a key way to assess risk and protect future transactions.",
-      "ai_opening": "AI could help draft policy-compliant reviews, preserve records, and identify when moderation removes useful safety information.",
+      "bucket": "Everyday",
+      "whyBig": "When reviews about bad experiences disappear, users lose a key way to assess risk and protect future transactions.",
+      "aiOpening": "AI could help draft policy-compliant reviews, preserve records, and identify when moderation removes useful safety information.",
       "uncertainty": "The evidence is limited to host reports about Airbnb and does not prove why the reviews were removed.",
       "evidence": [
         "https://web.archive.org/web/20231010113820/https://old.reddit.com/r/airbnb_hosts/comments/170vtcb/should_i_allow_my_guest_to_use_my_utube_tv/",
@@ -736,10 +736,10 @@ window.SO_ANNOYING_DATA = {
     },
     {
       "id": "candidate-manipulative-interfaces-push-users-into-unwanted-actions-50",
-      "status": "screened",
       "title": "Manipulative interfaces push users into unwanted actions",
-      "why_big": "Dark-pattern style interfaces make users inspect routine flows for traps instead of trusting normal controls, creating recurring attention and decision burden.",
-      "ai_opening": "AI could flag likely dark patterns, summarize what an interface is steering the user toward, and suggest safer action paths.",
+      "bucket": "Everyday",
+      "whyBig": "Dark-pattern style interfaces make users inspect routine flows for traps instead of trusting normal controls, creating recurring attention and decision burden.",
+      "aiOpening": "AI could flag likely dark patterns, summarize what an interface is steering the user toward, and suggest safer action paths.",
       "uncertainty": "The evidence uses broad complaint language and does not prove the specific mechanism or harm in each case.",
       "evidence": [
         "https://web.archive.org/web/20230101210255/https://old.reddit.com/r/assholedesign/comments/100dv8c/the_x_on_this_mobile_game_ad/",
@@ -756,10 +756,10 @@ window.SO_ANNOYING_DATA = {
       "status": "pilot",
       "sourcePages": 92,
       "candidateCount": 389,
-      "finalistCount": 31,
+      "finalCount": 31,
       "updatedAt": "2026-08-09",
-      "finalistsPath": "data/cities/2026-08-09-san-francisco-finalists.jsonl",
-      "finalists": [
+      "finalsPath": "data/cities/2026-08-09-san-francisco-finals.jsonl",
+      "finals": [
         {
           "id": "f5bc65fd4b591597",
           "title": "Residential parking permits can take days when people need immediate legal parking",

@@ -15,8 +15,6 @@
         <div class="navlinks">
           <a href="#cities">Cities</a>
           <a href="https://github.com/pauljump/soannoying">GitHub</a>
-          <a href="https://github.com/pauljump/soannoying/issues/new?template=problem-review.yml">Review</a>
-          <a href="https://github.com/pauljump/soannoying/issues/new?template=solution-proposal.yml">Propose</a>
         </div>
       </nav>
       <section class="intro">
@@ -41,7 +39,7 @@
           </div>
           <div class="stat">
             <span>50</span>
-            <small>audited finalists published</small>
+            <small>published annoyances</small>
           </div>
           <div class="stat-grid">
             <div><strong>v0.1</strong><small>release</small></div>
@@ -54,34 +52,18 @@
     </header>
 
     <main>
-      <section class="funnel" id="process">
-        <div class="section-heading">
-          <p class="kicker">The funnel</p>
-          <h2>From raw irritation to a published annoyance.</h2>
-          <p>Nothing becomes a published annoyance just because a model noticed it. The project keeps the raw material, screens for a real burden, merges duplicates, and then publishes the strongest source-backed records.</p>
-        </div>
-        <div class="funnel-grid">
-          <article class="funnel-step"><span>01</span><h3>Raw observations</h3><p>What people said in archived public sources.</p></article>
-          <article class="funnel-step"><span>02</span><h3>Candidate patterns</h3><p>Repeated or promising burdens pulled out of the raw material.</p></article>
-          <article class="funnel-step"><span>03</span><h3>Screened annoyances</h3><p>Strong enough to survive the Big Annoyance Test and source checks.</p></article>
-          <article class="funnel-step"><span>04</span><h3>City collections</h3><p>Published annoyances grouped by city without changing the general list.</p></article>
-        </div>
-      </section>
-
       <section class="band">
         <div class="rule">
           <p>Raw titles are clues. They are not proof that a problem is big, common, important, or solvable.</p>
           <p>That is why the project keeps observations, reviews, proposals, and validations separate.</p>
-            <p>The latest filter found 50 stronger finalist patterns. Every finalist has been checked against the source trail before publication.</p>
+            <p>The published set contains the strongest source-backed annoyances from the current release. It is a release boundary, not a claim that every problem is solved.</p>
         </div>
       </section>
 
-      <section class="candidate-section" id="candidates">
-        <div class="section-heading">
-          <h2>Screened candidate patterns</h2>
-          <p>These survived a first pass for repetition, real cost, weak workarounds, and a problem bigger than one product. They are still waiting for community review.</p>
-        </div>
-        <div class="candidate-grid" id="candidateCards"></div>
+      <section class="section-heading release-heading" id="annoyances">
+        <p class="kicker">Published set</p>
+        <h2>Final annoyances</h2>
+        <p>These are the records that made it through the current source and annoyance checks. Their evidence and history stay linked below.</p>
       </section>
 
       <section class="cities-section" id="cities">
@@ -99,10 +81,10 @@
         </div>
       </section>
 
-      <section class="controls" id="annoyances" aria-label="Browse highlighted annoyances">
+      <section class="controls" aria-label="Browse published annoyances">
         <div>
-          <h2>Raw leads to review</h2>
-          <p>This is the work queue. The Cities section above contains the selected city shortlist; these general leads still have Source, Review, and Propose paths. Apply the <a href="https://github.com/pauljump/soannoying/blob/main/BIG_ANNOYANCE_TEST.md">Big Annoyance Test</a> before treating one as a real candidate.</p>
+          <h2>Browse the published set</h2>
+          <p>Search the final records by the kind of annoyance they describe.</p>
         </div>
         <label class="search">
           <span>Search</span>
@@ -119,6 +101,20 @@
       <section class="empty" id="emptyState" hidden>
         <h2>No matches</h2>
         <p>Try a broader word or clear the filter.</p>
+      </section>
+
+      <section class="funnel" id="process">
+        <div class="section-heading">
+          <p class="kicker">The trail behind the list</p>
+          <h2>How an annoyance becomes final.</h2>
+          <p>The homepage shows the final release. The repo keeps the work behind it: what was collected, what was screened out, and what passed the source and annoyance checks.</p>
+        </div>
+        <div class="funnel-grid">
+          <article class="funnel-step"><span>01</span><h3><a href="https://github.com/pauljump/soannoying/tree/main/data/observations">Raw observations</a></h3><p>What people said in archived public sources.</p></article>
+          <article class="funnel-step"><span>02</span><h3><a href="https://github.com/pauljump/soannoying/tree/main/data/candidates">Candidate patterns</a></h3><p>Repeated or promising burdens pulled out of the raw material.</p></article>
+          <article class="funnel-step"><span>03</span><h3><a href="https://github.com/pauljump/soannoying/blob/main/BIG_ANNOYANCE_TEST.md">Source and annoyance checks</a></h3><p>The checks used to decide what belongs in the published set.</p></article>
+          <article class="funnel-step"><span>04</span><h3><a href="https://github.com/pauljump/soannoying/tree/main/data/cities">City collections</a></h3><p>Separate published annoyances grouped by city.</p></article>
+        </div>
       </section>
     </main>
 

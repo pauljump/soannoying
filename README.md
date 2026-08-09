@@ -34,7 +34,9 @@ Treat this as raw material, not truth. It is not a complete annoyance catalog, a
 
 The public release is still `v0.1`, but the source-tracked mining work has continued privately. The working list now has `1,878` rough annoyances from `2,460` archived sources across `107` provisional categories. See the [progress note](data/PROGRESS.md) for what that number means. It is not a new public release or a claim that all of these are big annoyances.
 
-The latest Codex screening pass produced `50` stronger finalist drafts from the private corpus. They passed a source audit: every finalist points to real corpus evidence, and every finalist has multiple distinct source URLs. They are published as screened candidates in [data/candidates/2026-08-09-codex-finalists.jsonl](data/candidates/2026-08-09-codex-finalists.jsonl), not as reviewed problem records.
+The latest Codex screening pass produced `50` stronger finalist records from the private corpus. They passed a source audit: every record points to real corpus evidence, and every record has multiple distinct source URLs. They are the current published final set on the [public page](https://pauljump.github.io/soannoying/). “Published final” means it made the release boundary. It does not mean the annoyance is solved, universally measured, or already a reviewed problem record.
+
+The raw leads and screened candidate work stay in the repo, but they are not homepage cards. The public page also has a separate city layer: the first release has `31` published final annoyances from San Francisco. City records are not used to filter or redefine the general list.
 
 ## What belongs here
 
