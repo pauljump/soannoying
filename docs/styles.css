@@ -143,16 +143,39 @@ h1 {
   overflow: hidden;
 }
 
+.snapshot-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.stat-group:first-child {
+  border-right: 1px solid var(--line);
+}
+
+.stat-heading {
+  min-height: 58px;
+  margin: 0;
+  padding: 18px 18px 10px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
 .stat {
-  padding: 28px;
+  padding: 20px 18px;
   border-bottom: 1px solid var(--line);
 }
 
 .stat span {
   display: block;
-  font-size: 64px;
+  font-size: 46px;
   line-height: 1;
   font-weight: 850;
+}
+
+.stat-group .stat:last-child {
+  border-bottom: 0;
 }
 
 small {
@@ -620,6 +643,15 @@ footer p {
 
   .lede {
     font-size: 18px;
+  }
+
+  .snapshot-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-group:first-child {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
   }
 
   .stat span {

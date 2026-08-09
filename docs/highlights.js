@@ -749,6 +749,9 @@ window.SO_ANNOYING_DATA = {
       ]
     }
   ],
+  "generalStats": {
+    "publishedCount": 50
+  },
   "cities": [
     {
       "id": "san-francisco",
@@ -1384,6 +1387,11 @@ window.SO_ANNOYING_DATA = {
       ]
     }
   ],
+  "cityStats": {
+    "cityCount": 1,
+    "finalCount": 31,
+    "sourcePages": 92
+  },
   "highlights": [
     {
       "id": "cdb1d9ce748c",

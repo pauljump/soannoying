@@ -164,7 +164,15 @@ const payload = {
   sourceCount: Object.keys(countsBySource).length,
   countsBySource,
   publishedFinals,
+  generalStats: {
+    publishedCount: publishedFinals.length,
+  },
   cities,
+  cityStats: {
+    cityCount: cities.length,
+    finalCount: cities.reduce((total, city) => total + city.finals.length, 0),
+    sourcePages: cities.reduce((total, city) => total + city.sourcePages, 0),
+  },
   highlights,
 };
 

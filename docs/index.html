@@ -29,17 +29,37 @@
           </div>
         </div>
         <aside class="snapshot" aria-label="Current release snapshot">
-          <div class="stat">
-            <span id="totalObservations">1,340</span>
-            <small>raw observations</small>
-          </div>
-          <div class="stat">
-            <span>5,761</span>
-            <small>raw leads in active mining</small>
-          </div>
-          <div class="stat">
-            <span>50</span>
-            <small>published annoyances</small>
+          <div class="snapshot-columns">
+            <section class="stat-group">
+              <p class="stat-heading">General annoyances</p>
+              <div class="stat">
+                <span id="totalObservations">1,340</span>
+                <small>raw observations</small>
+              </div>
+              <div class="stat">
+                <span>5,761</span>
+                <small>raw leads in active mining</small>
+              </div>
+              <div class="stat">
+                <span id="publishedFinalCount">50</span>
+                <small>published annoyances</small>
+              </div>
+            </section>
+            <section class="stat-group">
+              <p class="stat-heading">City-specific annoyances</p>
+              <div class="stat">
+                <span id="cityCount">1</span>
+                <small>city covered</small>
+              </div>
+              <div class="stat">
+                <span id="cityFinalCount">31</span>
+                <small>published annoyances</small>
+              </div>
+              <div class="stat">
+                <span id="citySourcePages">92</span>
+                <small>frozen source pages</small>
+              </div>
+            </section>
           </div>
           <div class="stat-grid">
             <div><strong>v0.1</strong><small>release</small></div>
@@ -61,30 +81,15 @@
       </section>
 
       <section class="section-heading release-heading" id="annoyances">
-        <p class="kicker">Published list</p>
-        <h2>Annoyances</h2>
+        <p class="kicker">General annoyances</p>
+        <h2>Published annoyances</h2>
         <p>These made it through the current source check and Big Annoyance Test. They are the public list; the work behind each one stays linked below.</p>
-      </section>
-
-      <section class="cities-section" id="cities">
-        <div class="section-heading">
-          <p class="kicker">City layer</p>
-          <h2>City annoyances</h2>
-          <p>This is a separate collection for annoyances from specific cities. San Francisco is the first one. We can compare cities later; this section does not reclassify the general annoyance list.</p>
-        </div>
-        <div class="city-layout">
-          <div class="city-list" id="cityList" aria-label="Cities"></div>
-          <div class="city-panel">
-            <div class="city-panel-top" id="cityPanelTop"></div>
-            <div class="city-grid" id="cityCards"></div>
-          </div>
-        </div>
       </section>
 
       <section class="controls" aria-label="Browse published annoyances">
         <div>
-          <h2>Browse the published set</h2>
-          <p>Search the published list by the kind of annoyance it describes.</p>
+          <h2>Browse general annoyances</h2>
+          <p>Search the published general list by the kind of annoyance it describes.</p>
         </div>
         <label class="search">
           <span>Search</span>
@@ -101,6 +106,21 @@
       <section class="empty" id="emptyState" hidden>
         <h2>No matches</h2>
         <p>Try a broader word or clear the filter.</p>
+      </section>
+
+      <section class="cities-section" id="cities">
+        <div class="section-heading">
+          <p class="kicker">City layer</p>
+          <h2>City-specific annoyances</h2>
+          <p>This is a separate collection for annoyances from specific cities. San Francisco is the first one. We can compare cities later; this section does not reclassify the general annoyance list.</p>
+        </div>
+        <div class="city-layout">
+          <div class="city-list" id="cityList" aria-label="Cities"></div>
+          <div class="city-panel">
+            <div class="city-panel-top" id="cityPanelTop"></div>
+            <div class="city-grid" id="cityCards"></div>
+          </div>
+        </div>
       </section>
 
       <section class="funnel" id="process">
