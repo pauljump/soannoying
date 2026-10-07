@@ -1,3 +1,11 @@
 .DS_Store
 node_modules/
 coverage/
+
+# Generated local files; source and retained evidence remain explicit.
+__pycache__/
+*.pyc
+*.tsbuildinfo
+.next/
+.next-*/
+.build/
